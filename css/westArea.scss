@@ -516,6 +516,8 @@ body {
       }
     }
     .attraContent {
+      padding-bottom: 200px;
+      // 常樂footer 修改page06 底部高度
       p {
         font-size: 18px;
         letter-spacing: 3px;
@@ -525,3 +527,35 @@ body {
     }
   }
 }
+
+// 常樂footer 修改
+.westArea_footer {
+  width: 100%;
+  height: 13em;
+  background-color: black;
+  position: relative;
+  p {
+    color: whitesmoke;
+    font-size: 1.5em;
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translate(-50%, -50%);
+  }
+  .westArea_art_gallery {
+    height: 130%;
+    width: 40%;
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+  }
+  .westArea_person {
+    height: 240%;
+    position: absolute;
+    right: 3em;
+    bottom: 0em;
+  }
+}
+// 常樂footer 修改
+
