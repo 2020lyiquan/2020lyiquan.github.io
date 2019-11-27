@@ -126,11 +126,7 @@ body {
     }
 }
 
-#page02 {
-
-    // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-    // background-position: center;
-    // background-size: contain;
+section.template {
     .container {
         padding-top: 50px;
 
@@ -173,82 +169,6 @@ body {
                 @media (max-width: 576px) {
                     padding: 30px 20px 20px 40px;
                 }
-            }
-        }
-
-        .attraContent {
-            @media(max-width:576px) {
-                padding-top: 15px;
-            }
-
-            p {
-                font-size: 18px;
-                letter-spacing: 3px;
-                line-height: 35px;
-                margin-bottom: 30px;
-                text-align: justify;
-
-                @media(max-width:576px) {
-                    font-size: 16px;
-                    letter-spacing: 1px;
-                    line-height: 30px;
-                }
-            }
-        }
-    }
-}
-
-#page03 {
-
-    // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-    // background-position: center;
-    // background-size: contain;
-    .container {
-        padding-top: 50px;
-
-        .title.drop-shadow {
-            /* attra title add drop-shadow */
-            filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-            img {
-                width: 100%;
-
-                @media (max-width: 576px) {
-                    width: 100%;
-                }
-            }
-        }
-
-        .row02 {
-            box-shadow: 0 0 10px #5c5c5c;
-
-            .swiper-container {
-                width: 100%;
-                height: 492px;
-
-                @media (max-width: 320px) {
-                    height: 300px;
-                }
-
-                .swiper-wrapper {
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-
-            .attraInfo {
-                width: 100%;
-                height: 100%;
-                letter-spacing: 1px;
-                color: whitesmoke;
-                background-color: gray;
-                padding: 40px 20px 20px 40px;
-
-                @media (max-width: 576px) {
-                    padding: 30px 20px 20px 40px;
-                }
 
                 h2 {
                     margin-bottom: 30px;
@@ -299,224 +219,17 @@ body {
                     line-height: 30px;
                 }
             }
-
-            margin-bottom: 20px;
-        }
-
-    }
-}
-
-#page04 {
-
-    // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-    // background-position: center;
-    // background-size: contain;
-    .container {
-        padding-top: 50px;
-
-        .title.drop-shadow {
-            /* attra title add drop-shadow */
-            filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-            img {
-                width: 100%;
-
-                @media(max-width:576px) {
-                    width: 100%;
-                }
-            }
-        }
-
-        .row02 {
-            box-shadow: 0 0 10px #5c5c5c;
-
-            .swiper-container {
-                width: 100%;
-                height: 492px;
-
-                @media(max-width: 576px) {
-                    height: 300px;
-                }
-
-                .swiper-wrapper {
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-
-            .attraInfo {
-                width: 100%;
-                height: 100%;
-                letter-spacing: 1px;
-                color: whitesmoke;
-                background-color: gray;
-                padding: 40px 20px 20px 40px;
-
-                @media(max-width:576px) {
-                    padding: 30px 20px 20px 40px;
-                }
-
-                h2 {
-                    margin-bottom: 30px;
-
-                    @media(max-width:576px) {
-                        font-size: 22px;
-                        margin-bottom: 15px;
-                    }
-                }
-
-                p {
-                    font-size: 18px;
-
-                    @media(max-width:576px) {
-                        font-size: 16px;
-                        margin: 0 0 10px 0;
-                    }
-
-                    a {
-                        // background-color:#555;
-                        // padding: 5px 15px;
-
-                        text-decoration: none;
-                        border-bottom: #ffffff 2px solid;
-                        color: #ffffff;
-                        font-size: 16px;
-                        // 一拳修改
-                    }
-                }
-            }
-        }
-
-        .attraContent {
-            @media(max-width:576px) {
-                padding-top: 15px;
-            }
-
-            p {
-                font-size: 18px;
-                letter-spacing: 3px;
-                line-height: 35px;
-                margin-bottom: 30px;
-                text-align: justify;
-
-                @media(max-width:576px) {
-                    font-size: 16px;
-                    letter-spacing: 1px;
-                    line-height: 30px;
-                }
-            }
-
-            margin-bottom: 20px;
         }
     }
 }
 
 #page05 {
-    // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-    // background-position: center;
-    // background-size: contain;
-
     .container {
-        padding-top: 50px;
-
-        .title.drop-shadow {
-            /* attra title add drop-shadow */
-            filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-            img {
-                width: 100%;
-
-                @media(max-width: 576px) {
-                    width: 100%;
-                }
-            }
-        }
-
-        .row02 {
-            box-shadow: 0 0 10px #5c5c5c;
-
-            .swiper-container {
-                width: 100%;
-                height: 492px;
-
-                @media(max-width: 576px) {
-                    height: 300px;
-                }
-
-                .swiper-wrapper {
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-
-            .attraInfo {
-                width: 100%;
-                height: 100%;
-                letter-spacing: 1px;
-                color: whitesmoke;
-                background-color: gray;
-                padding: 40px 20px 20px 40px;
-
-                @media(max-width:576px) {
-                    padding: 30px 20px 20px 40px;
-                }
-
-                h2 {
-                    margin-bottom: 30px;
-
-                    @media(max-width:576px) {
-                        font-size: 22px;
-                        margin-bottom: 15px;
-                    }
-                }
-
-                // 常樂footer 修改page06 圖文重疊到給底部內距
-                p {
-                    font-size: 18px;
-
-                    @media(max-width:576px) {
-                        font-size: 16px;
-                        margin: 0 0 10px 0;
-                    }
-
-                    a {
-                        // background-color:#555;
-                        // padding: 5px 15px;
-
-                        text-decoration: none;
-                        border-bottom: #ffffff 2px solid;
-                        color: #ffffff;
-                        font-size: 16px;
-                        // 一拳修改
-                    }
-                }
-            }
-        }
-
         .attraContent {
             padding-bottom: 200px;
 
             @media(max-width:576px) {
-                padding-top: 15px;
                 padding-bottom: 100px;
-            }
-
-            p {
-                font-size: 18px;
-                letter-spacing: 3px;
-                line-height: 35px;
-                margin-bottom: 30px;
-                text-align: justify;
-
-                @media(max-width:576px) {
-                    font-size: 16px;
-                    letter-spacing: 1px;
-                    line-height: 30px;
-                }
             }
         }
     }
@@ -584,4 +297,5 @@ body {
         }
     }
 }
+
 // 常樂footer 修改
