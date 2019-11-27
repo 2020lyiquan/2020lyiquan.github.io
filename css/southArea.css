@@ -126,10 +126,6 @@ body {
   padding-bottom: 50px;
 }
 
-section.template .container {
-  padding-top: 50px;
-}
-
 section.template .container .title.drop-shadow {
   /* attra title add drop-shadow */
   -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
