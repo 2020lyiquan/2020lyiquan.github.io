@@ -51,7 +51,6 @@ body {
 }
 
 #page01 {
-<<<<<<< HEAD
 
     // background-image: url("./../img/背景圖/ep_naturalwhite.png");
     // background-position: center;
@@ -69,10 +68,11 @@ body {
                 border-radius: 50%;
                 border: 3px solid rgb(95, 95, 95);
                 position: relative;
+
                 @media(max-width:576px) {
-                width: 250px;
-                height: 250px;
-                margin: 20px 0;
+                    width: 250px;
+                    height: 250px;
+                    margin: 20px 0;
                 }
 
                 .mask {
@@ -91,29 +91,6 @@ body {
                     opacity: 0.8;
                 }
             }
-=======
-  // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  // background-position: center;
-  // background-size: contain;
-  .container {
-    padding-bottom: 50px ;
-    .row {
-      /* width: 100%; */
-      .areaAvatar {
-        background-image: url("./../img/示意圖/文創園區.jpg");
-        width: 315px;
-        height: 315px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        border: 3px solid rgb(95, 95, 95);
-        position: relative;
-        .mask {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: rgba(240, 240, 240, 0.3);
->>>>>>> 5931f9500e7fe0e5060d2e42b637c9a6cd94af5a
         }
 
         .areaInfo {
@@ -121,9 +98,10 @@ body {
                 padding: 45px 10px 0 0px;
                 letter-spacing: 3px;
                 font-weight: 900;
+
                 @media(max-width:576px) {
                     padding: 20px 0px 20px 0px;
-                    }
+                }
 
             }
 
@@ -134,8 +112,8 @@ body {
                 line-height: 35px;
 
                 @media(max-width:576px) {
-                font-size: 20px;
-                padding: 10px 0px 20px 0px;
+                    font-size: 20px;
+                    padding: 10px 0px 20px 0px;
                 }
             }
         }
@@ -193,11 +171,14 @@ body {
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
+
                 @media(max-width:576px) {
-                padding: 30px 20px 20px 40px;
+                    padding: 30px 20px 20px 40px;
                 }
 
                 h2 {
+                    margin-bottom: 30px;
+
                     @media(max-width:576px) {
                         font-size: 22px;
                         margin-bottom: 15px;
@@ -206,6 +187,7 @@ body {
 
                 p {
                     font-size: 18px;
+
                     @media(max-width:576px) {
                         font-size: 16px;
                         margin: 0 0 10px 0;
@@ -229,13 +211,15 @@ body {
             @media(max-width:576px) {
                 padding-top: 15px;
             }
+
             p {
                 font-size: 18px;
                 letter-spacing: 3px;
                 line-height: 35px;
                 margin-bottom: 30px;
                 text-align: justify;
-                @media(max-width:576px){
+
+                @media(max-width:576px) {
                     font-size: 16px;
                     letter-spacing: 1px;
                     line-height: 30px;
@@ -292,10 +276,13 @@ body {
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
+
                 @media(max-width:576px) {
-                padding: 30px 20px 20px 40px;
+                    padding: 30px 20px 20px 40px;
                 }
+
                 h2 {
+                    margin-bottom: 30px;
                     @media(max-width:576px) {
                         font-size: 22px;
                         margin-bottom: 15px;
@@ -304,6 +291,7 @@ body {
 
                 p {
                     font-size: 18px;
+
                     @media(max-width:576px) {
                         font-size: 16px;
                         margin: 0 0 10px 0;
@@ -327,13 +315,15 @@ body {
             @media(max-width:576px) {
                 padding-top: 15px;
             }
+
             p {
                 font-size: 18px;
                 letter-spacing: 3px;
                 line-height: 35px;
                 margin-bottom: 30px;
                 text-align: justify;
-                @media(max-width:576px){
+
+                @media(max-width:576px) {
                     font-size: 16px;
                     letter-spacing: 1px;
                     line-height: 30px;
@@ -392,11 +382,13 @@ body {
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
+
                 @media(max-width:576px) {
-                padding: 30px 20px 20px 40px;
+                    padding: 30px 20px 20px 40px;
                 }
 
                 h2 {
+                    margin-bottom: 30px;
                     @media(max-width:576px) {
                         font-size: 22px;
                         margin-bottom: 15px;
@@ -405,6 +397,7 @@ body {
 
                 p {
                     font-size: 18px;
+
                     @media(max-width:576px) {
                         font-size: 16px;
                         margin: 0 0 10px 0;
@@ -428,13 +421,15 @@ body {
             @media(max-width:576px) {
                 padding-top: 15px;
             }
+
             p {
                 font-size: 18px;
                 letter-spacing: 3px;
                 line-height: 35px;
                 margin-bottom: 30px;
                 text-align: justify;
-                @media(max-width:576px){
+
+                @media(max-width:576px) {
                     font-size: 16px;
                     letter-spacing: 1px;
                     line-height: 30px;
@@ -493,11 +488,13 @@ body {
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
+
                 @media(max-width:576px) {
-                padding: 30px 20px 20px 40px;
+                    padding: 30px 20px 20px 40px;
                 }
 
                 h2 {
+                    margin-bottom: 30px;
                     @media(max-width:576px) {
                         font-size: 22px;
                         margin-bottom: 15px;
@@ -506,6 +503,7 @@ body {
 
                 p {
                     font-size: 18px;
+
                     @media(max-width:576px) {
                         font-size: 16px;
                         margin: 0 0 10px 0;
@@ -529,13 +527,15 @@ body {
             @media(max-width:576px) {
                 padding-top: 15px;
             }
+
             p {
                 font-size: 18px;
                 letter-spacing: 3px;
                 line-height: 35px;
                 margin-bottom: 30px;
                 text-align: justify;
-                @media(max-width:576px){
+
+                @media(max-width:576px) {
                     font-size: 16px;
                     letter-spacing: 1px;
                     line-height: 30px;
@@ -543,51 +543,52 @@ body {
             }
         }
     }
-<<<<<<< HEAD
-}
-=======
+
     .attraContent {
-      padding-bottom: 200px;
-      // 常樂footer 修改page06 圖文重疊到給底部內距
-      p {
-        font-size: 18px;
-        letter-spacing: 3px;
-        line-height: 35px;
-        margin-bottom: 30px;
-      }
+        padding-bottom: 200px;
+
+        // 常樂footer 修改page06 圖文重疊到給底部內距
+        p {
+            font-size: 18px;
+            letter-spacing: 3px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
     }
-  }
 }
+
 
 // 常樂footer 修改
 .southArea_footer {
-  width: 100%;
-  height: 13em;
-  background-color: black;
-  position: relative;
-  p {
-    color: whitesmoke;
-    font-size: 1.5em;
-    z-index: 9999;
-    position: absolute;
-    top: 50%;
-    left: 34%;
-    transform: translate(-50%, -50%);
-  }
-  .southArea_library {
-    height: 100%;
-    position: absolute;
-    right: 3em;
-    bottom: 2em;
-  }
-  .southArea_person {
-    height: 200%;
-    position: absolute;
-    left: 5em;
-    bottom: 1em;
-    transform: scaleX(-1);
-  }
-}
-// 常樂footer 修改
+    width: 100%;
+    height: 13em;
+    background-color: black;
+    position: relative;
 
->>>>>>> 5931f9500e7fe0e5060d2e42b637c9a6cd94af5a
+    p {
+        color: whitesmoke;
+        font-size: 1.5em;
+        z-index: 9999;
+        position: absolute;
+        top: 50%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+    }
+
+    .southArea_library {
+        height: 100%;
+        position: absolute;
+        right: 3em;
+        bottom: 2em;
+    }
+
+    .southArea_person {
+        height: 200%;
+        position: absolute;
+        left: 5em;
+        bottom: 1em;
+        transform: scaleX(-1);
+    }
+}
+
+// 常樂footer 修改

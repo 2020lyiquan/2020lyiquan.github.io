@@ -52,14 +52,6 @@ body {
   color: rgba(0, 0, 0, 0.568);
 }
 
-#page01 .container {
-  padding-bottom: 50px;
-}
-
-#page01 .container .row {
-  /* width: 100%; */
-}
-
 #page01 .container .row .areaAvatar {
   background-image: url("./../img/示意圖/文創園區.jpg");
   width: 315px;
@@ -175,6 +167,10 @@ body {
   }
 }
 
+#page02 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 576px) {
   #page02 .container .row02 .attraInfo h2 {
     font-size: 22px;
@@ -276,6 +272,10 @@ body {
   #page03 .container .row02 .attraInfo {
     padding: 30px 20px 20px 40px;
   }
+}
+
+#page03 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {
@@ -385,6 +385,10 @@ body {
   }
 }
 
+#page04 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 576px) {
   #page04 .container .row02 .attraInfo h2 {
     font-size: 22px;
@@ -492,6 +496,10 @@ body {
   }
 }
 
+#page05 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 576px) {
   #page05 .container .row02 .attraInfo h2 {
     font-size: 22px;
@@ -517,15 +525,10 @@ body {
   font-size: 16px;
 }
 
-<<<<<<< HEAD
 @media (max-width: 576px) {
   #page05 .container .attraContent {
     padding-top: 15px;
   }
-=======
-#page05 .container .attraContent {
-  padding-bottom: 150px;
->>>>>>> 5931f9500e7fe0e5060d2e42b637c9a6cd94af5a
 }
 
 #page05 .container .attraContent p {
@@ -542,6 +545,17 @@ body {
     letter-spacing: 1px;
     line-height: 30px;
   }
+}
+
+#page05 .attraContent {
+  padding-bottom: 200px;
+}
+
+#page05 .attraContent p {
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 35px;
+  margin-bottom: 30px;
 }
 
 .southArea_footer {
