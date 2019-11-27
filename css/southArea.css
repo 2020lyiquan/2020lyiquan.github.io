@@ -2,7 +2,7 @@
 body {
   padding-top: 76px;
   /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-weight: 600;
   background-image: url("./../img/背景圖/ep_naturalwhite.png");
   background-position: center;
@@ -565,6 +565,24 @@ body {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  .southArea_footer {
+    height: 10em;
+  }
+}
+
+@media (max-width: 768px) {
+  .southArea_footer {
+    height: 6em;
+  }
+}
+
+@media (max-width: 414px) {
+  .southArea_footer {
+    height: 4em;
+  }
+}
+
 .southArea_footer p {
   color: whitesmoke;
   font-size: 1.5em;
@@ -576,11 +594,64 @@ body {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1024px) {
+  .southArea_footer p {
+    font-size: 1.3em;
+    left: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .southArea_footer p {
+    font-size: 1em;
+    left: 38%;
+  }
+}
+
+@media (max-width: 414px) {
+  .southArea_footer p {
+    left: 75%;
+    width: 100%;
+  }
+}
+
 .southArea_footer .southArea_library {
   height: 100%;
   position: absolute;
   right: 3em;
   bottom: 2em;
+}
+
+@media (max-width: 1024px) {
+  .southArea_footer .southArea_library {
+    height: 80%;
+    right: 1.3em;
+    bottom: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .southArea_footer .southArea_library {
+    height: 90%;
+    right: 1.3em;
+    bottom: 1em;
+  }
+}
+
+@media (max-width: 414px) {
+  .southArea_footer .southArea_library {
+    right: 1em;
+    bottom: 3em;
+    height: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .southArea_footer .southArea_library {
+    right: 0.5em;
+    bottom: 3em;
+    height: 80%;
+  }
 }
 
 .southArea_footer .southArea_person {
@@ -590,5 +661,19 @@ body {
   bottom: 1em;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+  .southArea_footer .southArea_person {
+    height: 250%;
+    left: 3em;
+  }
+}
+
+@media (max-width: 414px) {
+  .southArea_footer .southArea_person {
+    right: 1em;
+    bottom: 3em;
+  }
 }
 /*# sourceMappingURL=southArea.css.map */
