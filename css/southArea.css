@@ -52,14 +52,6 @@ body {
   color: rgba(0, 0, 0, 0.568);
 }
 
-#page01 .container {
-  padding: 50px 0;
-}
-
-#page01 .container .row {
-  width: 100%;
-}
-
 #page01 .container .row .areaAvatar {
   background-image: url("./../img/示意圖/文創園區.jpg");
   width: 315px;
