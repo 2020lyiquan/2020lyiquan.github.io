@@ -325,9 +325,9 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   #page04 .container .title.drop-shadow img {
-    width: 200%;
+    width: 100%;
   }
 }
 
@@ -338,13 +338,6 @@ body {
 
 #page04 .container .row02 .swiper-container {
   width: 100%;
-  height: 492px;
-}
-
-@media screen and (max-width: 320px) {
-  #page04 .container .row02 .swiper-container {
-    height: 300px;
-  }
 }
 
 #page04 .container .row02 .swiper-container .swiper-wrapper img {
@@ -361,10 +354,33 @@ body {
   padding: 30px 40px 20px 40px;
 }
 
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page04 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
 #page04 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
   /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page04 .container .row02 .attraInfo p a {
@@ -374,8 +390,10 @@ body {
   font-size: 16px;
 }
 
-#page04 .container .attraContent {
-  margin-bottom: 20px;
+@media (max-width: 576px) {
+  #page04 .container .attraContent {
+    padding-top: 15px;
+  }
 }
 
 #page04 .container .attraContent p {
@@ -383,12 +401,15 @@ body {
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page05 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
+@media (max-width: 576px) {
+  #page04 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page05 .container {
@@ -405,9 +426,9 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   #page05 .container .title.drop-shadow img {
-    width: 200%;
+    width: 100%;
   }
 }
 
@@ -418,13 +439,6 @@ body {
 
 #page05 .container .row02 .swiper-container {
   width: 100%;
-  height: 515px;
-}
-
-@media screen and (max-width: 320px) {
-  #page05 .container .row02 .swiper-container {
-    height: 300px;
-  }
 }
 
 #page05 .container .row02 .swiper-container .swiper-wrapper img {
@@ -438,7 +452,13 @@ body {
   letter-spacing: 1px;
   color: whitesmoke;
   background-color: gray;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page05 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
 }
 
 #page05 .container .row02 .attraInfo p {
