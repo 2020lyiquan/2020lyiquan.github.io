@@ -49,7 +49,6 @@ body {
 }
 
 #page01 {
-
   // background-image: url("./../img/背景圖/ep_naturalwhite.png");
   // background-position: center;
   // background-size: contain;
@@ -64,7 +63,6 @@ body {
         border-radius: 50%;
         border: 3px solid rgb(95, 95, 95);
         position: relative;
-        margin: 50px 0;
 
         @media (max-width: 576px) {
           width: 250px;
@@ -91,10 +89,6 @@ body {
     }
 
     .areaInfo {
-      margin: 50px 0;
-      @media(max-width:576px) {
-        margin: 0;
-      }
       h2 {
         padding: 45px 10px 0 0px;
         letter-spacing: 3px;
@@ -127,766 +121,517 @@ body {
 }
 
 #page02 {
-
   // background-image: url("./../img/背景圖/ep_naturalwhite.png");
   // background-position: center;
   // background-size: contain;
   .container {
     padding-top: 50px;
 
-    p {
-      padding: 20px 20px 10px 0px;
-      font-size: 22px;
-      letter-spacing: 3px;
-      line-height: 35px;
-      text-align: justify;
+    .title.drop-shadow {
+      /* attra title add drop-shadow */
+      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
 
-      .title.drop-shadow {
-        /* attra title add drop-shadow */
-        filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
+      img {
+        width: 100%;
 
-        img {
+        @media (max-width: 576px) {
           width: 100%;
-
-          @media (max-width: 576px) {
-            width: 100%;
-          }
-        }
-      }
-
-      .row02 {
-        box-shadow: 0 0 10px #5c5c5c;
-
-        .swiper-container {
-          width: 100%;
-
-          @media (max-width: 576px) {}
-
-          .swiper-wrapper {
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-
-        .attraInfo {
-          /* 景點 Attractions 簡介 */
-          width: 100%;
-          height: 100%;
-          letter-spacing: 1px;
-          color: whitesmoke;
-          background-color: gray;
-          padding: 40px 20px 20px 40px;
-
-          @media (max-width: 576px) {
-            padding: 30px 20px 20px 40px;
-          }
-
-          // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-          // background-position: center;
-          // background-size: contain;
-          .container {
-
-            .title.drop-shadow {
-              /* attra title add drop-shadow */
-              filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-              img {
-                width: 100%;
-
-                @media(max-width:576px) {
-                  width: 100%;
-                }
-              }
-            }
-
-            .row02 {
-              box-shadow: 0 0 10px #5c5c5c;
-
-              .swiper-container {
-                width: 100%;
-
-                .swiper-wrapper {
-                  img {
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-              }
-
-              .attraInfo {
-                /* 景點 Attractions 簡介 */
-                width: 100%;
-                height: 100%;
-                letter-spacing: 3px;
-                color: whitesmoke;
-                background-color: gray;
-                padding: 40px 20px 20px 40px;
-
-                @media(max-width:576px) {
-                  font-size: 22px;
-                  margin-bottom: 15px;
-                }
-              }
-
-              p {
-                font-size: 18px;
-
-                @media(max-width:576px) {
-                  font-size: 16px;
-                  margin: 0 0 10px 0;
-                }
-
-                a {
-                  // background-color:#555;
-                  // padding: 5px 15px;
-
-                  text-decoration: none;
-                  border-bottom: #ffffff 2px solid;
-                  color: #ffffff;
-                  font-size: 16px;
-                  // 一拳修改
-                }
-              }
-            }
-          }
-
-          .attraContent {
-            @media(max-width:576px) {
-              padding-top: 15px;
-            }
-
-            p {
-              font-size: 18px;
-              letter-spacing: 3px;
-              line-height: 35px;
-              margin-bottom: 30px;
-              text-align: justify;
-
-              @media(max-width:576px) {
-                font-size: 16px;
-                letter-spacing: 1px;
-                line-height: 30px;
-              }
-            }
-          }
         }
       }
     }
-  }
 
-  #page03 {
+    .row02 {
+      box-shadow: 0 0 10px #5c5c5c;
 
-    // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-    // background-position: center;
-    // background-size: contain;
-    .container {
-      padding-top: 50px;
+      .swiper-container {
+        width: 100%;
 
-      .title.drop-shadow {
-        /* attra title add drop-shadow */
-        filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-        img {
-          width: 100%;
-
-          @media (max-width: 576px) {
-            width: 100%;
-          }
-        }
-      }
-
-      .row02 {
-        box-shadow: 0 0 10px #5c5c5c;
-
-        .swiper-container {
-          width: 100%;
-          height: 492px;
-
-          @media (max-width: 320px) {
-            height: 300px;
-          }
-
-          .swiper-wrapper {
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-
-        .attraInfo {
-          width: 100%;
-          height: 100%;
-          letter-spacing: 1px;
-          color: whitesmoke;
-          background-color: gray;
-          padding: 40px 20px 20px 40px;
-
-          @media (max-width: 576px) {
-            padding: 30px 20px 20px 40px;
-          }
-
-          h2 {
-            margin-bottom: 30px;
-
-            @media (max-width: 576px) {
-              font-size: 22px;
-              margin-bottom: 15px;
-            }
-          }
-
-          p {
-            font-size: 18px;
-
-            @media (max-width: 576px) {
-              font-size: 16px;
-              margin: 0 0 10px 0;
-            }
-
-            a {
-              // background-color:#555;
-              // padding: 5px 15px;
-
-              text-decoration: none;
-              border-bottom: #ffffff 2px solid;
-              color: #ffffff;
-              font-size: 16px;
-              // 一拳修改
-            }
-          }
-        }
-      }
-
-      // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-      // background-position: center;
-      // background-size: contain;
-      .container {
-        padding-top: 50px;
-
-        .title.drop-shadow {
-          /* attra title add drop-shadow */
-          filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-          img {
-            width: 100%;
-
-            @media(max-width:576px) {
-              width: 100%;
-            }
-          }
-        }
-
-        .row02 {
-          box-shadow: 0 0 10px #5c5c5c;
-
-          .swiper-container {
-            width: 100%;
-
-
-            @media(max-width: 576px) {
-              height: 300px;
-            }
-
-            .swiper-wrapper {
-              img {
-                width: 100%;
-                height: 100%;
-              }
-            }
-
-            letter-spacing: 3px;
-            color: whitesmoke;
-            background-color: gray;
-            padding: 40px 20px 20px 40px;
-
-            @media(max-width:576px) {
-              padding: 30px 20px 20px 40px;
-            }
-
-            .attraInfo {
-              width: 100%;
-              height: 100%;
-              letter-spacing: 1px;
-              color: whitesmoke;
-              background-color: gray;
-              padding: 40px 20px 20px 40px;
-
-              @media(max-width:576px) {
-                padding: 30px 20px 20px 40px;
-              }
-
-              h2 {
-                margin-bottom: 30px;
-
-                @media(max-width:576px) {
-                  font-size: 22px;
-                  margin-bottom: 15px;
-                }
-              }
-
-              p {
-                font-size: 18px;
-
-                @media(max-width:576px) {
-                  font-size: 16px;
-                  margin: 0 0 10px 0;
-                }
-
-                a {
-                  // background-color:#555;
-                  // padding: 5px 15px;
-
-                  text-decoration: none;
-                  border-bottom: #ffffff 2px solid;
-                  color: #ffffff;
-                  font-size: 16px;
-                  // 一拳修改
-                }
-              }
-            }
-          }
-
-          .attraContent {
-            @media(max-width:576px) {
-              padding-top: 15px;
-            }
-
-            p {
-              font-size: 18px;
-              letter-spacing: 3px;
-              line-height: 35px;
-              margin-bottom: 30px;
-              text-align: justify;
-
-              @media(max-width:576px) {
-                font-size: 16px;
-                letter-spacing: 1px;
-                line-height: 30px;
-              }
-            }
-
-            margin-bottom: 20px;
-          }
-        }
-
-        margin-bottom: 20px;
-      }
-    }
-  }
-
-  #page04 {
-
-    // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-    // background-position: center;
-    // background-size: contain;
-    .container {
-
-      .title.drop-shadow {
-        /* attra title add drop-shadow */
-        filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-        img {
-          width: 100%;
-
-          @media(max-width:576px) {
-            width: 100%;
-          }
-        }
-      }
-
-      .row02 {
-        box-shadow: 0 0 10px #5c5c5c;
-
-        .swiper-container {
-          width: 100%;
-          height: 492px;
-
-          @media(max-width: 576px) {
-            height: 300px;
-          }
-
-          .swiper-wrapper {
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
+        @media (max-width: 576px) {
         }
 
         .swiper-wrapper {
           img {
             width: 100%;
             height: 100%;
-            letter-spacing: 3px;
-            color: whitesmoke;
-            background-color: gray;
-            padding: 40px 20px 20px 40px;
-
-            @media(max-width:576px) {
-              padding: 30px 20px 20px 40px;
-            }
-
-            .attraInfo {
-              width: 100%;
-              height: 100%;
-              letter-spacing: 1px;
-              color: whitesmoke;
-              background-color: gray;
-              padding: 40px 20px 20px 40px;
-
-              @media(max-width:576px) {
-                padding: 30px 20px 20px 40px;
-              }
-
-              h2 {
-                margin-bottom: 30px;
-
-                @media(max-width:576px) {
-                  font-size: 22px;
-                  margin-bottom: 15px;
-                }
-              }
-
-              p {
-                font-size: 18px;
-
-                @media(max-width:576px) {
-                  font-size: 16px;
-                  margin: 0 0 10px 0;
-                }
-
-                a {
-                  // background-color:#555;
-                  // padding: 5px 15px;
-
-                  text-decoration: none;
-                  border-bottom: #ffffff 2px solid;
-                  color: #ffffff;
-                  font-size: 16px;
-                  // 一拳修改
-                }
-              }
-            }
-          }
-
-          .attraContent {
-            @media(max-width:576px) {
-              padding-top: 15px;
-            }
-
-            p {
-              font-size: 18px;
-              letter-spacing: 3px;
-              line-height: 35px;
-              margin-bottom: 30px;
-              text-align: justify;
-
-              @media(max-width:576px) {
-                font-size: 16px;
-                letter-spacing: 1px;
-                line-height: 30px;
-              }
-            }
-
-            margin-bottom: 20px;
           }
         }
       }
 
-      .row02 {
-        box-shadow: 0 0 10px #5c5c5c;
+      .attraInfo {
+        /* 景點 Attractions 簡介 */
+        width: 100%;
+        height: 100%;
+        letter-spacing: 1px;
+        color: whitesmoke;
+        background-color: gray;
+        padding: 40px 20px 20px 40px;
 
-        .container {
-          .title.drop-shadow {
-            /* attra title add drop-shadow */
-            filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-            .swiper-wrapper {
-              img {
-                width: 100%;
-                height: 100%;
-              }
-            }
-          }
-
-          .attraInfo {
-            width: 100%;
-            height: 100%;
-            letter-spacing: 1px;
-            color: whitesmoke;
-            background-color: gray;
-            padding: 40px 20px 20px 40px;
-
-            @media (max-width: 576px) {
-              padding: 30px 20px 20px 40px;
-            }
-
-            h2 {
-              margin-bottom: 30px;
-
-              @media (max-width: 576px) {
-                font-size: 22px;
-                margin-bottom: 15px;
-              }
-            }
-
-            p {
-              font-size: 18px;
-
-              @media (max-width: 576px) {
-                font-size: 16px;
-                margin: 0 0 10px 0;
-              }
-
-              a {
-                // background-color:#555;
-                // padding: 5px 15px;
-
-                text-decoration: none;
-                border-bottom: #ffffff 2px solid;
-                color: #ffffff;
-                font-size: 16px;
-                // 一拳修改
-              }
-            }
-          }
+        @media (max-width: 576px) {
+          padding: 30px 20px 20px 40px;
         }
 
-        .attraContent {
+        h2 {
+          margin-bottom: 30px;
+
           @media (max-width: 576px) {
-            padding-top: 15px;
-          }
-
-          p {
-            font-size: 18px;
-            letter-spacing: 3px;
-            line-height: 35px;
-            margin-bottom: 30px;
-            text-align: justify;
-
-            @media (max-width: 576px) {
-              font-size: 16px;
-              letter-spacing: 1px;
-              line-height: 30px;
-            }
-          }
-
-          .attraInfo {
-            width: 100%;
-            height: 100%;
-            letter-spacing: 3px;
-            color: whitesmoke;
-            background-color: gray;
-            padding: 40px 20px 20px 40px;
-
-            #page05 {
-              // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-              // background-position: center;
-              // background-size: contain;
-
-              .container {
-                padding-top: 50px;
-
-                .title.drop-shadow {
-                  /* attra title add drop-shadow */
-                  filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-
-                  img {
-                    width: 100%;
-
-                    @media(max-width: 576px) {
-                      width: 100%;
-                    }
-                  }
-                }
-
-                .row02 {
-                  box-shadow: 0 0 10px #5c5c5c;
-
-                  .swiper-container {
-                    width: 100%;
-                    height: 492px;
-
-                    @media(max-width: 576px) {
-                      height: 300px;
-                    }
-
-                    .swiper-wrapper {
-                      img {
-                        width: 100%;
-                        height: 100%;
-                      }
-                    }
-                  }
-
-                  .attraInfo {
-                    width: 100%;
-                    height: 100%;
-                    letter-spacing: 1px;
-                    color: whitesmoke;
-                    background-color: gray;
-                    padding: 40px 20px 20px 40px;
-
-                    @media(max-width:576px) {
-                      font-size: 16px;
-                      letter-spacing: 1px;
-                      line-height: 30px;
-                    }
-                  }
-
-                  margin-bottom: 20px;
-                }
-
-                h2 {
-                  margin-bottom: 30px;
-
-                  @media(max-width:576px) {
-                    font-size: 22px;
-                    margin-bottom: 15px;
-                  }
-                }
-
-                p {
-                  font-size: 18px;
-
-                  @media(max-width:576px) {
-                    font-size: 16px;
-                    margin: 0 0 10px 0;
-                  }
-
-                  a {
-                    // background-color:#555;
-                    // padding: 5px 15px;
-
-                    text-decoration: none;
-                    border-bottom: #ffffff 2px solid;
-                    color: #ffffff;
-                    font-size: 16px;
-                    // 一拳修改
-                  }
-                }
-              }
-            }
-
-            .attraContent {
-              @media(max-width:576px) {
-                padding-top: 15px;
-              }
-
-              p {
-                font-size: 18px;
-                letter-spacing: 3px;
-                line-height: 35px;
-                margin-bottom: 30px;
-                text-align: justify;
-
-                @media(max-width:576px) {
-                  font-size: 16px;
-                  letter-spacing: 1px;
-                  line-height: 30px;
-                }
-              }
-            }
+            font-size: 22px;
+            margin-bottom: 15px;
           }
         }
 
-        .row02 {
-          box-shadow: 0 0 10px #5c5c5c;
+        p {
+          font-size: 18px;
 
-          .swiper-container {
-            width: 100%;
-            height: 492px;
-
-            @media (max-width: 320px) {
-              height: 300px;
-            }
-
-            .swiper-wrapper {
-              img {
-                width: 100%;
-                height: 100%;
-              }
-            }
-          }
-
-          .attraInfo {
-            width: 100%;
-            height: 100%;
-            letter-spacing: 1px;
-            color: whitesmoke;
-            background-color: gray;
-            padding: 40px 20px 20px 40px;
-
-            @media (max-width: 576px) {
-              padding: 30px 20px 20px 40px;
-            }
-
-            h2 {
-              margin-bottom: 30px;
-
-              @media (max-width: 576px) {
-                font-size: 22px;
-                margin-bottom: 15px;
-              }
-            }
-
-            p {
-              font-size: 18px;
-
-              @media (max-width: 576px) {
-                font-size: 16px;
-                margin: 0 0 10px 0;
-              }
-
-              a {
-                // background-color:#555;
-                // padding: 5px 15px;
-
-                text-decoration: none;
-                border-bottom: #ffffff 2px solid;
-                color: #ffffff;
-                font-size: 16px;
-                // 一拳修改
-              }
-            }
-          }
-        }
-
-        .attraContent {
           @media (max-width: 576px) {
-            padding-top: 15px;
+            font-size: 16px;
+            margin: 0 0 10px 0;
           }
 
-          p {
-            font-size: 18px;
-            letter-spacing: 3px;
-            line-height: 35px;
-            margin-bottom: 30px;
-            text-align: justify;
+          a {
+            // background-color:#555;
+            // padding: 5px 15px;
 
-            @media (max-width: 576px) {
-              font-size: 16px;
-              letter-spacing: 1px;
-              line-height: 30px;
-            }
+            text-decoration: none;
+            border-bottom: #ffffff 2px solid;
+            color: #ffffff;
+            font-size: 16px;
+            // 一拳修改
           }
         }
+      }
+    }
 
+    .attraContent {
+      @media (max-width: 576px) {
+        padding-top: 15px;
+      }
 
-        .attraContent {
-          padding-bottom: 200px;
+      p {
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: justify;
 
-          // 常樂footer 修改page06 圖文重疊到給底部內距
-          p {
-            font-size: 18px;
-            letter-spacing: 3px;
-            line-height: 35px;
-            margin-bottom: 30px;
-          }
+        @media (max-width: 576px) {
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 30px;
         }
       }
     }
   }
 }
+
+#page03 {
+  // background-image: url("./../img/背景圖/ep_naturalwhite.png");
+  // background-position: center;
+  // background-size: contain;
+  .container {
+    padding-top: 50px;
+
+    .title.drop-shadow {
+      /* attra title add drop-shadow */
+      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
+
+      img {
+        width: 100%;
+
+        @media (max-width: 576px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .row02 {
+      box-shadow: 0 0 10px #5c5c5c;
+
+      .swiper-container {
+        width: 100%;
+        height: 492px;
+
+        @media (max-width: 320px) {
+          height: 300px;
+        }
+
+        .swiper-wrapper {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .attraInfo {
+        width: 100%;
+        height: 100%;
+        letter-spacing: 1px;
+        color: whitesmoke;
+        background-color: gray;
+        padding: 40px 20px 20px 40px;
+
+        @media (max-width: 576px) {
+          padding: 30px 20px 20px 40px;
+        }
+
+        h2 {
+          margin-bottom: 30px;
+          @media (max-width: 576px) {
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+
+          @media (max-width: 576px) {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+          }
+
+          a {
+            // background-color:#555;
+            // padding: 5px 15px;
+
+            text-decoration: none;
+            border-bottom: #ffffff 2px solid;
+            color: #ffffff;
+            font-size: 16px;
+            // 一拳修改
+          }
+        }
+      }
+    }
+
+    .attraContent {
+      @media (max-width: 576px) {
+        padding-top: 15px;
+      }
+
+      p {
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: justify;
+
+        @media (max-width: 576px) {
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 30px;
+        }
+      }
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#page04 {
+  // background-image: url("./../img/背景圖/ep_naturalwhite.png");
+  // background-position: center;
+  // background-size: contain;
+  .container {
+    padding-top: 50px;
+
+    .title.drop-shadow {
+      /* attra title add drop-shadow */
+      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
+
+      img {
+        width: 100%;
+
+        @media (max-width: 576px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .row02 {
+      box-shadow: 0 0 10px #5c5c5c;
+
+      .swiper-container {
+        width: 100%;
+        height: 492px;
+
+        @media (max-width: 320px) {
+          height: 300px;
+        }
+
+        .swiper-wrapper {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .attraInfo {
+        width: 100%;
+        height: 100%;
+        letter-spacing: 1px;
+        color: whitesmoke;
+        background-color: gray;
+        padding: 40px 20px 20px 40px;
+
+        @media (max-width: 576px) {
+          padding: 30px 20px 20px 40px;
+        }
+
+        h2 {
+          margin-bottom: 30px;
+          @media (max-width: 576px) {
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+
+          @media (max-width: 576px) {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+          }
+
+          a {
+            // background-color:#555;
+            // padding: 5px 15px;
+
+            text-decoration: none;
+            border-bottom: #ffffff 2px solid;
+            color: #ffffff;
+            font-size: 16px;
+            // 一拳修改
+          }
+        }
+      }
+    }
+
+    .attraContent {
+      @media (max-width: 576px) {
+        padding-top: 15px;
+      }
+
+      p {
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: justify;
+
+        @media (max-width: 576px) {
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 30px;
+        }
+      }
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#page05 {
+  // background-image: url("./../img/背景圖/ep_naturalwhite.png");
+  // background-position: center;
+  // background-size: contain;
+
+  .container {
+    padding-top: 50px;
+
+    .title.drop-shadow {
+      /* attra title add drop-shadow */
+      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
+
+      img {
+        width: 100%;
+
+        @media (max-width: 320px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .row02 {
+      box-shadow: 0 0 10px #5c5c5c;
+
+      .swiper-container {
+        width: 100%;
+        height: 492px;
+
+        @media (max-width: 320px) {
+          height: 300px;
+        }
+
+        .swiper-wrapper {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .attraInfo {
+        width: 100%;
+        height: 100%;
+        letter-spacing: 1px;
+        color: whitesmoke;
+        background-color: gray;
+        padding: 40px 20px 20px 40px;
+
+        @media (max-width: 576px) {
+          padding: 30px 20px 20px 40px;
+        }
+
+        h2 {
+          margin-bottom: 30px;
+          @media (max-width: 576px) {
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+
+          @media (max-width: 576px) {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+          }
+
+          a {
+            // background-color:#555;
+            // padding: 5px 15px;
+
+            text-decoration: none;
+            border-bottom: #ffffff 2px solid;
+            color: #ffffff;
+            font-size: 16px;
+            // 一拳修改
+          }
+        }
+      }
+    }
+
+    .attraContent {
+      @media (max-width: 576px) {
+        padding-top: 15px;
+      }
+
+      p {
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: justify;
+
+        @media (max-width: 576px) {
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .attraContent {
+    padding-bottom: 200px;
+
+    // 常樂footer 修改page06 圖文重疊到給底部內距
+    p {
+      font-size: 18px;
+      letter-spacing: 3px;
+      line-height: 35px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// 常樂footer 修改
+.southArea_footer {
+  width: 100%;
+  height: 15vw;
+  background-color: black;
+  position: relative;
+ /*  @media (max-width: 1024px) {
+    height: 10em;
+  } */
+  @media (max-width: 576px) {
+    
+  }
+ /*  @media (max-width: 414px) {
+    height: 4em;
+  } */
+
+  p {
+    color: whitesmoke;
+    font-size: 1.5em;
+    z-index: 9999;
+    position: absolute;
+
+    top: 50%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    /* @media (max-width: 1024px) {
+      font-size: 1.3em;
+      left: 35%;
+    } */
+   
+     @media (max-width: 414px) {
+        font-size: 1em;
+      left: 50%;
+      width: 60vw;
+
+    }
+    
+    @media (max-width: 320px) {
+        width: 70vw;
+    } 
+  }
+
+  .southArea_library {
+    width: 50%;
+    position: absolute;
+    right: 4em;
+    bottom: 2em;
+   /*  @media (max-width: 1024px) {
+      height: 80%;
+      right: 1.3em;
+      bottom: 2em;
+    } */
+    @media (max-width: 576px) {
+     
+    }
+     @media (max-width: 414px) {
+      right: 1em;
+      bottom: 3em;
+      width: 60%;
+    }
+     @media (max-width: 320px) {
+      right: 0.5em;
+      bottom: 2em;
+      width: 40%;
+    }  
+  }
+
+  .southArea_person {
+    width:12%;
+    position: absolute;
+    left: 9em;
+    bottom: 1em;
+    transform: scaleX(-1);
+    @media (max-width: 576px) {
+   
+    }
+     @media (max-width: 414px) {
+     left: 1em;
+      bottom: 3em;
+      width:20%;
+    } 
+    
+  }
+}
+
+// 常樂footer 修改
