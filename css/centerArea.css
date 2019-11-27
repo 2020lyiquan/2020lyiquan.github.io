@@ -129,6 +129,12 @@ body {
   height: 100px;
 }
 
+@media (max-width: 576px) {
+  #page02 .topbutn {
+    right: 15px;
+  }
+}
+
 #page02 .container {
   padding-top: 50px;
 }
