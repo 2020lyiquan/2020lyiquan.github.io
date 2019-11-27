@@ -53,11 +53,11 @@ body {
 }
 
 #page01 .container {
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 
 #page01 .container .row {
-  width: 100%;
+  /* width: 100%; */
 }
 
 #page01 .container .row .areaAvatar {
