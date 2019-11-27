@@ -92,6 +92,7 @@ body {
   background-size: contain;
 
   .topbutn {
+    
     cursor: pointer;
     // display: none;
     opacity: 0;
@@ -101,6 +102,17 @@ body {
     bottom: 50px;
     z-index: 9999;
     transition: 0.25s;
+    &.active{
+      opacity: 1;
+      pointer-events: all;
+    }
+      img {
+      width: 50px;
+      height: 100px;
+    }
+    @media (max-width:576px){
+      right: 15px;
+    }
   }
   .container {
     padding-top: 50px;

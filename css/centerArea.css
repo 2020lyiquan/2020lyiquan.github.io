@@ -119,6 +119,22 @@ body {
   transition: 0.25s;
 }
 
+#page02 .topbutn.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#page02 .topbutn img {
+  width: 50px;
+  height: 100px;
+}
+
+@media (max-width: 576px) {
+  #page02 .topbutn {
+    right: 15px;
+  }
+}
+
 #page02 .container {
   padding-top: 50px;
 }
