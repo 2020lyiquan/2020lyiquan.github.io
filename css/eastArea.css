@@ -127,6 +127,34 @@ body {
   padding-bottom: 50px;
 }
 
+section.template .topbutn {
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  z-index: 9999;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+section.template .topbutn.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+section.template .topbutn img {
+  width: 50px;
+  height: 100px;
+}
+
+@media (max-width: 576px) {
+  section.template .topbutn {
+    right: 15px;
+  }
+}
+
 section.template .container .title.drop-shadow {
   /* attra title add drop-shadow */
   -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
