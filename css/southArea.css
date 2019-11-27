@@ -71,6 +71,14 @@ body {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  #page01 .container .row .areaAvatar {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+  }
+}
+
 #page01 .container .row .areaAvatar .mask {
   width: 100%;
   height: 100%;
@@ -79,8 +87,8 @@ body {
 }
 
 #page01 .container .row .areaAvatar img {
-  width: 200px;
-  height: 200px;
+  width: 65%;
+  height: 65%;
   position: absolute;
   left: 18%;
   top: 18%;
@@ -93,6 +101,12 @@ body {
   font-weight: 900;
 }
 
+@media (max-width: 576px) {
+  #page01 .container .areaInfo h2 {
+    padding: 20px 0px 20px 0px;
+  }
+}
+
 #page01 .container .areaInfo p {
   padding: 20px 20px 10px 0px;
   font-size: 22px;
@@ -102,7 +116,8 @@ body {
 
 @media (max-width: 576px) {
   #page01 .container .areaInfo p {
-    padding: 10px 0px 0 0;
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
   }
 }
 
@@ -137,13 +152,6 @@ body {
 
 #page02 .container .row02 .swiper-container {
   width: 100%;
-  height: 492px;
-}
-
-@media (max-width: 320px) {
-  #page02 .container .row02 .swiper-container {
-    height: 300px;
-  }
 }
 
 #page02 .container .row02 .swiper-container .swiper-wrapper img {
@@ -162,13 +170,27 @@ body {
 }
 
 @media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+@media (max-width: 576px) {
   #page02 .container .row02 .attraInfo h2 {
     font-size: 22px;
+    margin-bottom: 15px;
   }
 }
 
 #page02 .container .row02 .attraInfo p {
   font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page02 .container .row02 .attraInfo p a {
@@ -178,11 +200,26 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 576px) {
+  #page02 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page02 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  #page02 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page03 .container {
@@ -232,13 +269,31 @@ body {
   letter-spacing: 1px;
   color: whitesmoke;
   background-color: gray;
-  padding: 30px 40px 20px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page03 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page03 .container .row02 .attraInfo p a {
@@ -252,11 +307,26 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  #page03 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page03 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  #page03 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page04 .container {
@@ -306,13 +376,31 @@ body {
   letter-spacing: 1px;
   color: whitesmoke;
   background-color: gray;
-  padding: 30px 40px 20px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page04 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page04 .container .row02 .attraInfo p a {
@@ -326,11 +414,26 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  #page04 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page04 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  #page04 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page05 .container {
@@ -380,13 +483,31 @@ body {
   letter-spacing: 1px;
   color: whitesmoke;
   background-color: gray;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page05 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #page05 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page05 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page05 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page05 .container .row02 .attraInfo p a {
@@ -396,8 +517,15 @@ body {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
+@media (max-width: 576px) {
+  #page05 .container .attraContent {
+    padding-top: 15px;
+  }
+=======
 #page05 .container .attraContent {
   padding-bottom: 150px;
+>>>>>>> 5931f9500e7fe0e5060d2e42b637c9a6cd94af5a
 }
 
 #page05 .container .attraContent p {
@@ -405,6 +533,15 @@ body {
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  #page05 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 .southArea_footer {
