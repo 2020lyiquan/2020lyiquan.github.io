@@ -51,7 +51,6 @@ body {
 }
 
 #page01 {
-<<<<<<< HEAD
 
     // background-image: url("./../img/背景圖/ep_naturalwhite.png");
     // background-position: center;
@@ -91,29 +90,6 @@ body {
                     opacity: 0.8;
                 }
             }
-=======
-  // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  // background-position: center;
-  // background-size: contain;
-  .container {
-    padding-bottom: 50px ;
-    .row {
-      /* width: 100%; */
-      .areaAvatar {
-        background-image: url("./../img/示意圖/文創園區.jpg");
-        width: 315px;
-        height: 315px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        border: 3px solid rgb(95, 95, 95);
-        position: relative;
-        .mask {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: rgba(240, 240, 240, 0.3);
->>>>>>> 5931f9500e7fe0e5060d2e42b637c9a6cd94af5a
         }
 
         .areaInfo {
