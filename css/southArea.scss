@@ -12,7 +12,7 @@ body {
     width: 100vw;
 
     /*  padding: 0; */
-    .container {
+    
         .navbar-brand img {
             @media(max-width:576px) {
                 width: auto;
@@ -47,27 +47,25 @@ body {
                 }
             }
         }
-    }
+    
 }
 
 #page01 {
 
-    // background-image: url("./../img/背景圖/ep_naturalwhite.png");
-    // background-position: center;
-    // background-size: contain;
     .container {
 
         .row {
 
             .areaAvatar {
                 background-image: url("./../img/示意圖/文創園區.jpg");
-                width: 315px;
-                height: 315px;
+                width: 250px;
+                height: 250px;
                 background-size: cover;
                 background-position: center;
                 border-radius: 50%;
                 border: 3px solid rgb(95, 95, 95);
                 position: relative;
+                margin: 40px 0px ;
 
                 @media(max-width:576px) {
                     width: 250px;
@@ -94,8 +92,12 @@ body {
         }
 
         .areaInfo {
+            margin: 40px 0 ;
+            @media(max-width:576px) {
+                margin: 0 ;
+            }
             h2 {
-                padding: 45px 10px 0 0px;
+                padding: 13px 10px 0 0px;
                 letter-spacing: 3px;
                 font-weight: 900;
 
@@ -110,6 +112,7 @@ body {
                 font-size: 22px;
                 letter-spacing: 3px;
                 line-height: 35px;
+                text-align: justify;
 
                 @media(max-width:576px) {
                     font-size: 20px;

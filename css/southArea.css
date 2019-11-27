@@ -12,20 +12,17 @@ body {
 #main_nav.navbar {
   width: 100vw;
   /*  padding: 0; */
-}
-
-#main_nav.navbar .container {
   /*  margin: 8px 16px; */
 }
 
 @media (max-width: 576px) {
-  #main_nav.navbar .container .navbar-brand img {
+  #main_nav.navbar .navbar-brand img {
     width: auto;
     height: 25px;
   }
 }
 
-#main_nav.navbar .container .navbar-nav .nav-item {
+#main_nav.navbar .navbar-nav .nav-item {
   font-size: 20px;
   width: 9vw;
   height: 40px;
@@ -36,12 +33,12 @@ body {
 }
 
 @media (max-width: 576px) {
-  #main_nav.navbar .container .navbar-nav .nav-item {
+  #main_nav.navbar .navbar-nav .nav-item {
     width: 100%;
   }
 }
 
-#main_nav.navbar .container .navbar-nav .nav-item:hover {
+#main_nav.navbar .navbar-nav .nav-item:hover {
   /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
   background-color: lightgray;
   -webkit-transition: 0.3s linear;
@@ -54,13 +51,14 @@ body {
 
 #page01 .container .row .areaAvatar {
   background-image: url("./../img/示意圖/文創園區.jpg");
-  width: 315px;
-  height: 315px;
+  width: 250px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   border: 3px solid #5f5f5f;
   position: relative;
+  margin: 40px 0px;
 }
 
 @media (max-width: 576px) {
@@ -87,8 +85,18 @@ body {
   opacity: 0.8;
 }
 
+#page01 .container .areaInfo {
+  margin: 40px 0;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .areaInfo {
+    margin: 0;
+  }
+}
+
 #page01 .container .areaInfo h2 {
-  padding: 45px 10px 0 0px;
+  padding: 13px 10px 0 0px;
   letter-spacing: 3px;
   font-weight: 900;
 }
@@ -104,6 +112,7 @@ body {
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 35px;
+  text-align: justify;
 }
 
 @media (max-width: 576px) {
