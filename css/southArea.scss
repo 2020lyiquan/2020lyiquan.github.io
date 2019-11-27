@@ -552,19 +552,12 @@ body {
 // 常樂footer 修改
 .southArea_footer {
   width: 100%;
-  height: 13em;
+  height: 10vw;
   background-color: black;
   position: relative;
-  @media (max-width: 1024px) {
-    height: 10em;
+  @media (max-width: 375px) {
+    height: 20vw;
   }
-  @media (max-width: 768px) {
-    height: 6em;
-  }
-  @media (max-width: 414px) {
-    height: 4em;
-  }
-
   p {
     color: whitesmoke;
     font-size: 1.5em;
@@ -574,62 +567,40 @@ body {
     top: 50%;
     left: 34%;
     transform: translate(-50%, -50%);
-    @media (max-width: 1024px) {
-      font-size: 1.3em;
-      left: 35%;
-    }
-    @media (max-width: 768px) {
+    @media (max-width: 414px) {
       font-size: 1em;
-      left: 38%;
+      left: 50%;
+      width: 60vw;
+      transform: translate(-50%, -50%);
     }
-    @media (max-width: 414px) {
-      left: 75%;
-      width: 100%;
-    }
-    @media (max-width: 414px) {
+
+    @media (max-width: 320px) {
+      width: 70vw;
     }
   }
 
   .southArea_library {
-    height: 100%;
+    width: 50%;
     position: absolute;
-    right: 3em;
+    right: 4em;
     bottom: 2em;
-    @media (max-width: 1024px) {
-      height: 80%;
-      right: 1.3em;
-      bottom: 2em;
-    }
-    @media (max-width: 768px) {
-      height: 90%;
-      right: 1.3em;
-      bottom: 1em;
-    }
     @media (max-width: 414px) {
-      right: 1em;
-      bottom: 3em;
-      height: 100%;
-    }
-    @media (max-width: 320px) {
       right: 0.5em;
-      bottom: 3em;
-      height: 80%;
+      bottom: 3.2em;
+      width: 60%;
     }
   }
 
   .southArea_person {
-    height: 200%;
+    width: 12%;
     position: absolute;
-    left: 5em;
+    left: 9em;
     bottom: 1em;
     transform: scaleX(-1);
-    @media (max-width: 768px) {
-      height: 250%;
-      left: 3em;
-    }
     @media (max-width: 414px) {
-      right: 1em;
-      bottom: 3em;
+      left: 1em;
+      bottom: 3.2em;
+      width: 20%;
     }
   }
 }

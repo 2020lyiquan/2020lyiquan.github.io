@@ -560,26 +560,14 @@ body {
 
 .southArea_footer {
   width: 100%;
-  height: 13em;
+  height: 10vw;
   background-color: black;
   position: relative;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 375px) {
   .southArea_footer {
-    height: 10em;
-  }
-}
-
-@media (max-width: 768px) {
-  .southArea_footer {
-    height: 6em;
-  }
-}
-
-@media (max-width: 414px) {
-  .southArea_footer {
-    height: 4em;
+    height: 20vw;
   }
 }
 
@@ -594,86 +582,51 @@ body {
           transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1024px) {
-  .southArea_footer p {
-    font-size: 1.3em;
-    left: 35%;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 414px) {
   .southArea_footer p {
     font-size: 1em;
-    left: 38%;
-  }
-}
-
-@media (max-width: 414px) {
-  .southArea_footer p {
-    left: 75%;
-    width: 100%;
-  }
-}
-
-.southArea_footer .southArea_library {
-  height: 100%;
-  position: absolute;
-  right: 3em;
-  bottom: 2em;
-}
-
-@media (max-width: 1024px) {
-  .southArea_footer .southArea_library {
-    height: 80%;
-    right: 1.3em;
-    bottom: 2em;
-  }
-}
-
-@media (max-width: 768px) {
-  .southArea_footer .southArea_library {
-    height: 90%;
-    right: 1.3em;
-    bottom: 1em;
-  }
-}
-
-@media (max-width: 414px) {
-  .southArea_footer .southArea_library {
-    right: 1em;
-    bottom: 3em;
-    height: 100%;
+    left: 50%;
+    width: 60vw;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
 @media (max-width: 320px) {
+  .southArea_footer p {
+    width: 70vw;
+  }
+}
+
+.southArea_footer .southArea_library {
+  width: 50%;
+  position: absolute;
+  right: 4em;
+  bottom: 2em;
+}
+
+@media (max-width: 414px) {
   .southArea_footer .southArea_library {
     right: 0.5em;
-    bottom: 3em;
-    height: 80%;
+    bottom: 3.2em;
+    width: 60%;
   }
 }
 
 .southArea_footer .southArea_person {
-  height: 200%;
+  width: 12%;
   position: absolute;
-  left: 5em;
+  left: 9em;
   bottom: 1em;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-@media (max-width: 768px) {
-  .southArea_footer .southArea_person {
-    height: 250%;
-    left: 3em;
-  }
-}
-
 @media (max-width: 414px) {
   .southArea_footer .southArea_person {
-    right: 1em;
-    bottom: 3em;
+    left: 1em;
+    bottom: 3.2em;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=southArea.css.map */
