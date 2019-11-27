@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- BootStrap Css CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/westArea.css"> <!-- css 資料夾 include northArea.css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <!-- swiper css include -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <style>
+        /*  Swiper styles */
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main_nav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark  ">
+        <!-- Nav Bar  -->
+        <div class="container mx-auto ">
+            <button class="navbar-toggler order-1 " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto order-0" href="#">
+                <img src="./img/logo01.png" width="70" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="collapse navbar-collapse order-2" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center mx-auto">
+                    <a class="nav-item nav-link   " href="#page01">回首頁</a>
+                    <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
+                    <a class="nav-item nav-link " href="#page02">趣北區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣中區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣東區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣西區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣南區</a>
+                    <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="page01">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <!-- div 南區大頭貼 & 書法體標題 疊圖 -->
+
+                    <div class="areaAvatar mx-auto">
+                        <div class="mask"></div>
+                        <img src="./img/西區/西區.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-12 pl-5 ">
+                    <!-- div 南區簡介 padding left & top 5 -->
+                    <div class="areaInfo ">
+                        <h2><strong>簡介</strong></h2>
+                        <p>臺中市西區是匯集了歷史、文化、宗教、產業的重要地點，因為區內環境清幽，學校、文化設施眾多，有著「臺中市文教區」的美稱。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 pl-0 pr-0">
+                    <div class="areaMap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29125.87343398635!2d120.64864470454476!3d24.145971701322217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d7558e6e215%3A0x4c5f616f9dfe67c!2zNDAz5Y-w5Lit5biC6KW_5Y2A!5e0!3m2!1szh-TW!2stw!4v1574638389663!5m2!1szh-TW!2stw"
+                            width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page02">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6">
+                    <div class="title drop-shadow">
+                        <img src="./img/西區/勤美術館/素材/勤美術館.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5">
+                <div class="col-lg-8  pl-0  pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/西區/勤美術館/素材/勤美術館.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/勤美術館/素材/勤美術館01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/勤美術館/素材/勤美術館02.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/勤美術館/素材/勤美術館-聖誕節裝置藝術.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
+                                <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市西區館前路71號<br>
+                            <p>電話：+886-8-00266155
+                        </p>
+                        <!-- <p>官方網站: http://cmpblockmuseum.tw/
+                        </p> -->
+                        <p>開放時間：<br>
+                            <p>星期三至星期日: 14:00 ~ 19:30<br>
+                            <p>星期一至星期二: 休息
+                        </p>
+                        <p><a target="blank" href="http://cmpblockmuseum.tw/">官方網站</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>位於科博館、國美館之間的勤美術館，臨近誠品旗艦店，加上與草悟道串連，共同打造出台中市「街區博物館」。勤美術館是一個無牆也無疆界的美術館，讓藝術更貼近民眾生活。
+                        </p>
+                        <p>勤美術館以活的、無疆界的美術館為定位，由勤美集團與璞真建設聯手，推出佔地2,500坪的「勤美術館CMP Block Museum of
+                            Arts」。勤美術館以草悟道沿線為範圍，號召台灣各界藝術家及特色店家參與，讓民眾體會在地的藝術街區。
+                        </p>
+                        <p>勤美術館四周聚集了許多特色小店，不僅逐漸形成藝術家聚落，更創造了動靜態共存的美學形式。勤美術館致力於成為兼具國際高度與在地深度的藝術街區，讓藝術滲透民眾的日常生活。
+                        </p>
+                        <p>勤美術館也是臺灣第一座有機的無牆美術館。以無疆界街區美術館為定位，主打生活化的親民藝術。除了舊校舍改造的室內展演空間外，戶外則以「手打村落」的概念，分為「日晷牧場」、「串門子村落」、「大客廳」三大創意區塊。
+                        </p>
+                        <p>勤美術館也邀請各界藝術家一起到此創作，讓民眾透過互動，成為藝術的一部分。形成一個人人皆演員、處處皆舞臺的人文美學創意特區。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page03">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-6 ml-sm-auto">
+                    <div class="title drop-shadow">
+                        <img src="./img/西區/忠信市場/素材/忠信市場.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8 pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/西區/忠信市場/素材/中信市場.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/忠信市場/素材/中信市場01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/忠信市場/素材/中信市場02.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/忠信市場/素材/中信市場03.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide"><img src="" alt=""></div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                    <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市西區臺中市五權西路一段67號 (國美館對面，長青登山協會招牌巷子進去)
+                        </p>
+                        <p>開放時間：<br>
+                            14:00 ~ 22:00 <br>
+                            (實際營業時間依各店家為準)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>忠信市場從一個老市場，變成一個藝文工作者的展演場所，展現出現代與復古的衝突美感。看起來老舊的建築，裡頭卻注入了新的元素。來到這裡會發現，這裡的建築空間都比較小，當初為了節省空間，讓空間更有效的應用，所以每一間房子，坪數其實都不大。忠信市場，一個舊有的空間，曾經是傳統市場，當初熱鬧的景象已不復見，已搖身一變，轉變為新的藝文空間。
+                        </p>
+                        <p>忠信市場位於台中國美館對面，包括五權一街、五權西二街、五權西三街圍成的小區域。建造於民國50年代的忠信市場，在60、70年代時人口相當密集，而後因經濟下滑而逐漸沒落。
+                        </p>
+                        <p>現在，漸漸演變成藝術空間，這裡都是藝文工作者保留舊有的房厝建築結構，再重新設計規劃的藝文空間。忠信市場可供遊客參觀，影像創作播放空間裡頭還有二手書籍和有機產品的販售。
+                        </p>
+                        <p>忠信市場企圖提倡一種生活美學及慢活的態度，或者做為一個自我的實踐領域，也讓新一代的藝術工作者可以交流的場地。逐漸地，忠信市場慢慢成為新一代藝術工作者或是對美非常有鑑賞的遊客們，都可以來這裡挖到許多寶物。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page04">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6 ">
+                    <div class="title drop-shadow">
+                        <img src="./img/西區/國立臺灣美術館/素材/國立台灣美術館.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8 pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/西區/國立臺灣美術館/素材/國立台灣美術館.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/國立臺灣美術館/素材/國立台灣美術館01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/國立臺灣美術館/素材/國立台灣美術館02.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                                    <div class="swiper-slide"><img src="" alt=""></div>
+                                                    <div class="swiper-slide">Slide 6</div>
+                                                    <div class="swiper-slide">Slide 7</div>
+                                                    <div class="swiper-slide">Slide 8</div>
+                                                    <div class="swiper-slide">Slide 9</div>
+                                                    <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0  pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市西區五權西路一段2號 <br>
+                            <br>電話：04-23723552<br>
+                            <br>傳真：+886-4-23721195
+                        </p>
+                        <p>開放時間：<br>
+                            <br>星期一: 休館 <br>
+                            星期二至星期五: 09:00 ~ 17:00 <br>
+                            星期六至星期日: 09:00 ~ 18:00 <br>
+                        </p>
+                        <p><a target="blank" href="http://www.ntmofa.gov.tw/">官方網站</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>國立臺灣美術館隸屬文化部，是台灣唯一的國家級美術館，也是目前亞洲最大的美術館之一，地處於臺中市中心點，交通便利，館佔地約三公頃，於1988年開館使用。國立臺灣美術館周邊景點有國立自然科學博物館、美術園道商圈、草悟道等知名景點，特殊的藝術氛圍帶動附近的藝文與商業活動，形成充滿文藝氣息的生活圈與觀光遊憩區。
+                        </p>
+                        <p>美術館的建築空間強調開闊性與現代感，造型簡潔方整，呈階梯遞降，以天然石片為主要外飾材料。開闊的園區陳列雕塑精品，並有蒐集台灣先賢書家之墨跡而成的碑林廣場。
+                        </p>
+                        <p>南面以大片玻璃帷幕引進自然光，在館內形成光影嶙峋交錯的景象，建築體隨著時間與天候的變遷，處處可見光影的層次變化，使建築和天空渾然成為一體。
+                        </p>
+                        <p>國美館有系統策畫以臺灣美術發展為主軸的各類型展覽，同時致力於國際文化藝術交流。館內圖書資料中心、影音藝術廳、影音平台、教師資源室等學習及休閒空間，讓觀眾透過多元形式親近藝術、探索藝術。另有專為親子設置的兒童繪本區和兒童遊戲室，讓孩子在歡樂的學習環境中體驗玩中學、學中玩的手作互動。數位藝術方舟與資訊轉運站等空間，則讓民眾體驗數位藝術，感受到科技與人文結合的新世界。館內並設有精品店及古典玫瑰園、春水堂、秋山堂。
+                        </p>
+                        <p>此外，美術館前景致優雅的美術園道和綠園道，隨處可見歐風建築和日式庭園造景，兩側開設了許多具有獨特風味的餐廳與咖啡館，結合創意和異國佳餚的視覺與味蕾感受，置身其中立即讓人忘卻城市喧囂。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page05">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6 ml-sm-auto">
+                    <div class="title drop-shadow">
+                        <!--  div 景點書法體標題 add drop-shadow class -->
+                        <img src="./img/西區/道禾六藝文化-刑武場/素材/刑武場.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8   pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/西區/道禾六藝文化-刑武場/素材/道禾六藝文化-刑武場01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/道禾六藝文化-刑武場/素材/道禾六藝文化-刑武場02.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/道禾六藝文化-刑武場/素材/道禾六藝文化-刑武場03.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/道禾六藝文化-刑武場/素材/道禾六藝文化-刑武場04.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                            <div class="swiper-slide">Slide 6</div>
+                                            <div class="swiper-slide">Slide 7</div>
+                                            <div class="swiper-slide">Slide 8</div>
+                                            <div class="swiper-slide">Slide 9</div>
+                                            <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市西區林森路33號 <br>
+                            <br>電話：04-23759366 <br>
+                            <br>傳真：+886-4-23756113
+                        </p>
+                        <!-- <p>官方網站 : http://www.sixarts.org.tw/
+                        </p> -->
+                        <p>開放時間：<br>
+                            星期一：休館
+                            <br>星期二至星期日：9:00 ~ 17:00
+                        </p>
+                        <p>門票資訊：<br>免費參觀；婚紗、COSPLAY及商業攝影酌收場地清潔費
+                        </p>
+                        <p><a target="blank" href="http://www.sixarts.org.tw/">官方網站</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>台中刑務所演武場，位於台中市西區林森路33號，興建於日治時期昭和12年(西元1937年)，為司獄官、警察日常練武之武道館舍，屬本市僅存之演武場，歷史原貌保存完整，
+                            極具保存、再利用及建築研究價值。
+                        </p>
+                        <p>演武場建築群包括演武場主體建築及東側附屬建築，主體建築依對稱型式建造，中央後側設有神龕，面對神龕左側為柔道場、右側為劍道場，演武場內僅單側設有座席，與同時期類似建築武德殿相較，屬較小之武道設施。建築形式屬日治時期典型演武場，座基抬高，立面仿木結構及壁柱飾樣，屋頂入母式屋頂建造，有大型鬼瓦及博風板裝飾。
+                        </p>
+                        <p>臺中刑務所演武場，興建於日治時期昭和12年(1937年)，為日據時期司獄官、警日常演習柔道、劍道之訓練場。2004年登錄為歷史建築。道禾基金會於2011年獲得經營管理權，並以發展「新六藝文化」研究與實踐為目標，舉辦一系列相關活動。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page06">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6 ">
+                    <div class="title drop-shadow">
+                        <!--  div 景點書法體標題 add drop-shadow class -->
+                        <img src="./img/西區/台中文學館/素材/台中文學館.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8   pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/西區/台中文學館/素材/台中文學館.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/台中文學館/素材/台中文學館01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/台中文學館/素材/台中文學館02.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                                    <div class="swiper-slide">Slide 6</div>
+                                                    <div class="swiper-slide">Slide 7</div>
+                                                    <div class="swiper-slide">Slide 8</div>
+                                                    <div class="swiper-slide">Slide 9</div>
+                                                    <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市西區樂群街38號<br>
+                            <p>聯絡電話：04-22240875
+                        </p>
+                        <!-- <p>官方網站 : http://www.tlm.taichung.gov.tw/</p> -->
+                        <p>開放時間：<br>
+                            星期一及國定假日休館
+                            <br>星期二至星期日：10:00 ~ 17:00
+                        </p>
+                        <p>導覽解說：■有 □無 ■預約制(平日)
+                        </p>
+                        <p><a target="blank" href="http://www.tlm.taichung.gov.tw/">官方網站</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>為台中首座以文學為主題的公園，進入園區可見檜木搭建的古老日式建築，為1932年日治時期建造的警察宿舍群，原為面臨剷平拆除的廢墟，後來經過各方搶救被保存下來，103年開始進行修復工作，改建為台中文學館，用以推廣在地文學家作品，培育市民文學涵養向下扎根，預計六棟館舍將規劃常設展、主題特展、兒童文學展、主題餐廳等，並舉辦相關的展演講座活動，拓展文學更多的可能性。
+                        </p>
+                        <p>臺中文學館原為日治時期警察宿舍，為活化歷史建築，於2016年8月26日全館開放，共有6棟館舍，包含常設館、主題特展館、研習講堂、主題餐廳、兒童文學區及行政中心。以「臺中文學」為主題，推廣在地文化，讓文學走進日常生活中。臺中文學館是臺中第一座以文學為主題之公立博物館，也是文青休閒好去處。
+                        </p>
+                        <p>漫步在園區，撲鼻而來的陣陣檜木香，映入眼簾的日式建築、古樸的木板迴廊及綠意的庭院造景，環境清幽恬靜，讓人有如置身於日本街頭的錯覺，是一處充滿日式建築與文學氣息的場域。園區中央豎立一棵令人驚豔的珍貴老榕樹，被視為來到台中文學館必賞的風景，榕樹高達約3層樓高，因歷史悠久，形成特殊的氣根廊穴景觀，視覺上相當壯觀，吸引許多人在此處拍照留念，若是仔細觀察還會發現一台前人所留下的腳踏車，被氣根盤根錯節包覆沒有拆除，使人深刻體會到景物依舊，物換星移、人事已非的感受。
+                        </p>
+                        <p>台中文學公園除了如一般公園具備的綠美化植栽景觀外，還包含有樹影牆、書夾亭、種子文學廣場等文學元素的巧思設計，以及古代文人雅士雅用來吟詩罰酒助興的遊戲「曲水流觴」、磚牆鑲嵌不同大小位置的方框「老牆說書」、描寫台中作家趙天儀的新詩《小草》「墨痕詩牆」，讓文學更貼近大家的生活之中，同時也推出定期導覽解說，帶領民眾認識公園的文化故事。此處鄰近不少特色景點如州廳、演武場、第五市場等地，可利用台中市iBike公共自行車租借服務，漫遊體驗台中城市之美。
+                        </p>
+                        <p>臺灣香蕉新樂園成為對台灣過去生活的緬懷與紀念的餐廳，在這裡用餐，彷彿置身時光隧道。<br>
+                            香蕉新樂園主要為中華料理與港式點心以熱炒類最為受歡迎，適合三五好友或家人一同前來。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page07">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6 ml-sm-auto">
+                    <div class="title drop-shadow">
+                        <!--  div 景點書法體標題 add drop-shadow class -->
+                        <img src="./img/西區/審計新村/素材/審計新村.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8   pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/西區/審計新村/素材/審計新村.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/審計新村/素材/審計新村01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/審計新村/素材/審計新村03.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/西區/審計新村/素材/審計新村04.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                                    <div class="swiper-slide">Slide 6</div>
+                                                    <div class="swiper-slide">Slide 7</div>
+                                                    <div class="swiper-slide">Slide 8</div>
+                                                    <div class="swiper-slide">Slide 9</div>
+                                                    <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市西區民生路368巷 </p>
+                        <p>電話：<br>04-23023138<br> 04-23210630</p>
+                        <p>開放時間：<br>
+                            星期日至星期一: 24 小時營業
+                        </p>
+                        <p><a target="blank" href="https://www.facebook.com/shenji368/">臉書官網</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>活絡閒置公有建物，提供產業發展需求之空間，並帶動地方整體發展，臺中市政府以委託經營方式合作開發，另公開招商募集民間、法人團體投資開發。本基地以引入複合式主題文化創意產業為主，本區之區位之交通優勢，及臨近臺中相關之藝術、人文及新興商業活動區都在步行可達之範圍，可串連既有的綠園道及美術館文創商店以形成產業群聚效應，型塑臺中市園道文創產業廊道，並以生活、生產、生態三生共構的基礎，輔導青年族群進行微型創業，增加就業機會。
+                        </p>
+                        <p>鄰近馬路卻獨出一格的審計新村，便是在這片將近半世紀歷史的老宿舍，審計新村是臺中市第三批臺灣省政府宿舍群之一。
+                        </p>
+                        <p>省府時期審計處的員工眷舍，凍省之後成了閒置空間荒廢多年，面積雖然只有0.52公頃，但所處地點就在臺中勤美綠園道附近，因此更是顯示出審計新村的獨特性，老舊的建築充滿了時代痕跡。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page08">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-6 col-lg-6 ">
+                        <div class="title drop-shadow">
+                            <!--  div 景點書法體標題 add drop-shadow class -->
+                            <img src="./img/西區/台中州廳/素材/台中州廳.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row row02 mt-5 ">
+                    <div class="col-lg-8   pl-0 pr-0 ">
+                        <!-- Swiper -->
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide"><img src="./img/西區/台中州廳/素材/台中州廳.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/西區/台中州廳/素材/台中州廳01.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/西區/台中州廳/素材/台中州廳02.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/西區/台中州廳/素材/台中州廳03.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/西區/台中州廳/素材/台中州廳04.jpg" alt=""></div>
+                                <!--                             <div class="swiper-slide">Slide 5</div>
+                                                    <div class="swiper-slide">Slide 6</div>
+                                                    <div class="swiper-slide">Slide 7</div>
+                                                    <div class="swiper-slide">Slide 8</div>
+                                                    <div class="swiper-slide">Slide 9</div>
+                                                    <div class="swiper-slide">Slide 10</div> -->
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 pl-0 pr-0  ">
+                        <div class="attraInfo  ">
+                            <h2><strong>詳細資訊</strong></h2><br>
+                            <p>地址：<br>臺中市西區民權路99號 
+                              </p>
+                            <p>開放時間：<br>
+                                星期一至星期日: 08:00 – 17:30
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                        <div class="attraContent  ">
+                            <p>臺中州廳建於日治時期的官署建築，完工後先後成為日治之臺中州、後之臺中市的政府所在地。目前被列為臺中市市定古蹟保護。由於該建築最初是日治時期的臺中州廳（「州廳」等同於中文語法的「州政府」）使用，因而沿用成為對其之稱呼。台中州廳附屬建築群自日治時期起就被規劃作為總督府的廳舍，至今仍為台中市政府的辦公處所；州廳鄰近台中火車站，交通具便利性，其附近有商業區、飲食消費區和傳統的老街，充滿著歷史文化資源，州廳及附近建築群被列為歷史建築，此區域可說是歷史古蹟最為密集之地區，也因此，吸引許多外來遊客到此處參觀。
+                            </p>
+                            <p>臺中州廳1912年動工，1913年完成第一期，經歷四次擴建，於1934年完成現行規模，由日人森山松之助設計。臺中州廳管轄臺中市市、彰化縣及南投縣地，臺中市役所才是當時臺中市政府。二戰後，臺中市政府遷入現址辦公至今，而臺中州廳則被臺中市列為市定古蹟。
+                            </p>
+                            <p>臺中州廳整體設計為仿法國馬薩風格，正立面具有明顯的「馬薩」式屋頂。主體為L型平面二層樓建築，建築正面向東，中央有塔式突出建築，正立面左右各段「角樓」用以完整銜接兩翼建築物。一樓入口玄關有多立克式柱子，二樓則採愛奧尼克柱式，退縮的陽臺強化立面的陰影效果。臺中州廳建築為突顯其政治上的位階與都市中的重要性，並配合臺中市街計畫，將主入口設於重要街廊的轉角處，為日治時期官署建築的特徵。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--  BootStrap JS LOAD -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS LOAD -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- BootStrap Css CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/centerArea.css"> <!-- css 資料夾 include centerArea.css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <!-- swiper css include -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,600,900&display=swap"
+        rel="stylesheet">
+    <style>
+        /*  Swiper styles */
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav id="main_nav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark  ">
+        <!-- Nav Bar  -->
+        <div class="container mx-auto ">
+            <button class="navbar-toggler order-1 " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand order-0 mr-auto" href="#">
+                <img src="./img/logo01.png" width="70" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="collapse navbar-collapse order-2 " id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center mx-auto">
+                    <a class="nav-item nav-link  " href="#page01">回首頁</a>
+                    <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
+                    <a class="nav-item nav-link " href="#page02">趣北區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣中區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣東區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣西區</a>
+                    <a class="nav-item nav-link  " href="#page03">趣南區</a>
+                    <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="page01">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <!-- div 中區大頭貼 & 書法體標題 疊圖 -->
+
+                    <div class="areaAvatar mx-auto">
+                        <div class="mask"></div>
+                        <img src="./img/中區/中區.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-12 pl-5 ">
+                    <!-- div 中區簡介 padding left & top 5 -->
+                    <div class="areaInfo ">
+                        <h2><strong>簡介</strong></h2>
+                        <p>中區位於今日的柳川與綠川之間，早期尚未開發時，此地區到處都是沼澤地，其中有一座小丘陵地，小丘陵地上高凸處叫做「墩」，清朝時在高凸處設置煙墩，於是就把小丘陵地稱為「大墩」（今臺中公園砲臺山），鄰近的市街因此稱為「大墩街」，為臺中市區的起源。但實際上中區的大墩是指「東大墩」，因為在西屯另有相對於本地的「西大墩」。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 pl-0 pr-0">
+                    <div class="areaMap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7281.701541641904!2d120.67554607658111!3d24.141878328053387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d12d30b6485%3A0xc89c5d992503070d!2zNDAw5Y-w5Lit5biC5Lit5Y2A!5e0!3m2!1szh-TW!2stw!4v1574595244669!5m2!1szh-TW!2stw"
+                            width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page02">
+            <div class="topbutn"></div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6">
+                    <div class="title drop-shadow">
+                        <img src="./img/中區/台中火車站-舊站/素材/台中火車站.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5">
+                <div class="col-lg-8  pl-0  pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/中區/台中火車站-舊站/素材/火車站-舊站.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/台中火車站-舊站/素材/火車站-舊站(俯瞰圖).jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/台中火車站-舊站/素材/火車站-新站.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img//中區/台中火車站-舊站/素材/火車站-新站(俯瞰圖).jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                    <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pl-0 pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市中區臺灣大道一段1號 </p>
+                        <p>時間：06:00 ~ 24:00</p>
+                        <p>電話：04-22216492 </p>
+                        <p><a target="blank" href="https://www.railway.gov.tw/tra-tip-web/tip">官方網站</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>舊站: <br>
+                            臺中站距基隆站起點193公里252公尺，為中部地區第一大站，位居臺灣西部鐵路縱貫線的中心。新站體座落於東區新庄里，附近有多家公路客運及國道客運業者，形成快速便捷的交通網。1905年5月15日通車啟用,1908年4月1日臺灣西部縱貫鐵路全線通車，同年10月24日並在臺中公園舉行全線通車大典。於1995年內政部將臺中站審定為臺閩地區第二級古蹟(文資法修正後為國定古蹟)，保存此一深具歷史及建築意義的火車站。
+                            <br> <b style="color: red;">現已停駛，欲搭台鐵請至新站</b>
+                            <p>全臺碩存最完整的火車站之一
+                                新站、舊站、一代站「三代同堂」車站 <br>
+                                臺中火車站為中部地區第一大站，位居臺灣西部鐵路縱貫線的中心。
+                            </p>
+                            <p>此站建於明治時代，於1906年通車，而現在的火車站為1917年改建，巴洛克
+                                式的建築搭配山牆式設計，屋頂則由青銅片拼成，是全臺碩存最完整的火車站之一，也是二級古蹟(文資法修正後為國定古蹟)。
+                            </p>
+                            <p>站前廣場設置廣場舖面、植栽綠化與周邊區域的道路及人行道、無障礙通路設置等，建構具現代化都市休閒活動空間，再搭配路型調整與景觀再造，讓現代化廣場及綠意休閒意象，與百年老車站景觀共融，建構歷史風貌再生與活化。
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page03">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-6 ml-sm-auto">
+                    <div class="title drop-shadow">
+                        <img src="./img/中區/宮原眼科/素材/眼科 拷貝.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8 pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/中區/宮原眼科/素材/宮原眼科-01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/宮原眼科/素材/宮原眼科-02.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                        <div class="swiper-slide"><img src="" alt=""></div>
+                                        <div class="swiper-slide">Slide 6</div>
+                                        <div class="swiper-slide">Slide 7</div>
+                                        <div class="swiper-slide">Slide 8</div>
+                                        <div class="swiper-slide">Slide 9</div>
+                                        <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市中區中山路20號 </p>
+                        <p>電話：04-22271927</p>
+                        <p>時間: 10:00 ~ 22:00</p>
+                        <p><a target="blank" href="http://www.miyahara.com.tw/">官方網站</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>建造於西元1927年的宮原眼科是由日本眼科博士宮原武熊所興建，也是日治時代臺中規模最大的眼科診所，1945年日本戰敗，宮原武熊返回日本，宮原眼科變成了臺中衛生院，但隨著時代的物換遷移，老舊沒落的衛生院逐漸成了危樓，更在九二一大地震中變成了雜草叢生的廢墟。直到「日出」經營團隊耗時一年半，結合兩位建築師、一位古蹟修復博士所共同打造出現代感的日出宮原眼科。
+                        </p>
+                        <p>靠近臺中火車站的綠川旁，一棟由紅磚瓦構成的建築，是臺中以土鳳梨酥一戰成名的「日出」蛋糕團隊買下了宮原眼科的舊址。宮原眼科外部的紅磚牆、舊牌樓被完整保留下來，打造成富有懷舊風情的紅磚木頂式騎樓，走進店內，仿造復古挑高圖書館的裝飾，創造出新舊時代的魔幻空間，店中央一座無法被使用的古井，則被重新打造成現代風的圓型玻璃募款箱，可見設計之巧思。
+                        </p>
+                        <p>保留具有年代歷史的老建築是一件非常不容易的事，但在「日出」團隊的巧思與努力之下，臺中宮原眼科不僅還存有老房子的氣息，改建整修後還能讓人感受到歷史的感動，著實是一座令人嘆為觀止的建築，天花板的透光玻璃將光線自然引進，陽光灑進屋裡甚是美麗；室內的裝潢也相當有氣勢，挑高的設計像極了哈利波特內霍格華茲學院的場景，以木頭建造的書架和櫃子營造出一種特有的質感美。
+                        </p>
+                        <p> 復古包裝的糕點是最受大家歡迎的伴手禮，有著精緻包裝又美味可口的點心，送禮自用兩相宜唷！來到宮原眼科，千萬不可錯過這裡招牌的冰淇淋，多種口味都是獨家特製配方，如果您以為只有口味特別那就太小看宮原了，冰淇淋旁的配料更是讓人驚呼連連，整塊的土鳳梨酥、乳酪蛋糕、杏仁雪球等等，從沒見過的豐富冰淇淋就在宮原啦！來到臺中怎麼能夠不來宮原眼科吃吃逛逛呢。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page04">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6 ">
+                    <div class="title drop-shadow">
+                        <img src="./img/中區/柳川水岸步道/素材/彩虹眷村IN柳川水岸步道.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8 pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/中區/柳川水岸步道/素材/柳川水岸步道.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/柳川水岸步道/素材/柳川水岸步道-01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/柳川水岸步道/素材/柳川水岸步道(俯瞰).jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                                        <div class="swiper-slide"><img src="" alt=""></div>
+                                                        <div class="swiper-slide">Slide 6</div>
+                                                        <div class="swiper-slide">Slide 7</div>
+                                                        <div class="swiper-slide">Slide 8</div>
+                                                        <div class="swiper-slide">Slide 9</div>
+                                                        <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0  pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市中區柳川東路三段7號
+                            <p>時間：<br>
+                                星期日至星期六: 06:00 ~ 00:00 <br>
+                                星期一至星期五: 06:00 ~ 22:00
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>白天的柳川呈現悠閒的氣息，水質清澈，可近距離欣賞水中的錦鯉，十分適合親子出遊踏青；而晚上的柳川充滿浪漫的氛圍，走在璀璨的燈火下，看著閃閃亮光的柳樹和裝置藝術天鵝，不僅是拍夜景的好地方，也適合情侶夜晚來此散步。
+                        </p>
+                        <p>柳川是台中市中心四條重要河川之一，整治之後成為市區首座永續性生態工法開發的景觀河岸，白天景色宜人，晚上燈火璀璨，成為台中新興的熱門景點，不僅是IG打卡拍照的好地方，也是一條會呼吸的河川，兼具了美感與儲水灌溉的功能。
+                        </p>
+                        <p>柳川是一條會呼吸的河川，拓寬兩側護岸改為緩坡，有助排水及透水，並藉由滲透及蒸發，減輕暴雨逕流對排水系統的負荷，河岸下方設置水撲滿吸收水份，儲水回抽作為澆灌使用，河道下方則設置滲透性排水管（HDPE管），在枯水期與豐水期之間調整水源，創造出如同海綿般吸水的彈性空間。
+                        </p>
+                        <p>而為兼顧水質及生態，柳川水源經過上游汙水截流送至中華水質淨化場處理後，現在已有顯著改善，由原先嚴重汙染降為輕度汙染；河岸旁除移植37株喬木，同時也新植38株水柳保留柳川風情，加上流蘇、台灣欒樹及光臘樹等台灣在地原生植栽共159株喬木，讓柳川河道一年四季皆有不同的景色。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page05">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6 ml-sm-auto">
+                    <div class="title drop-shadow">
+                        <!--  div 景點書法體標題 add drop-shadow class -->
+                        <img src="./img/中區/第四信用合作社/素材/合作社 拷貝.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8   pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/中區/第四信用合作社/素材/第四信用合作社.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/第四信用合作社/素材/第四信用合作社01.jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                            <div class="swiper-slide">Slide 6</div>
+                                            <div class="swiper-slide">Slide 7</div>
+                                            <div class="swiper-slide">Slide 8</div>
+                                            <div class="swiper-slide">Slide 9</div>
+                                            <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市中區中山路72號 <br>
+                            <p>電話：04-22271966</p>
+                        </p>
+                        <p>開放時間：10:00 ~ 22:00<br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>繼「宮原眼科」後，以製作糕餅出名的日出集團，再次打造台中老建築新亮點第四信用合作社。這是一棟落成於民國55年的建築，新改造的第四信用合作社沿用原有名稱，整體建築刻意保留舊有的鋼筋水泥外貌，露出建築結構與橫樑，創造出古今交錯的美感。
+                        </p>
+                        <p>同為日出集團旗下的第四信用合作社，是繼宮原眼科後另一處老屋改造的成功案例。位於中山路上的第四信用合作社，將老舊的建築賦予新生命，時尚與老建築融合得宜，令人感覺耳目一新。外觀保留金庫的特色，再搭配整建後的設備，裡頭則售賣各式冰品美食，包括鹹點、甜點、芒果冰、及超級豐仁冰。
+                        </p>
+                        <p>內部裝潢上則是採復古風格，如壁上掛著過去合作社員工的照片、騎樓的磨石子地板、二樓吧檯櫃檯底下的瓦片、金庫造型的大門等，營造出當時合作社的氛圍。
+                        </p>
+                        <p>第四信用合作社的騎樓販售豐仁冰與各式水果挫冰，利用手搖式的古早味剉冰機，設計成水果冰磚，再以果凍、海藻糖點綴，不僅可口又賞心悅目。一樓內部販售多種口味冰淇淋，冰淇淋以經典老歌命名，別具特色。
+                        </p>
+                        <p>用餐區的空間設計上，合作社將金黃色的燈飾懸吊於未經修飾的天花板下，製造出一種昏暗卻又巧妙的違和感。二樓則是販賣各式冷飲、滷味、點心等等。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page06">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 col-lg-6 ">
+                    <div class="title drop-shadow">
+                        <!--  div 景點書法體標題 add drop-shadow class -->
+                        <img src="./img/中區/太陽餅博物館/素材/太陽餅 拷貝.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row02 mt-5 ">
+                <div class="col-lg-8   pl-0 pr-0 ">
+                    <!-- Swiper -->
+                    <div class="swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="./img/中區/太陽餅博物館/素材/太陽餅博物館(全安堂).jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/太陽餅博物館/素材/太陽餅博物館.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/中區/太陽餅博物館/素材/太陽餅博物館(禮盒).jpg" alt=""></div>
+                            <!--                             <div class="swiper-slide">Slide 5</div>
+                                                <div class="swiper-slide">Slide 6</div>
+                                                <div class="swiper-slide">Slide 7</div>
+                                                <div class="swiper-slide">Slide 8</div>
+                                                <div class="swiper-slide">Slide 9</div>
+                                                <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-0 pr-0  ">
+                    <div class="attraInfo  ">
+                        <h2><strong>詳細資訊</strong></h2><br>
+                        <p>地址：<br>臺中市中區臺灣大道一段145號<br>
+                            <p>電話：04-22295559</p>
+                        </p>
+                        <p>開放時間：08:00 ~ 20:00<br>
+                        </p>
+                        <p>導覽解說：<br>■有 □無 ■預約制 <br>
+                            <br>其他服務：<br>■ DIY體驗：太陽餅DIY
+                        </p>
+                        <p><a target="blank" href="http://www.sunnycake.tw/">官方網站</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                    <div class="attraContent  ">
+                        <p>臺灣太陽餅博物館位址的建築為「全安堂」，為保存良好的百年建築，從日治時代佇立至今，仍不減其風采。早期的全安堂空間作為藥鋪使用，販售進口藥品、民生用品等；而今，經過專業設計團隊的再造，讓老建築重現光彩，並巧妙地融合台中在地傳統產業特色，讓充滿歷史韻味的糕餅文化及百年古蹟。
+                        </p>
+                        <p>臺灣太陽餅博物館傳承了太陽餅發明人魏清海老師傅三代手藝的純正好滋味，結合藝文展覽、互動影音、交流座談、輕食餐飲等多元面向，帶給民眾截然不同的全新體驗。
+                        </p>
+                        <p>太陽餅文物展示 <br>
+                            粿印(或稱餅印)，是早期製餅、製粿、製作糕點的模型。每逢歲時節慶，家家戶戶都會自製含有吉祥、平安意象的糕點分送左鄰右舍，將喜氣與他人一同分享，粿印代表的不僅僅是製餅工具，更反映了早期人們的生活模式及飲食文化，歡迎您來到全安堂，一起由粿印一窺先人的生活痕跡。
+                        </p>
+                        <p>全安堂太陽餅是太陽餅的發明人-魏清海(阿明師)老先生直系傳承下來的好手藝，經過三代的沿革，全安堂不僅保留了傳統的正宗古早滋味，技術也更加純熟。
+                        </p>
+                        <p>臺灣太陽餅博物館位址的建築為「全安堂」，為保存良好的百年建築，從日治時代佇立至今，仍不減其風采。早期的全安堂空間作為藥鋪使用，販售進口藥品、民生用品等；而今，經過專業設計團隊的再造，讓老建築重現光彩，並巧妙地融合台中在地傳統產業特色，讓充滿歷史韻味的糕餅文化及百年古蹟激盪出令人讚嘆的火花。
+                        </p>
+                        <p>老空間輕食區 <br>
+                            位於2F的輕食餐廳，以秋香綠為基調，搭配原木系列的素材，營造出舒服、放鬆的用餐空間。店內主要販售輕食餐點，不管是健康新鮮的雞肉沙拉，或是道地的印度咖哩，您都能在這裡品嘗到令人讚不絕口的美味!
+                            老空間展演
+                        </p>
+                        <p>太陽餅博物館興建於1909年，是走過百年的珍貴歷史古蹟。在老建築空間中我們希望發展更多元的應用賦予本身新的價值，為此本館增添文化與藝術的展演活動規劃，讓藝術與生活結合也讓新創藝術家有發表展演的空間。歡迎您的展覽申請與蒞臨參觀。
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  BootStrap JS LOAD -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS LOAD -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
