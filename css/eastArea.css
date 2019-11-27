@@ -338,6 +338,10 @@ body {
   font-size: 16px;
 }
 
+#page05 .container .attraContent {
+  padding-bottom: 200px;
+}
+
 #page05 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;

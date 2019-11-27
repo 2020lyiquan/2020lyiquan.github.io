@@ -361,6 +361,8 @@ body {
       }
     }
     .attraContent {
+      padding-bottom: 200px;
+      // 常樂footer 修改page06 圖文重疊到給底部內距
       p {
         font-size: 18px;
         letter-spacing: 3px;
@@ -370,3 +372,35 @@ body {
     }
   }
 }
+
+// 常樂footer 修改
+.southArea_footer {
+  width: 100%;
+  height: 13em;
+  background-color: black;
+  position: relative;
+  p {
+    color: whitesmoke;
+    font-size: 1.5em;
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+  }
+  .southArea_library {
+    height: 100%;
+    position: absolute;
+    right: 3em;
+    bottom: 2em;
+  }
+  .southArea_person {
+    height: 200%;
+    position: absolute;
+    left: 5em;
+    bottom: 1em;
+    transform: scaleX(-1);
+  }
+}
+// 常樂footer 修改
+

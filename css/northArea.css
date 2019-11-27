@@ -541,10 +541,46 @@ body {
   /* 文字強迫換行 */
 }
 
+#page07 .container .attraContent {
+  padding-bottom: 150px;
+}
+
 #page07 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+}
+
+.northArea_footer {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  position: relative;
+}
+
+.northArea_footer p {
+  color: whitesmoke;
+  font-size: 1.5em;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.northArea_footer .northArea_museum {
+  height: 130%;
+  position: absolute;
+  left: 6em;
+  bottom: 2em;
+}
+
+.northArea_footer .northArea_person {
+  height: 250%;
+  position: absolute;
+  right: 8em;
+  bottom: 1em;
 }
 /*# sourceMappingURL=northArea.css.map */
