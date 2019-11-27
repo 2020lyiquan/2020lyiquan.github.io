@@ -4,6 +4,10 @@ body {
   /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
   font-family: 'Noto Serif TC', serif;
   font-weight: 600;
+  background-image: url("./../img/背景圖/ep_naturalwhite.png");
+  background-position: center;
+  background-repeat: repeat;
+  scroll-behavior: smooth;
 }
 
 #main_nav.navbar {
@@ -15,6 +19,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 576px) {
+  #main_nav.navbar .container .navbar-brand img {
+    width: auto;
+    height: 25px;
+  }
 }
 
 #main_nav.navbar .container .nav-item {
@@ -44,29 +55,24 @@ body {
   top: -2px;
 }
 
-#page01 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page01 .container {
-  padding: 50px 0;
-}
-
-#page01 .container .row {
-  width: 100%;
-}
-
 #page01 .container .row .areaAvatar {
   background-image: url("./../img/示意圖/柳川4.jpg");
-  width: 315px;
-  height: 315px;
+  width: 250px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   border: 3px solid #5f5f5f;
   position: relative;
+  margin: 40px 0px;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .row .areaAvatar {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+  }
 }
 
 #page01 .container .row .areaAvatar .mask {
@@ -77,37 +83,56 @@ body {
 }
 
 #page01 .container .row .areaAvatar img {
-  width: 200px;
-  height: 200px;
+  width: 65%;
+  height: 65%;
   position: absolute;
   left: 18%;
   top: 18%;
   opacity: 0.7;
 }
 
+#page01 .container .areaInfo {
+  margin: 30px 0;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .areaInfo {
+    margin: 0;
+  }
+}
+
 #page01 .container .areaInfo h2 {
-  padding: 20px 10px 0 0px;
+  padding: 13px 10px 0 0px;
   letter-spacing: 3px;
+  font-weight: 900;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .areaInfo h2 {
+    padding: 20px 0px 20px 0px;
+  }
 }
 
 #page01 .container .areaInfo p {
-  padding: 10px 20px 10px 0px;
+  padding: 20px 20px 10px 0px;
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 35px;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .areaInfo p {
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+  }
 }
 
 #page01 .container-fluid .areaMap {
   padding-bottom: 50px;
 }
 
-#page02 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page02 .topbutn {
+section.template .topbutn {
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
@@ -119,64 +144,53 @@ body {
   transition: 0.25s;
 }
 
-#page02 .topbutn.active {
+section.template .topbutn.active {
   opacity: 1;
   pointer-events: all;
 }
 
-#page02 .topbutn img {
+section.template .topbutn img {
   width: 50px;
   height: 100px;
 }
 
 @media (max-width: 576px) {
-  #page02 .topbutn {
+  section.template .topbutn {
     right: 15px;
   }
 }
 
-#page02 .container {
-  padding-top: 50px;
-}
-
-#page02 .container .title.drop-shadow {
+section.template .container .title.drop-shadow {
   /* attra title add drop-shadow */
   -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
           filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
 }
 
-#page02 .container .title.drop-shadow img {
+section.template .container .title.drop-shadow img {
   width: 100%;
 }
 
 @media (max-width: 320px) {
-  #page02 .container .title.drop-shadow img {
+  section.template .container .title.drop-shadow img {
     width: 200%;
   }
 }
 
-#page02 .container .row02 {
+section.template .container .row02 {
   -webkit-box-shadow: 0 0 10px #5c5c5c;
           box-shadow: 0 0 10px #5c5c5c;
 }
 
-#page02 .container .row02 .swiper-container {
+section.template .container .row02 .swiper-container {
   width: 100%;
-  height: 492px;
 }
 
-@media (max-width: 320px) {
-  #page02 .container .row02 .swiper-container {
-    height: 300px;
-  }
-}
-
-#page02 .container .row02 .swiper-container .swiper-wrapper img {
+section.template .container .row02 .swiper-container .swiper-wrapper img {
   width: 100%;
   height: 100%;
 }
 
-#page02 .container .row02 .attraInfo {
+section.template .container .row02 .attraInfo {
   /* 景點 Attractions 簡介 */
   width: 100%;
   height: 100%;
@@ -186,324 +200,71 @@ body {
   padding: 40px 20px 20px 40px;
 }
 
-#page02 .container .row02 .attraInfo p {
+@media (max-width: 576px) {
+  section.template .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+section.template .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  section.template .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+section.template .container .row02 .attraInfo p {
   font-size: 18px;
 }
 
-#page02 .container .row02 .attraInfo p a {
+@media (max-width: 576px) {
+  section.template .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+}
+
+section.template .container .row02 .attraInfo p a {
   text-decoration: none;
   border-bottom: #ffffff 2px solid;
   color: #ffffff;
   font-size: 16px;
 }
 
-#page02 .container .attraContent p {
+@media (max-width: 576px) {
+  section.template .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
+section.template .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page03 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page03 .container {
-  padding-top: 50px;
-}
-
-#page03 .container .title.drop-shadow {
-  /* attra title add drop-shadow */
-  -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-          filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-}
-
-#page03 .container .title.drop-shadow img {
-  width: 100%;
-}
-
-@media (max-width: 320px) {
-  #page03 .container .title.drop-shadow img {
-    width: 200%;
+@media (max-width: 576px) {
+  section.template .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
   }
-}
-
-#page03 .container .row02 {
-  -webkit-box-shadow: 0 0 10px #5c5c5c;
-          box-shadow: 0 0 10px #5c5c5c;
-}
-
-#page03 .container .row02 .swiper-container {
-  width: 100%;
-  height: 492px;
-}
-
-@media (max-width: 320px) {
-  #page03 .container .row02 .swiper-container {
-    height: 300px;
-  }
-}
-
-#page03 .container .row02 .swiper-container .swiper-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-#page03 .container .row02 .attraInfo {
-  width: 100%;
-  height: 100%;
-  letter-spacing: 1px;
-  color: whitesmoke;
-  background-color: gray;
-  padding: 30px 40px 20px 40px;
-}
-
-#page03 .container .row02 .attraInfo p {
-  font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
-}
-
-#page03 .container .row02 .attraInfo p a {
-  text-decoration: none;
-  border-bottom: #ffffff 2px solid;
-  color: #ffffff;
-  font-size: 16px;
-}
-
-#page03 .container .attraContent {
-  margin-bottom: 20px;
-}
-
-#page03 .container .attraContent p {
-  font-size: 18px;
-  letter-spacing: 3px;
-  line-height: 35px;
-  margin-bottom: 30px;
-}
-
-#page04 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page04 .container {
-  padding-top: 50px;
-}
-
-#page04 .container .title.drop-shadow {
-  /* attra title add drop-shadow */
-  -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-          filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-}
-
-#page04 .container .title.drop-shadow img {
-  width: 100%;
-}
-
-@media (max-width: 320px) {
-  #page04 .container .title.drop-shadow img {
-    width: 200%;
-  }
-}
-
-#page04 .container .row02 {
-  -webkit-box-shadow: 0 0 10px #5c5c5c;
-          box-shadow: 0 0 10px #5c5c5c;
-}
-
-#page04 .container .row02 .swiper-container {
-  width: 100%;
-  height: 492px;
-}
-
-@media (max-width: 320px) {
-  #page04 .container .row02 .swiper-container {
-    height: 300px;
-  }
-}
-
-#page04 .container .row02 .swiper-container .swiper-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-#page04 .container .row02 .attraInfo {
-  width: 100%;
-  height: 100%;
-  letter-spacing: 1px;
-  color: whitesmoke;
-  background-color: gray;
-  padding: 30px 40px 20px 40px;
-}
-
-#page04 .container .row02 .attraInfo p {
-  font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
-}
-
-#page04 .container .attraContent {
-  margin-bottom: 20px;
-}
-
-#page04 .container .attraContent p {
-  font-size: 18px;
-  letter-spacing: 3px;
-  line-height: 35px;
-  margin-bottom: 30px;
-}
-
-#page05 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page05 .container {
-  padding-top: 50px;
-}
-
-#page05 .container .title.drop-shadow {
-  /* attra title add drop-shadow */
-  -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-          filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-}
-
-#page05 .container .title.drop-shadow img {
-  width: 100%;
-}
-
-@media (max-width: 320px) {
-  #page05 .container .title.drop-shadow img {
-    width: 200%;
-  }
-}
-
-#page05 .container .row02 {
-  -webkit-box-shadow: 0 0 10px #5c5c5c;
-          box-shadow: 0 0 10px #5c5c5c;
-}
-
-#page05 .container .row02 .swiper-container {
-  width: 100%;
-  height: 492px;
-}
-
-@media (max-width: 320px) {
-  #page05 .container .row02 .swiper-container {
-    height: 300px;
-  }
-}
-
-#page05 .container .row02 .swiper-container .swiper-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-#page05 .container .row02 .attraInfo {
-  width: 100%;
-  height: 100%;
-  letter-spacing: 1px;
-  color: whitesmoke;
-  background-color: gray;
-  padding: 40px 40px 40px 40px;
-}
-
-#page05 .container .row02 .attraInfo p {
-  font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
-}
-
-#page05 .container .attraContent p {
-  font-size: 18px;
-  letter-spacing: 3px;
-  line-height: 35px;
-  margin-bottom: 30px;
-}
-
-#page06 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page06 .container {
-  padding-top: 50px;
-}
-
-#page06 .container .title.drop-shadow {
-  /* attra title add drop-shadow */
-  -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-          filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-}
-
-#page06 .container .title.drop-shadow img {
-  width: 100%;
-}
-
-@media (max-width: 320px) {
-  #page06 .container .title.drop-shadow img {
-    width: 200%;
-  }
-}
-
-#page06 .container .row02 {
-  -webkit-box-shadow: 0 0 10px #5c5c5c;
-          box-shadow: 0 0 10px #5c5c5c;
-}
-
-#page06 .container .row02 .swiper-container {
-  width: 100%;
-  height: 492px;
-}
-
-@media (max-width: 320px) {
-  #page06 .container .row02 .swiper-container {
-    height: 300px;
-  }
-}
-
-#page06 .container .row02 .swiper-container .swiper-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-#page06 .container .row02 .attraInfo {
-  width: 100%;
-  height: 100%;
-  letter-spacing: 1px;
-  color: whitesmoke;
-  background-color: gray;
-  padding: 40px 40px 40px 40px;
-}
-
-#page06 .container .row02 .attraInfo p {
-  font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
-}
-
-#page06 .container .row02 .attraInfo p a {
-  text-decoration: none;
-  border-bottom: #ffffff 2px solid;
-  color: #ffffff;
-  font-size: 16px;
 }
 
 #page06 .container .attraContent {
   padding-bottom: 200px;
 }
 
-#page06 .container .attraContent p {
-  font-size: 18px;
-  letter-spacing: 3px;
-  line-height: 35px;
-  margin-bottom: 30px;
+@media (max-width: 576px) {
+  #page06 .container .attraContent {
+    padding-bottom: 100px;
+  }
 }
 
 .centerArea_footer {
