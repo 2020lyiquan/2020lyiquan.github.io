@@ -132,7 +132,6 @@ body {
     // background-position: center;
     // background-size: contain;
     .container {
-        padding-top: 50px;
 
         .title.drop-shadow {
             /* attra title add drop-shadow */
@@ -152,8 +151,6 @@ body {
 
             .swiper-container {
                 width: 100%;
-
-                @media(max-width: 576px) {}
 
                 .swiper-wrapper {
                     img {
@@ -257,7 +254,7 @@ body {
                 width: 100%;
                 height: 492px;
 
-                @media(max-width: 320px) {
+                @media(max-width: 576px) {
                     height: 300px;
                 }
 
@@ -283,6 +280,7 @@ body {
 
                 h2 {
                     margin-bottom: 30px;
+
                     @media(max-width:576px) {
                         font-size: 22px;
                         margin-bottom: 15px;
@@ -363,7 +361,7 @@ body {
                 width: 100%;
                 height: 492px;
 
-                @media(max-width: 320px) {
+                @media(max-width: 576px) {
                     height: 300px;
                 }
 
@@ -389,6 +387,7 @@ body {
 
                 h2 {
                     margin-bottom: 30px;
+
                     @media(max-width:576px) {
                         font-size: 22px;
                         margin-bottom: 15px;
@@ -456,7 +455,7 @@ body {
             img {
                 width: 100%;
 
-                @media(max-width: 320px) {
+                @media(max-width: 576px) {
                     width: 100%;
                 }
             }
@@ -469,7 +468,7 @@ body {
                 width: 100%;
                 height: 492px;
 
-                @media(max-width: 320px) {
+                @media(max-width: 576px) {
                     height: 300px;
                 }
 
@@ -495,6 +494,7 @@ body {
 
                 h2 {
                     margin-bottom: 30px;
+
                     @media(max-width:576px) {
                         font-size: 22px;
                         margin-bottom: 15px;
