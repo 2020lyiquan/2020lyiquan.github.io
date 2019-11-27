@@ -4,6 +4,9 @@ body {
   /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
   font-family: 'Noto Serif TC', serif;
   font-weight: 600;
+  background-image: url("./../img/背景圖/ep_naturalwhite.png");
+  background-position: center;
+  background-repeat: repeat;
 }
 
 #main_nav.navbar {
@@ -15,23 +18,30 @@ body {
   /* margin: 8px 16px; */
 }
 
-#main_nav.navbar .container .nav-item {
+@media (max-width: 576px) {
+  #main_nav.navbar .container .navbar-brand img {
+    width: auto;
+    height: 25px;
+  }
+}
+
+#main_nav.navbar .container .navbar-nav .nav-item {
   font-size: 20px;
   width: 9vw;
-  height: 60px;
+  height: 40px;
   line-height: 45px;
-  /* font-family: "Noto Serif TC", serif; */
+  font-family: "Noto Serif TC", serif;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-@media screen and (max-width: 768px) {
-  #main_nav.navbar .container .nav-item {
+@media screen and (max-width: 576px) {
+  #main_nav.navbar .container .navbar-nav .nav-item {
     width: 100%;
   }
 }
 
-#main_nav.navbar .container .nav-item:hover {
+#main_nav.navbar .container .navbar-nav .nav-item:hover {
   /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
   background-color: lightgray;
   -webkit-transition: 0.3s linear;
@@ -40,20 +50,6 @@ body {
   left: -2px;
   top: -2px;
   color: rgba(0, 0, 0, 0.568);
-}
-
-#page01 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page01 .container {
-  padding: 50px 0;
-}
-
-#page01 .container .row {
-  width: 100%;
 }
 
 #page01 .container .row .areaAvatar {
@@ -67,6 +63,14 @@ body {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  #page01 .container .row .areaAvatar {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+  }
+}
+
 #page01 .container .row .areaAvatar .mask {
   width: 100%;
   height: 100%;
@@ -75,17 +79,24 @@ body {
 }
 
 #page01 .container .row .areaAvatar img {
-  width: 200px;
-  height: 200px;
+  width: 65%;
+  height: 65%;
   position: absolute;
   left: 18%;
   top: 18%;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 #page01 .container .areaInfo h2 {
-  padding: 55px 10px 0 0px;
+  padding: 45px 10px 0 0px;
   letter-spacing: 3px;
+  font-weight: 900;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .areaInfo h2 {
+    padding: 20px 0px 20px 0px;
+  }
 }
 
 #page01 .container .areaInfo p {
@@ -95,18 +106,15 @@ body {
   line-height: 35px;
 }
 
+@media (max-width: 576px) {
+  #page01 .container .areaInfo p {
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+  }
+}
+
 #page01 .container-fluid .areaMap {
   padding-bottom: 50px;
-}
-
-#page02 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page02 .container {
-  padding-top: 50px;
 }
 
 #page02 .container .title.drop-shadow {
@@ -119,9 +127,9 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   #page02 .container .title.drop-shadow img {
-    width: 200%;
+    width: 100%;
   }
 }
 
@@ -132,13 +140,6 @@ body {
 
 #page02 .container .row02 .swiper-container {
   width: 100%;
-  height: 492px;
-}
-
-@media screen and (max-width: 320px) {
-  #page02 .container .row02 .swiper-container {
-    height: 300px;
-  }
 }
 
 #page02 .container .row02 .swiper-container .swiper-wrapper img {
@@ -156,8 +157,32 @@ body {
   padding: 40px 20px 20px 40px;
 }
 
+@media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page02 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
 #page02 .container .row02 .attraInfo p {
   font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page02 .container .row02 .attraInfo p a {
@@ -167,21 +192,26 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 576px) {
+  #page02 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page02 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page03 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page03 .container {
-  padding-top: 50px;
+@media (max-width: 576px) {
+  #page02 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page03 .container .title.drop-shadow {
@@ -194,9 +224,9 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   #page03 .container .title.drop-shadow img {
-    width: 200%;
+    width: 100%;
   }
 }
 
@@ -207,13 +237,6 @@ body {
 
 #page03 .container .row02 .swiper-container {
   width: 100%;
-  height: 492px;
-}
-
-@media screen and (max-width: 320px) {
-  #page03 .container .row02 .swiper-container {
-    height: 300px;
-  }
 }
 
 #page03 .container .row02 .swiper-container .swiper-wrapper img {
@@ -227,17 +250,49 @@ body {
   letter-spacing: 1px;
   color: whitesmoke;
   background-color: gray;
-  padding: 30px 40px 20px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page03 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page03 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
   /* 文字強迫換行 */
 }
 
-#page03 .container .attraContent {
-  margin-bottom: 20px;
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+}
+
+#page03 .container .row02 .attraInfo p a {
+  text-decoration: none;
+  border-bottom: #ffffff 2px solid;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  #page03 .container .attraContent {
+    padding-top: 15px;
+  }
 }
 
 #page03 .container .attraContent p {
@@ -245,12 +300,15 @@ body {
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page04 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
+@media (max-width: 576px) {
+  #page03 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page04 .container {
