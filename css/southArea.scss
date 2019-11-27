@@ -110,6 +110,7 @@ body {
                 font-size: 22px;
                 letter-spacing: 3px;
                 line-height: 35px;
+                text-align: justify;
 
                 @media(max-width:576px) {
                     font-size: 20px;
@@ -167,7 +168,7 @@ body {
                 /* 景點 Attractions 簡介 */
                 width: 100%;
                 height: 100%;
-                letter-spacing: 1px;
+                letter-spacing: 3px;
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
@@ -255,9 +256,9 @@ body {
 
             .swiper-container {
                 width: 100%;
-                height: 492px;
+                
 
-                @media(max-width: 320px) {
+                @media(max-width: 576px) {
                     height: 300px;
                 }
 
@@ -272,7 +273,7 @@ body {
             .attraInfo {
                 width: 100%;
                 height: 100%;
-                letter-spacing: 1px;
+                letter-spacing: 3px;
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
@@ -341,7 +342,6 @@ body {
     // background-position: center;
     // background-size: contain;
     .container {
-        padding-top: 50px;
 
         .title.drop-shadow {
             /* attra title add drop-shadow */
@@ -363,7 +363,7 @@ body {
                 width: 100%;
                 height: 492px;
 
-                @media(max-width: 320px) {
+                @media(max-width: 576px) {
                     height: 300px;
                 }
 
@@ -378,7 +378,7 @@ body {
             .attraInfo {
                 width: 100%;
                 height: 100%;
-                letter-spacing: 1px;
+                letter-spacing: 3px;
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
@@ -447,8 +447,6 @@ body {
     // background-size: contain;
 
     .container {
-        padding-top: 50px;
-
         .title.drop-shadow {
             /* attra title add drop-shadow */
             filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
@@ -484,7 +482,7 @@ body {
             .attraInfo {
                 width: 100%;
                 height: 100%;
-                letter-spacing: 1px;
+                letter-spacing: 3px;
                 color: whitesmoke;
                 background-color: gray;
                 padding: 40px 20px 20px 40px;
@@ -541,6 +539,8 @@ body {
                     line-height: 30px;
                 }
             }
+
+            margin-bottom: 20px;
         }
     }
 

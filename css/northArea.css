@@ -4,6 +4,9 @@ body {
   /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
   font-family: 'Noto Serif TC', serif;
   font-weight: 600;
+  background-image: url("./../img/背景圖/ep_naturalwhite.png");
+  background-position: center;
+  background-repeat: repeat;
 }
 
 #main_nav.navbar {
@@ -13,6 +16,13 @@ body {
 
 #main_nav.navbar .container {
   /* margin: 8px 16px; */
+}
+
+@media (max-width: 576px) {
+  #main_nav.navbar .container .navbar-brand img {
+    width: auto;
+    height: 25px;
+  }
 }
 
 #main_nav.navbar .container .nav-item {
@@ -42,20 +52,6 @@ body {
   color: rgba(0, 0, 0, 0.568);
 }
 
-#page01 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page01 .container {
-  padding: 50px 0;
-}
-
-#page01 .container .row {
-  width: 100%;
-}
-
 #page01 .container .row .areaAvatar {
   background-image: url("./../img/示意圖/台中公園.jpg");
   width: 315px;
@@ -67,6 +63,14 @@ body {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  #page01 .container .row .areaAvatar {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+  }
+}
+
 #page01 .container .row .areaAvatar .mask {
   width: 100%;
   height: 100%;
@@ -75,8 +79,8 @@ body {
 }
 
 #page01 .container .row .areaAvatar img {
-  width: 200px;
-  height: 200px;
+  width: 65%;
+  height: 65%;
   position: absolute;
   left: 18%;
   top: 18%;
@@ -86,6 +90,13 @@ body {
 #page01 .container .areaInfo h2 {
   padding: 45px 10px 0 0px;
   letter-spacing: 3px;
+  font-weight: 900;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .areaInfo h2 {
+    padding: 20px 0px 20px 0px;
+  }
 }
 
 #page01 .container .areaInfo p {
@@ -93,20 +104,18 @@ body {
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 35px;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  #page01 .container .areaInfo p {
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+  }
 }
 
 #page01 .container-fluid .areaMap {
   padding-bottom: 50px;
-}
-
-#page02 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page02 .container {
-  padding-top: 50px;
 }
 
 #page02 .container .title.drop-shadow {
@@ -119,9 +128,9 @@ body {
   width: 100%;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   #page02 .container .title.drop-shadow img {
-    width: 200%;
+    width: 100%;
   }
 }
 
@@ -132,13 +141,6 @@ body {
 
 #page02 .container .row02 .swiper-container {
   width: 100%;
-  height: 492px;
-}
-
-@media (max-width: 320px) {
-  #page02 .container .row02 .swiper-container {
-    height: 300px;
-  }
 }
 
 #page02 .container .row02 .swiper-container .swiper-wrapper img {
@@ -150,14 +152,51 @@ body {
   /* 景點 Attractions 簡介 */
   width: 100%;
   height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: whitesmoke;
   background-color: gray;
   padding: 40px 20px 20px 40px;
 }
 
+@media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page02 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
 #page02 .container .row02 .attraInfo p {
   font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  #page02 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+}
+
+#page02 .container .row02 .attraInfo p a {
+  text-decoration: none;
+  border-bottom: #ffffff 2px solid;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  #page02 .container .attraContent {
+    padding-top: 15px;
+  }
 }
 
 #page02 .container .attraContent p {
@@ -165,16 +204,15 @@ body {
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page03 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page03 .container {
-  padding-top: 50px;
+@media (max-width: 576px) {
+  #page02 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page03 .container .title.drop-shadow {
@@ -200,7 +238,6 @@ body {
 
 #page03 .container .row02 .swiper-container {
   width: 100%;
-  height: 492px;
 }
 
 @media (max-width: 320px) {
@@ -217,16 +254,39 @@ body {
 #page03 .container .row02 .attraInfo {
   width: 100%;
   height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: whitesmoke;
   background-color: gray;
-  padding: 30px 40px 20px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page03 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page03 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
   /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page03 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page03 .container .row02 .attraInfo p a {
@@ -240,21 +300,26 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  #page03 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page03 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page04 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page04 .container {
-  padding-top: 50px;
+@media (max-width: 576px) {
+  #page03 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page04 .container .title.drop-shadow {
@@ -267,7 +332,7 @@ body {
   width: 100%;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   #page04 .container .title.drop-shadow img {
     width: 200%;
   }
@@ -283,7 +348,7 @@ body {
   height: 492px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   #page04 .container .row02 .swiper-container {
     height: 300px;
   }
@@ -297,16 +362,38 @@ body {
 #page04 .container .row02 .attraInfo {
   width: 100%;
   height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: whitesmoke;
   background-color: gray;
-  padding: 30px 40px 20px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page04 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page04 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page04 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page04 .container .row02 .attraInfo p a {
@@ -320,21 +407,26 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  #page04 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page04 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page05 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page05 .container {
-  padding-top: 50px;
+@media (max-width: 576px) {
+  #page04 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page05 .container .title.drop-shadow {
@@ -377,16 +469,39 @@ body {
 #page05 .container .row02 .attraInfo {
   width: 100%;
   height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: whitesmoke;
   background-color: gray;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page05 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page05 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page05 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page05 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
   /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page05 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page05 .container .row02 .attraInfo p a {
@@ -396,21 +511,30 @@ body {
   font-size: 16px;
 }
 
+#page05 .container .attraContent {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  #page05 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page05 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page06 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page06 .container {
-  padding-top: 50px;
+@media (max-width: 576px) {
+  #page05 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page06 .container .title.drop-shadow {
@@ -453,16 +577,39 @@ body {
 #page06 .container .row02 .attraInfo {
   width: 100%;
   height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: whitesmoke;
   background-color: gray;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page06 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page06 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page06 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page06 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
   /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page06 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
 }
 
 #page06 .container .row02 .attraInfo p a {
@@ -472,21 +619,30 @@ body {
   font-size: 16px;
 }
 
+#page06 .container .attraContent {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  #page06 .container .attraContent {
+    padding-top: 15px;
+  }
+}
+
 #page06 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-#page07 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page07 .container {
-  padding-top: 50px;
+@media (max-width: 576px) {
+  #page06 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 
 #page07 .container .title.drop-shadow {
@@ -529,20 +685,55 @@ body {
 #page07 .container .row02 .attraInfo {
   width: 100%;
   height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: whitesmoke;
   background-color: gray;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 20px 20px 40px;
+}
+
+@media (max-width: 576px) {
+  #page07 .container .row02 .attraInfo {
+    padding: 30px 20px 20px 40px;
+  }
+}
+
+#page07 .container .row02 .attraInfo h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  #page07 .container .row02 .attraInfo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 #page07 .container .row02 .attraInfo p {
   font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
+}
+
+@media (max-width: 576px) {
+  #page07 .container .row02 .attraInfo p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+}
+
+#page07 .container .row02 .attraInfo p a {
+  text-decoration: none;
+  border-bottom: #ffffff 2px solid;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 #page07 .container .attraContent {
-  padding-bottom: 200px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  #page07 .container .attraContent {
+    padding-top: 15px;
+  }
 }
 
 #page07 .container .attraContent p {
@@ -550,37 +741,14 @@ body {
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-.northArea_footer {
-  width: 100%;
-  height: 12em;
-  background-color: black;
-  position: relative;
-}
-
-.northArea_footer p {
-  color: whitesmoke;
-  font-size: 1.5em;
-  z-index: 9999;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.northArea_footer .northArea_museum {
-  height: 130%;
-  position: absolute;
-  left: 6em;
-  bottom: 2em;
-}
-
-.northArea_footer .northArea_person {
-  height: 250%;
-  position: absolute;
-  right: 8em;
-  bottom: 1em;
+@media (max-width: 576px) {
+  #page07 .container .attraContent p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
 }
 /*# sourceMappingURL=northArea.css.map */
