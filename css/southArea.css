@@ -396,10 +396,48 @@ body {
   font-size: 16px;
 }
 
+#page05 .container .attraContent {
+  padding-bottom: 150px;
+}
+
 #page05 .container .attraContent p {
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 35px;
   margin-bottom: 30px;
+}
+
+.southArea_footer {
+  width: 100%;
+  height: 13em;
+  background-color: black;
+  position: relative;
+}
+
+.southArea_footer p {
+  color: whitesmoke;
+  font-size: 1.5em;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 34%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.southArea_footer .southArea_library {
+  height: 100%;
+  position: absolute;
+  right: 3em;
+  bottom: 2em;
+}
+
+.southArea_footer .southArea_person {
+  height: 200%;
+  position: absolute;
+  left: 5em;
+  bottom: 1em;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 /*# sourceMappingURL=southArea.css.map */
