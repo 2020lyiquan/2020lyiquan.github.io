@@ -152,23 +152,23 @@ body {
       width: 15em;
       margin: 0 0 0.5em 0;
   }
-  
-  .map_btn {
-      padding: 0.2em;
-      margin: auto;
-      border-radius: 2px;
-      background-color: #555;
-      text-align: center;
-      a{
+  a{
       font-size:12px;
       color: #FFF;
       text-decoration: none;
       font-family:'Noto Serif TC', serif; 
       
-
-      }
+ .map_btn {
+      padding: 0.2em;
+      margin: auto;
+      border-radius: 2px;
+      background-color: #555;
+      text-align: center;
+      
   }
   
+      }
+ 
   
   .map_btn:hover {
       color: black;
