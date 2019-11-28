@@ -33,7 +33,7 @@ a{
         @media (max-width:576px){  width: 100%;
             position: absolute;
             top:70px;
-            left:calc(50% - 210px )
+            left:calc(50% - 170px )
     }
       
     }
@@ -44,7 +44,8 @@ a{
         font-weight: bolder;
         position: absolute;
         top: 405px ;
-        left:calc(50% - -215px);
+        right:220px;
+        // left:calc(50% - -215px);
         text-shadow:1px 1px 3px;
         transition: 0.5s;
         &:hover{
@@ -52,9 +53,10 @@ a{
             transform: translate(-2px,-2px);
         }
         @media (max-width:576px){
-       
-                        top: 285px ;
-                       right:calc(50% - 0px);
+            top: 240px ;
+            right:35px;
+                        
+                        // left:calc(50% + 110px);
         }
 }
 
@@ -74,12 +76,4 @@ a{
 //         height: 100vh;
     
 
-//        
-//         .enter{
-          
-//           
-      
-//             }
-//     }
-    
-// }
+
