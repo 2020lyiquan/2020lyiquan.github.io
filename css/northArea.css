@@ -35,7 +35,7 @@ body {
   transition: 0.3s linear;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   #main_nav.navbar .container .nav-item {
     width: 100%;
   }
@@ -272,12 +272,12 @@ section.template .container .attraContent p {
   }
 }
 
-#page06 .container .attraContent {
+#page07 .container .attraContent {
   padding-bottom: 200px;
 }
 
 @media (max-width: 576px) {
-  #page06 .container .attraContent {
+  #page07 .container .attraContent {
     padding-bottom: 100px;
   }
 }
