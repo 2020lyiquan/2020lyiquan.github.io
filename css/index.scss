@@ -30,10 +30,12 @@ a{
         position: absolute;
         top:95px;
         left:calc(50% - 275px );
-        @media (max-width:576px){  width: 100%;
+        @media (max-width:576px){  
+            width: 90%;
             position: absolute;
             top:70px;
-            left:calc(50% - 170px )
+            left:50%;
+            transform: translate(-50%);
     }
       
     }
@@ -53,7 +55,7 @@ a{
             transform: translate(-2px,-2px);
         }
         @media (max-width:576px){
-            top: 240px ;
+            top: 250px ;
             right:35px;
                         
                         // left:calc(50% + 110px);
