@@ -153,11 +153,11 @@ body {
 
   #map {
     .map_img {
-      width: 15em;
-      margin: 0 0 0.5em 0;
+      width: 180px;
+      margin: 0 0 6px 0;
       @media(max-width:576px) {
-        width: 12em;
-        margin: 0 0 0.3em 0;
+        width: 150px;
+        margin: 0 0 4px 0;
       }
     }
 
