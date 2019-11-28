@@ -93,7 +93,11 @@ a {
 
 @media (max-width: 576px) {
   .container .mapBox .arrow {
-    display: none;
+    position: absolute;
+    left: 45%;
+    top: 10px;
+    width: 200px;
+    height: 150px;
   }
 }
 
@@ -110,12 +114,12 @@ a {
 
 @media (max-width: 576px) {
   .container .mapBox .arrow2 {
-    display: block;
-    width: 200px;
-    height: 150px;
+    display: none;
+    width: 250px;
+    height: 100px;
     position: absolute;
-    left: 45%;
-    top: 75%;
+    left: 60%;
+    top: 10px;
     -webkit-animation: blink 1s linear infinite;
             animation: blink 1s linear infinite;
   }
