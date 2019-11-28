@@ -17,7 +17,7 @@
                 target: "#page03"
             },
             {
-                name: "台中國立自然科學博物館",
+                name: "國立自然科學博物館",
                 lat: 24.157355,
                 lng: 120.666075,
                 img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
@@ -248,7 +248,7 @@
 
 
                     var content = `<div><h5> ${loan} </h5><img class="map_img" src= ${img} alt=""></div> 
-                                    <div><a class="map_btn" href=${btn_anchor}>詳細資訊</a></div>`
+                                    <div class="map_btn"><a  href=${btn_anchor}>詳細資訊</a></div>`
 
                     var infowindow = new google.maps.InfoWindow({
                         maxWidth: 250,

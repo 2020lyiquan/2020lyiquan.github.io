@@ -1,101 +1,11 @@
-
-
 #page01 {
 
-  .container {
-
-    .row {
-      .areaAvatar {
-        background-image: url("./../img/示意圖/南天宮.jpg");
-        width: 250px;
-        height: 250px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        border: 3px solid rgb(95, 95, 95);
-        position: relative;
-        margin: 40px 0px;
-
-        @media(max-width:576px) {
-          width: 250px;
-          height: 250px;
-          margin: 20px 0;
-        }
-
-        .mask {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: rgba(240, 240, 240, 0.3);
-        }
-
-        img {
-          width: 65%;
-          height: 65%;
-          position: absolute;
-          left: 18%;
-          top: 18%;
-          opacity: 0.7;
-        }
-      }
-    }
-
-    .areaInfo {
-      margin: 40px 0 ;
-      @media(max-width:576px) {
-          margin: 0 ;
-      }
-      h2 {
-        padding: 20px 10px 0 0px;
-        letter-spacing: 3px;
-        font-weight: 900;
-        @media(max-width:576px) {
-          padding: 20px 0px 20px 0px;
-      }
-
-      }
-
-      p {
-        padding: 20px 20px 10px 0px;
-        font-size: 22px;
-        letter-spacing: 3px;
-        line-height: 35px;
-        text-align: justify;
-
-        @media(max-width:576px) {
-          font-size: 20px;
-          padding: 10px 0px 20px 0px;
-      }
-      }
-    }
-  }
-
-  #map{
-    .map_img {
-      width: 15em;
-      margin: 0 0 0.8em 0;
-  }
-  
-  .map_btn {
-      padding: 0.3em;
-      margin: auto;
-      font-size:12px;
-      color: #222;
-      text-decoration: none;
-      border-radius: 2px;
-      border: #444 1px solid;
-  }
-  
-  
-  .map_btn:hover {
-      color: black;
-      text-decoration: none; 
-      background-color: rgb(224, 211, 204);          
-  }
+  .areaAvatar {
+    background-image: url("./../img/示意圖/南天宮.jpg");
   }
 }
 
-section.template  {
+section.template {
   .topbutn {
     cursor: pointer;
     // display: none;
@@ -120,9 +30,10 @@ section.template  {
     @media (max-width:576px) {
       width: 40px;
       height: 80px;
-    right: 15px;
+      right: 15px;
+    }
   }
-  }
+
   .container {
     .title.drop-shadow {
       /* attra title add drop-shadow */
@@ -130,10 +41,11 @@ section.template  {
 
       img {
         width: 100%;
-        margin: 80px 0 ;
+        margin: 80px 0;
+
         @media (max-width: 576px) {
-          margin: 20px 0 ;
-      }
+          margin: 20px 0;
+        }
       }
     }
 
@@ -142,6 +54,7 @@ section.template  {
 
       .swiper-container {
         width: 100%;
+
         .swiper-wrapper {
           img {
             width: 100%;
@@ -149,6 +62,7 @@ section.template  {
           }
         }
       }
+
       .attraInfo {
         /* 景點 Attractions 簡介 */
         width: 100%;
@@ -157,31 +71,35 @@ section.template  {
         color: whitesmoke;
         background-color: gray;
         padding: 40px 20px 20px 40px;
+
         @media (max-width: 576px) {
           padding: 30px 20px 20px 40px;
-      }
+        }
 
-      h2 {
-        margin-bottom: 30px;
+        h2 {
+          margin-bottom: 30px;
 
-        @media (max-width: 576px) {
+          @media (max-width: 576px) {
             font-size: 22px;
             margin-bottom: 15px;
+          }
         }
-    }
+
         p {
           font-size: 18px;
+
           @media (max-width: 576px) {
             font-size: 16px;
             margin: 0 0 10px 0;
-        }
-        a {
-          text-decoration: none;
-          border-bottom: #ffffff 2px solid;
-          color: #ffffff;
-          font-size: 16px;
-          // 一拳修改
-      }
+          }
+
+          a {
+            text-decoration: none;
+            border-bottom: #ffffff 2px solid;
+            color: #ffffff;
+            font-size: 16px;
+            // 一拳修改
+          }
 
         }
       }
@@ -190,18 +108,20 @@ section.template  {
     .attraContent {
       @media(max-width:576px) {
         padding-top: 15px;
-    }
+      }
+
       p {
         font-size: 18px;
         letter-spacing: 3px;
         line-height: 35px;
         margin-bottom: 30px;
         text-align: justify;
+
         @media(max-width:576px) {
           font-size: 16px;
           letter-spacing: 1px;
           line-height: 30px;
-      }
+        }
       }
     }
   }
@@ -215,7 +135,7 @@ section.template  {
 
       @media(max-width:576px) {
         padding-bottom: 160px;
-    }
+      }
     }
   }
 }
@@ -226,9 +146,11 @@ section.template  {
   height: 10vw;
   background-color: black;
   position: relative;
+
   @media (max-width: 768px) {
     height: 18vw;
   }
+
   p {
     color: whitesmoke;
     font-size: 0.9em;
@@ -239,6 +161,7 @@ section.template  {
     left: 53vw;
     width: auto;
     transform: translate(-50%, -50%);
+
     @media (max-width: 768px) {
       font-size: 3.3vw;
       left: 63vw;
@@ -247,33 +170,39 @@ section.template  {
       letter-spacing: 0.5px;
     }
   }
+
   .eastArea_Zebra_road {
-    width:25%;
+    width: 25%;
     position: absolute;
     left: 3vw;
     bottom: 0.8vw;
+
     @media (max-width: 768px) {
-     left: -12vw;
+      left: -12vw;
       bottom: 1vw;
       width: 45%;
     }
   }
+
   .eastArea_person {
     width: 9%;
     position: absolute;
     left: 14vw;
     bottom: 5vw;
+
     @media (max-width: 768px) {
-     left: 2vw;
+      left: 2vw;
       bottom: 13vw;
       width: 16%;
     }
   }
+
   .eastArea_temple {
     width: 20%;
     position: absolute;
     right: 2vw;
     bottom: 3vw;
+
     @media (max-width: 768px) {
       right: 1vw;
       bottom: 13vw;
