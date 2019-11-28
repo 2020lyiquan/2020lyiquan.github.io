@@ -125,8 +125,23 @@ body {
   }
 }
 
-#page01 .container-fluid .areaMap {
-  padding-bottom: 50px;
+#page01 .container-fluid #Map .map_img {
+  width: 15em;
+  margin: 0 0 1em 0;
+}
+
+#page01 .container-fluid #Map .map_btn {
+  padding: 0.5em;
+  margin: auto;
+  background-color: #65bae4;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 2px;
+  border-bottom: #3c86a8 3px solid;
+}
+
+#page01 .container-fluid #Map .map_btn:active {
+  border-bottom: none;
 }
 
 section.template .topbutn {
