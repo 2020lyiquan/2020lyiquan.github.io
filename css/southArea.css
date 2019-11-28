@@ -238,68 +238,62 @@ section.template .container .attraContent p {
   position: relative;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .southArea_footer {
-    height: 20vw;
+    height: 18vw;
   }
 }
 
 .southArea_footer p {
   color: whitesmoke;
-  font-size: 1.5em;
+  font-size: 1.4em;
   z-index: 9999;
   position: absolute;
   top: 50%;
-  left: 34%;
+  left: 34vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .southArea_footer p {
-    font-size: 1em;
+    font-size: 3.3vw;
     left: 50%;
-    width: 60vw;
+    width: 68vw;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
 }
 
-@media (max-width: 460px) {
-  .southArea_footer p {
-    width: 70vw;
-  }
-}
-
 .southArea_footer .southArea_library {
-  width: 50%;
+  width: 35%;
   position: absolute;
-  right: 4em;
-  bottom: 2em;
+  right: 3vw;
+  bottom: 5vw;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .southArea_footer .southArea_library {
-    right: 0.5em;
-    bottom: 3.2em;
+    right: 1vw;
+    bottom: 13vw;
     width: 60%;
   }
 }
 
 .southArea_footer .southArea_person {
-  width: 12%;
+  width: 8%;
   position: absolute;
-  left: 9em;
-  bottom: 1em;
+  left: 8vw;
+  bottom: 5vw;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .southArea_footer .southArea_person {
-    left: 1em;
-    bottom: 3.2em;
-    width: 20%;
+    left: 2vw;
+    bottom: 13vw;
+    width: 16%;
   }
 }
 /*# sourceMappingURL=southArea.css.map */
