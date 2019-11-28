@@ -125,23 +125,25 @@ body {
   }
 }
 
-#page01 .container-fluid #Map .map_img {
+#page01 #map .map_img {
   width: 15em;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.8em 0;
 }
 
-#page01 .container-fluid #Map .map_btn {
-  padding: 0.5em;
+#page01 #map .map_btn {
+  padding: 0.3em;
   margin: auto;
-  background-color: #65bae4;
-  color: #FFF;
+  font-size: 12px;
+  color: #222;
   text-decoration: none;
   border-radius: 2px;
-  border-bottom: #3c86a8 3px solid;
+  border: #444 1px solid;
 }
 
-#page01 .container-fluid #Map .map_btn:active {
-  border-bottom: none;
+#page01 #map .map_btn:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #e0d3cc;
 }
 
 section.template .topbutn {
@@ -179,12 +181,13 @@ section.template .container .title.drop-shadow {
 }
 
 section.template .container .title.drop-shadow img {
+  margin: 80px 0;
   width: 100%;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   section.template .container .title.drop-shadow img {
-    width: 200%;
+    margin: 20px 0;
   }
 }
 

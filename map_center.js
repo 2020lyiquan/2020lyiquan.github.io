@@ -3,53 +3,46 @@
 
             //宣告景點變數
             var array_location = [{
-                name: "台中公園",
-                lat: 24.144853,
-                lng: 120.684518,
+                name: "台中火車站",
+                lat: 24.137,
+                lng: 120.686,
                 img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
                 target: "#page02"
             },
             {
-                name: "台中孔廟",
-                lat: 24.154337,
-                lng: 120.689977,
+                name: "宮原眼科",
+                lat: 24.137843,
+                lng: 120.683583,
                 img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
                 target: "#page03"
             },
             {
-                name: "台中國立自然科學博物館",
-                lat: 24.157355,
-                lng: 120.666075,
+                name: "柳川水岸步道",
+                lat: 24.142506,
+                lng: 120.677088,
                 img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
                 target: "#page04"
             },
             {
-                name: "香蕉新樂園",
-                lat: 24.156196,
-                lng: 120.689975,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
-                target: "#page06"
-            },
-            {
-                name: "中興堂",
-                lat: 24.145892,
-                lng: 120.685504,
+                name: "第四信用合作社",
+                lat: 24.138989,
+                lng: 120.682018,
                 img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
                 target: "#page05"
             },
             {
-                name: "寶覺寺",
-                lat: 24.159693,
-                lng: 120.687782,
+                name: "太陽餅博物館",
+                lat: 24.139741,
+                lng: 120.682492,
                 img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
-                target: "#page07"
+                target: "#page06"
             }
             ];
 
             //指定中央點
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: { lat: 24.154000, lng: 120.678000 },
+                zoom: 15,
+                center: { lat: 24.138989, lng: 120.682018 },
                 styles: [
                     {
                         "elementType": "geometry",
@@ -232,7 +225,7 @@
 
                     var new_icon = {
                         url: 'https://image.flaticon.com/icons/svg/149/149984.svg',
-                        size: new google.maps.Size(60, 60),
+                        size: new google.maps.Size(80, 80),
                         scaledSize: new google.maps.Size(40, 40),
                         origin: new google.maps.Point(0, 0),
                         anchor: new google.maps.Point(20, 50),
@@ -247,7 +240,7 @@
                     });
 
 
-                    var content = `<div><h5> ${loan} </h5><img class="map_img" src= ${img} alt=""></div> 
+                    var content = `<div><h2> ${loan} </h2><img class="map_img" src= ${img} alt=""></div> 
                                     <div><a class="map_btn" href=${btn_anchor}>詳細資訊</a></div>`
 
                     var infowindow = new google.maps.InfoWindow({
@@ -255,24 +248,6 @@
                         content: content
 
                     })
-
-                    // var markers = []
-                    // markers.push(marker);
-
-
-
-                    //     marker.addListener('click', function () {
-                    //     console.log(infowindow);
-
-                    //     infowindow.setContent(content);
-                    //     infowindow.open(map, this);
-                    //    })
-
-
-
-
-
-
 
                     var prev_infowindow;
 
@@ -293,3 +268,4 @@
             }
 
         }
+
