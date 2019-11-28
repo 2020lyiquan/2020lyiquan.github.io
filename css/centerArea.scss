@@ -1,15 +1,31 @@
 body {
-  padding-top: 76px; /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
+  padding-top: 76px;
+  /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
   font-family: 'Noto Serif TC', serif;
   font-weight: 600;
- 
+  background-image: url("./../img/背景圖/ep_naturalwhite.png");
+  background-position: center;
+  background-repeat: repeat;
+  scroll-behavior: smooth;
+
 }
 
 #main_nav.navbar {
   width: 100vw;
+
   /*  padding: 0; */
   .container {
     display: flex;
+
+    .navbar-brand img {
+      @media(max-width:576px) {
+        width: auto;
+        height: 25px;
+
+      }
+
+    }
+
     .nav-item {
       font-size: 20px;
       width: 9vw;
@@ -17,14 +33,16 @@ body {
       line-height: 45px;
       font-family: "Noto Serif TC", serif;
       transition: 0.3s linear;
-      @media(max-width:320px){
+
+      @media(max-width:320px) {
         width: 100%;
       }
+
       &:hover {
         /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
         background-color: lightgray;
         transition: 0.3s linear;
-        color: rgba(0, 0, 0, 0.568);        
+        color: rgba(0, 0, 0, 0.568);
         position: relative;
         left: -2px;
         top: -2px;
@@ -34,31 +52,38 @@ body {
 }
 
 #page01 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
+
   .container {
-    padding: 50px 0;
+
     .row {
-      width: 100%;
+
       .areaAvatar {
         background-image: url("./../img/示意圖/柳川4.jpg");
-        width: 315px;
-        height: 315px;
+        width: 250px;
+        height: 250px;
         background-size: cover;
         background-position: center;
         border-radius: 50%;
         border: 3px solid rgb(95, 95, 95);
         position: relative;
+        margin: 40px 0px;
+
+        @media(max-width:576px) {
+          width: 250px;
+          height: 250px;
+          margin: 20px 0;
+        }
+
         .mask {
           width: 100%;
           height: 100%;
           border-radius: 50%;
           background: rgba(240, 240, 240, 0.3);
         }
+
         img {
-          width: 200px;
-          height: 200px;
+          width: 65%;
+          height: 65%;
           position: absolute;
           left: 18%;
           top: 18%;
@@ -66,33 +91,67 @@ body {
         }
       }
     }
+
     .areaInfo {
-      h2 {
-        padding: 20px 10px 0 0px;
-        letter-spacing: 3px;
+      margin: 30px 0;
+
+      @media(max-width:576px) {
+        margin: 0;
       }
+
+      h2 {
+        padding: 13px 10px 0 0px;
+        letter-spacing: 3px;
+        font-weight: 900;
+
+        @media(max-width:576px) {
+          padding: 20px 0px 20px 0px;
+        }
+
+      }
+
       p {
-        padding: 10px 20px 10px 0px;
+        padding: 20px 20px 10px 0px;
         font-size: 22px;
         letter-spacing: 3px;
         line-height: 35px;
+        text-align: justify;
+
+        @media(max-width:576px) {
+          font-size: 20px;
+          padding: 10px 0px 20px 0px;
+        }
       }
     }
   }
-  .container-fluid {
-    .areaMap {
-      padding-bottom: 50px;
-    }
+
+  #map{
+    .map_img {
+      width: 15em;
+      margin: 0 0 0.8em 0;
+  }
+  
+  .map_btn {
+      padding: 0.3em;
+      margin: auto;
+      font-size:12px;
+      color: #222;
+      text-decoration: none;
+      border-radius: 2px;
+      border: #444 1px solid;
+  }
+  
+  
+  .map_btn:hover {
+      color: black;
+      text-decoration: none; 
+      background-color: rgb(224, 211, 204);          
+  }
   }
 }
 
-#page02 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-
+section.template {
   .topbutn {
-    
     cursor: pointer;
     // display: none;
     opacity: 0;
@@ -102,38 +161,45 @@ body {
     bottom: 50px;
     z-index: 9999;
     transition: 0.25s;
-    &.active{
+
+    &.active {
       opacity: 1;
       pointer-events: all;
     }
-      img {
+
+    img {
       width: 50px;
       height: 100px;
     }
-    @media (max-width:576px){
+
+    @media (max-width:576px) {
       right: 15px;
     }
   }
+
   .container {
-    padding-top: 50px;
+
     .title.drop-shadow {
       /* attra title add drop-shadow */
       filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
+
       img {
         width: 100%;
-        @media(max-width:320px){
-          width: 200%;
+        margin: 80px 0 ;
+
+        @media(max-width:576px) {
+      
+        margin: 20px 0 ;
         }
       }
     }
+
     .row02 {
       box-shadow: 0 0 10px #5c5c5c;
+
       .swiper-container {
         width: 100%;
-        height: 492px;
-        @media(max-width:320px){
-          height: 300px;
-        }
+
         .swiper-wrapper {
           img {
             width: 100%;
@@ -141,6 +207,7 @@ body {
           }
         }
       }
+
       .attraInfo {
         /* 景點 Attractions 簡介 */
         width: 100%;
@@ -149,303 +216,109 @@ body {
         color: whitesmoke;
         background-color: gray;
         padding: 40px 20px 20px 40px;
+
+        @media (max-width: 576px) {
+          padding: 30px 20px 20px 40px;
+        }
+
+        h2 {
+          margin-bottom: 30px;
+
+          @media (max-width: 576px) {
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+        }
+
         p {
           font-size: 18px;
+
+          @media (max-width: 576px) {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+          }
+
           a {
             // background-color:#555;
             // padding: 5px 15px;
-            
+
             text-decoration: none;
             border-bottom: #ffffff 2px solid;
             color: #ffffff;
-            font-size: 16px; 
+            font-size: 16px;
             // 一拳修改
 
           }
         }
       }
     }
+
     .attraContent {
+      @media(max-width:576px) {
+        padding-top: 15px;
+      }
+
       p {
         font-size: 18px;
         letter-spacing: 3px;
         line-height: 35px;
         margin-bottom: 30px;
+        text-align: justify;
+
+        @media(max-width:576px) {
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 30px;
+        }
       }
     }
   }
 }
 
-#page03 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-  .container {
-    padding-top: 50px;
-    .title.drop-shadow {
-      /* attra title add drop-shadow */
-      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-      img {
-        width: 100%;
-        @media(max-width:320px){
-          width: 200%;
-        }
-      }
-    }
-    .row02 {
-      box-shadow: 0 0 10px #5c5c5c;
-      .swiper-container {
-        width: 100%;
-        height: 492px;
-        @media(max-width:320px){
-          height: 300px;
-        }
-        .swiper-wrapper {
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-      .attraInfo {
-        width: 100%;
-        height: 100%;
-        letter-spacing: 1px;
-        color: whitesmoke;
-        background-color: gray;
-        padding: 30px 40px 20px 40px;
-        p {
-          font-size: 18px;
-          word-wrap: break-word; /* 文字強迫換行 */
-          a {
-            text-decoration: none;
-            border-bottom: #ffffff 2px solid;
-            color: #ffffff;
-            font-size: 16px; 
-          }
-        }
-      }
-    }
-    .attraContent {
-      p {
-        font-size: 18px;
-        letter-spacing: 3px;
-        line-height: 35px;
-        margin-bottom: 30px;
-      }
-      margin-bottom: 20px;
-    }
-  }
-}
-
-#page04 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-  .container {
-    padding-top: 50px;
-    .title.drop-shadow {
-      /* attra title add drop-shadow */
-      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-      img {
-        width: 100%;
-        @media(max-width:320px){
-          width: 200%;
-        }
-      }
-    }
-    .row02 {
-      box-shadow: 0 0 10px #5c5c5c;
-      .swiper-container {
-        width: 100%;
-        height: 492px;
-        @media(max-width:320px){
-          height:  300px;
-        }
-        .swiper-wrapper {
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-      .attraInfo {
-        width: 100%;
-        height: 100%;
-        letter-spacing: 1px;
-        color: whitesmoke;
-        background-color: gray;
-        padding: 30px 40px 20px 40px;
-        p {
-          font-size: 18px;
-
-          word-wrap: break-word; /* 文字強迫換行 */
-        }
-      }
-    }
-    .attraContent {
-      p {
-        font-size: 18px;
-        letter-spacing: 3px;
-        line-height: 35px;
-        margin-bottom: 30px;
-      }
-      margin-bottom: 20px;
-    }
-  }
-}
-
-#page05 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-
-  .container {
-    padding-top: 50px;
-    .title.drop-shadow {
-      /* attra title add drop-shadow */
-      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-      img {
-        width: 100%;
-        @media(max-width:320px){
-          width: 200%;
-        }
-      }
-    }
-    .row02 {
-      box-shadow: 0 0 10px #5c5c5c;
-      .swiper-container {
-        width: 100%;
-        height: 492px;
-        @media(max-width:320px){
-          height: 300px;
-        }
-        .swiper-wrapper {
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-      .attraInfo {
-        width: 100%;
-        height: 100%;
-        letter-spacing: 1px;
-        color: whitesmoke;
-        background-color: gray;
-        padding: 40px 40px 40px 40px;
-        p {
-          font-size: 18px;
-          word-wrap: break-word; /* 文字強迫換行 */
-        }
-      }
-    }
-    .attraContent {
-      p {
-        font-size: 18px;
-        letter-spacing: 3px;
-        line-height: 35px;
-        margin-bottom: 30px;
-      }
-    }
-  }
-}
 
 #page06 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-
   .container {
-    padding-top: 50px;
-    .title.drop-shadow {
-      /* attra title add drop-shadow */
-      filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-      img {
-        width: 100%;
-        @media(max-width:320px){
-          width: 200%;
-        }
-      }
-    }
-    .row02 {
-      box-shadow: 0 0 10px #5c5c5c;
-      .swiper-container {
-        width: 100%;
-        height: 492px;
-        @media(max-width:320px){
-          height: 300px;
-        }
-        .swiper-wrapper {
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-      .attraInfo {
-        width: 100%;
-        height: 100%;
-        letter-spacing: 1px;
-        color: whitesmoke;
-        background-color: gray;
-        padding: 40px 40px 40px 40px;
-        p {
-          font-size: 18px;
-          word-wrap: break-word; /* 文字強迫換行 */
-          a {
-            // background-color:#555;
-            // padding: 5px 15px;
-            
-            text-decoration: none;
-            border-bottom: #ffffff 2px solid;
-            color: #ffffff;
-            font-size: 16px; 
-            // 一拳修改
-
-          }
-        }
-      }
-    }
     .attraContent {
       padding-bottom: 200px;
-      // 常樂footer 修改page06 圖文重疊到給底部內距
-      p {
-        font-size: 18px;
-        letter-spacing: 3px;
-        line-height: 35px;
-        margin-bottom: 30px;
+
+      @media(max-width:576px) {
+        padding-bottom: 100px;
       }
     }
   }
 }
 
+
 // 常樂footer 修改
-.centerArea_footer{
+.centerArea_footer {
   width: 100%;
   height: 12em;
   background-color: black;
   position: relative;
+
   p {
     color: whitesmoke;
     font-size: 1.5em;
     z-index: 9999;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .centerArea_person{
-    height:220%;
+
+  .centerArea_person {
+    height: 220%;
     position: absolute;
     left: 9em;
     bottom: 0em;
   }
-  .centerArea_train_station{
-    height:160% ;
+
+  .centerArea_train_station {
+    height: 160%;
     position: absolute;
     right: 2em;
     bottom: 2em;
   }
 }
+
 // 常樂footer 修改

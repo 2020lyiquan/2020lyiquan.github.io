@@ -22,18 +22,12 @@
             font-size: 18px;
             background: #fff;
             /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
             display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
             justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
             align-items: center;
+        }
+        html{
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -48,16 +42,17 @@
             </button>
             <a class="navbar-brand mr-auto" href="#">
                 <img src="./img/logo01.png" width="70" height="50" class="d-inline-block align-top" alt="">
+                <img class="d-lg-none align-top " src="./img/台中文藝趣-合成  參考版全橫-白色字體.png" width="100" height="0" alt="">
             </a>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav text-center mx-auto">
                     <a class="nav-item nav-link  " href="#page01">回首頁</a>
                     <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
-                    <a class="nav-item nav-link " href="#page02">趣北區</a>
-                    <a class="nav-item nav-link  " href="#page03">趣中區</a>
-                    <a class="nav-item nav-link  " href="#page03">趣東區</a>
-                    <a class="nav-item nav-link  " href="#page03">趣西區</a>
-                    <a class="nav-item nav-link  " href="#page03">趣南區</a>
+                    <a class="nav-item nav-link " href="./northArea.html">趣北區</a>
+                    <a class="nav-item nav-link  " href="./centerArea.html">趣中區</a>
+                    <a class="nav-item nav-link  " href="./eastArea.html">趣東區</a>
+                    <a class="nav-item nav-link  " href="./westArea.html">趣西區</a>
+                    <a class="nav-item nav-link  " href="./southArea.html">趣南區</a>
                     <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
                 </div>
             </div>
@@ -68,7 +63,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-4 col-12">
-                    <!-- div 南區大頭貼 & 書法體標題 疊圖 -->
+                    <!-- div 區域大頭貼 & 書法體標題 疊圖 -->
 
                     <div class="areaAvatar mx-auto">
                         <div class="mask"></div>
@@ -76,10 +71,10 @@
                     </div>
 
                 </div>
-                <div class="col-lg-8 col-12 pl-5 ">
-                    <!-- div 南區簡介 padding left & top 5 -->
+                <div class="col-lg-8 col-12 pl-lg-5 ">
+                    <!-- div 東區簡介 padding left & top 5 -->
                     <div class="areaInfo ">
-                        <h2><strong>簡介</strong></h2>
+                        <h2>簡介</h2>
                         <p>在二次世界大戰後，臺中由中華民國政府接收後，將原來臺中州下的臺中市所屬的曙町、花園町…等地合併成立「東區」。由於此區發展甚早，也留下了許多舊地名如：「新庄仔」、「石頭攤仔」。
                         </p>
                     </div>
@@ -87,23 +82,16 @@
             </div>
         </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 pl-0 pr-0">
-                    <div class="areaMap">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14563.931973531719!2d120.68892613653989!3d24.137235382073033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d3862651fb7%3A0x2a208dd7213b420c!2zNDAx5Y-w5Lit5biC5p2x5Y2A!5e0!3m2!1szh-TW!2stw!4v1574613099758!5m2!1szh-TW!2stw"
-                            width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="map" style="width: 100%; height: 70vh; font-family: 'Noto Serif TC', serif;" ></div> 
     </section>
 
-    <section id="page02">
+    <section class="template"  id="page02">
+            <div class="topbutn active">
+                    <a href="#"> <img src="./img/TOParrow.png" alt=""></a>
+                </div> 
         <div class="container">
             <div class="row ">
-                <div class="col-6 col-lg-6">
+                <div class="col-12 col-lg-6 pt-5">
                     <div class="title drop-shadow">
                         <img src="./img/東區/樂成宮/素材/樂成宮-合成去背.png" alt="">
                     </div>
@@ -117,12 +105,6 @@
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide"><img src="./img/東區/樂成宮/素材/樂成宮.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="./img/東區/樂成宮/素材/樂成宮01.jpg" alt=""></div>
-                            <!--                             <div class="swiper-slide">Slide 5</div>
-                                    <div class="swiper-slide">Slide 6</div>
-                                    <div class="swiper-slide">Slide 7</div>
-                                    <div class="swiper-slide">Slide 8</div>
-                                    <div class="swiper-slide">Slide 9</div>
-                                    <div class="swiper-slide">Slide 10</div> -->
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
@@ -132,17 +114,17 @@
 
                 <div class="col-lg-4 pl-0 pr-0  ">
                     <div class="attraInfo  ">
-                        <h2><strong>詳細資訊</strong></h2><br>
+                        <h2><strong>詳細資訊</strong></h2>
                         <p>地址：臺中市東區旱溪街48 號 <br>
-                            <p>電話：04-22111928 <br>
-                            <p>傳真：04-22126224</p>
+                            <p>電話：04 -22111928 <br>
+                            <p>傳真：04 -22126224</p>
                         <p>開放時間：06:30 ~ 22:00<br>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                <div class="col-11 mx-auto p-1  p-lg-5">
                     <div class="attraContent  ">
                         <p>樂成宮建廟的緣由於清乾隆時期，林大發的祖先由湄州奉請媽祖香火來台，行至旱溪，媽祖自擇地安身，於是庄民建廟奉祀，至今已有兩百餘年的歷史。此廟為兩殿式，前殿的屋頂為重簷歇山式，看起來較一般廟宇華美，而正門口一對青石獅子和許多尚存的花崗岩石板說明廟的悠久歷史，內政部於民國七十四年核定樂成宮為國家第三級古蹟，所以亦可安排一趟古蹟之旅，有悠久歷史、兩百年的香爐，雕工精美的神桌、石門枕與石座、青斗石古獅，都是樂成宮兩百年歷史的見證。
                         </p>
@@ -160,10 +142,10 @@
         </div>
     </section>
 
-    <section id="page03">
+    <section class="template"  id="page03">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-lg-6 ml-auto">
+                <div class="col-12 col-lg-6 ml-auto">
                     <div class="title drop-shadow">
                         <img src="./img/東區/新天地西洋博物館/素材/新天地西洋博物館-去背 1.png" alt="">
                     </div>
@@ -178,13 +160,6 @@
                             <div class="swiper-slide"><img src="./img/東區/新天地西洋博物館/素材/新天地西洋博物館01.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="./img/東區/新天地西洋博物館/素材/新天地西洋博物館.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="./img/東區/新天地西洋博物館/素材/新天地西洋博物館02.jpg" alt=""></div>
-                            <!--                             <div class="swiper-slide">Slide 5</div>
-                                    <div class="swiper-slide"><img src="" alt=""></div>
-                                    <div class="swiper-slide">Slide 6</div>
-                                    <div class="swiper-slide">Slide 7</div>
-                                    <div class="swiper-slide">Slide 8</div>
-                                    <div class="swiper-slide">Slide 9</div>
-                                    <div class="swiper-slide">Slide 10</div> -->
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
@@ -194,8 +169,8 @@
 
                 <div class="col-lg-4 pl-0 pr-0">
                     <div class="attraInfo  ">
-                        <h2><strong>詳細資訊</strong></h2><br>
-                        <p>地址：<br>臺中市東區旱溪東路一段456號1樓 <br>
+                        <h2><strong>詳細資訊</strong></h2>
+                        <p>地址： 臺中市東區旱溪東路一段456號1樓 <br>
                             <p>電話：04-22136222</p>
                         <p>開放時間：09:00 - 21:30</p>
                         <p><a target="blank" href="https://www.facebook.com/%E6%96%B0%E5%A4%A9%E5%9C%B0%E8%A5%BF%E6%B4%8B%E5%8D%9A%E7%89%A9%E9%A4%A8-586771734848361/">臉書官網</a></p>
@@ -203,7 +178,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                <div class="col-11 mx-auto p-1  p-lg-5">
                     <div class="attraContent  ">
                         <p>千件私人收藏，藏品來自蘇富比 Sotheby's、佳士得 Christie's 及私人收藏，帶您體驗，絢爛繽紛的西洋文化。
                         </p>
@@ -215,10 +190,10 @@
         </div>
     </section>
 
-    <section id="page04">
+    <section class="template"  id="page04">
         <div class="container">
             <div class="row ">
-                <div class="col-6 col-lg-6 ">
+                <div class="col-12 col-lg-6 ">
                     <div class="title drop-shadow">
                         <img src="./img/東區/關聖帝君-南天宮/素材/東區.png" alt="">
                     </div>
@@ -232,13 +207,7 @@
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide"><img src="./img/東區/關聖帝君-南天宮/素材/台中南天宮-關帝聖君.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="./img/東區/關聖帝君-南天宮/素材/台中南天宮-關帝聖君01.jpg" alt=""></div>
-                            <!--                             <div class="swiper-slide">Slide 5</div>
-                                                <div class="swiper-slide"><img src="" alt=""></div>
-                                                <div class="swiper-slide">Slide 6</div>
-                                                <div class="swiper-slide">Slide 7</div>
-                                                <div class="swiper-slide">Slide 8</div>
-                                                <div class="swiper-slide">Slide 9</div>
-                                                <div class="swiper-slide">Slide 10</div> -->
+                            
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
@@ -248,8 +217,7 @@
 
                 <div class="col-lg-4 pl-0  pr-0  ">
                     <div class="attraInfo  ">
-                        <h2><strong>詳細資訊</strong></h2><br>
-                        <p>地址：<br>臺中市東區自由路三段309 號<br>
+                        <h2><strong>詳細資訊</strong></h2><p>地址：臺中市東區自由路三段309 號</p>
                             <p>電話：04-22111281</p>
                             <p>傳真：04-22153477</p>
                         <p>開放時間： 06:00 ~ 21:50</p>
@@ -259,7 +227,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                <div class="col-11 mx-auto p-1  p-lg-5">
                     <div class="attraContent  ">
                         <p>南天宮於民國41年建廟，先修正殿，42年完成前殿，主祀關帝聖君，當時為台中市最大的關帝廟，民國69年另建基層六樓、高達一百四十六公尺的聖帝大神像，73年完成後，從遠處便可看到這座聳入雲天的神像，而成為南天宮的標誌。
                         </p>
@@ -271,10 +239,10 @@
         </div>
     </section>
 
-    <section id="page05">
+    <section class="template"  id="page05">
         <div class="container">
             <div class="row ">
-                <div class="col-6 col-lg-6 ml-auto">
+                <div class="col-12 col-lg-6 ml-auto">
                     <div class="title drop-shadow">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術 紀念館-去背.png" alt="">
@@ -288,13 +256,7 @@
                     <div class="swiper-container ">
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide"><img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術紀念館.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術紀念館01.jpg" alt=""></div>
-                            <!--                             <div class="swiper-slide">Slide 5</div>
-                                        <div class="swiper-slide">Slide 6</div>
-                                        <div class="swiper-slide">Slide 7</div>
-                                        <div class="swiper-slide">Slide 8</div>
-                                        <div class="swiper-slide">Slide 9</div>
-                                        <div class="swiper-slide">Slide 10</div> -->
+                            <div class="swiper-slide"><img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術紀念館01.jpg" alt=""></div>                           
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
@@ -304,14 +266,13 @@
 
                 <div class="col-lg-4 pl-0 pr-0  ">
                     <div class="attraInfo  ">
-                        <h2><strong>詳細資訊</strong></h2><br>
-                        <p>地址：<br>臺中市東區建智街12號<br>
+                        <h2><strong>詳細資訊</strong></h2>
+                        <p>地址： 臺中市東區建智街12號<br>
                             <p>電話：04-22813106</p>
                         </p>
                         <!-- <p>賴高山藝術官方臉書: https://www.facebook.com/laimuseum/</p> -->
-                        <p>開放時間：<br>
-                            <p>週一至週二: 休館</p>
-                            <p>週三至週日: 10:00 ~ 17:00</p>
+                        <p>開放時間：週一至週二: 休館<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;週三至週日: 10:00 ~ 17:00</p>
                         </p>
                         <P>導覽解說：■有 □無 ■預約制
                         </P>
@@ -321,7 +282,7 @@
             </div>
 
             <div class="row">
-                <div class="col-11 mx-auto pl-5 pr-5 pt-5 pb-5">
+                <div class="col-11 mx-auto p-1  p-lg-5">
                     <div class="attraContent  ">
                         <p>賴高山先生師承日人山中公，於「臺中工藝專科學校」習得融合臺灣意象的雕刻技法與漆工藝「蓬萊塗」。2000年，賴氏父子將昔日漆工廠兼自宅改建為「臺灣漆文化博物館」，目前館內已賴高山先生生平事蹟、創作，以及臺灣樹漆文化發展為主軸，將臺中獨特的漆文化作為臺灣特色，發揚光大。
                         </p>
@@ -377,6 +338,22 @@
             },
         });
     </script>
+     <!-- map -->
+     <script src="./map_east.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"async defer></script>
+     <script>
+            $(window).scroll(function(){
+     
+                var scrollTop = $(window).scrollTop();
+             if(scrollTop > 1000 && scrollTop < 7800){
+                 $(".topbutn").addClass("active");
+             }else{ 
+                 $(".topbutn").removeClass("active");
+                 }
+     
+     
+            });
+         </script>
 </body>
 
 </html>
