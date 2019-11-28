@@ -319,7 +319,7 @@ section.template .container .attraContent p {
 
 @media (max-width: 576px) {
   .eastArea_footer .eastArea_Zebra_road {
-    height: 100%;
+    height: 50%;
     width: 50%;
     left: 10%;
     bottom: 2px;
@@ -327,7 +327,7 @@ section.template .container .attraContent p {
 }
 
 .eastArea_footer .eastArea_person {
-  width: 50%;
+  width: 10%;
   position: absolute;
   left: 12em;
   bottom: 1em;
@@ -342,7 +342,7 @@ section.template .container .attraContent p {
 }
 
 .eastArea_footer .eastArea_temple {
-  width: 50%;
+  width: 20%;
   position: absolute;
   right: 2em;
   bottom: 5em;
