@@ -204,7 +204,8 @@ a {
 
 @media (max-width: 576px) {
   .container .textContent {
-    margin-left: 45px;
+    margin: auto;
+    width: 70%;
   }
 }
 
