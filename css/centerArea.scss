@@ -125,10 +125,28 @@ body {
     }
   }
 
-  .container-fluid {
-    .areaMap {
-      padding-bottom: 50px;
-    }
+  #map{
+    .map_img {
+      width: 15em;
+      margin: 0 0 0.8em 0;
+  }
+  
+  .map_btn {
+      padding: 0.3em;
+      margin: auto;
+      font-size:12px;
+      color: #222;
+      text-decoration: none;
+      border-radius: 2px;
+      border: #444 1px solid;
+  }
+  
+  
+  .map_btn:hover {
+      color: black;
+      text-decoration: none; 
+      background-color: rgb(224, 211, 204);          
+  }
   }
 }
 
@@ -167,9 +185,11 @@ section.template {
 
       img {
         width: 100%;
+        margin: 80px 0 ;
 
-        @media(max-width:320px) {
-          width: 200%;
+        @media(max-width:576px) {
+      
+        margin: 20px 0 ;
         }
       }
     }
