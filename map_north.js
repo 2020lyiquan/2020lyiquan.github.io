@@ -17,7 +17,7 @@
                 target: "#page03"
             },
             {
-                name: "台中國立自然科學博物館",
+                name: "國立自然科學博物館",
                 lat: 24.157355,
                 lng: 120.666075,
                 img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
