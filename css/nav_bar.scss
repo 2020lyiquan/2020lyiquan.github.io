@@ -27,30 +27,41 @@ body {
         }
   
       }
-  
-      .nav-item {
-        font-size: 20px;
-        width: 9vw;
-        height: 60px;
-        line-height: 45px;
-        font-family: "Noto Serif TC", serif;
-        transition: 0.3s linear;
-        padding: 10px;
-  
-        @media(max-width:576px) {
-          width: 100%;
-        }
-  
-        &:hover {
-          /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
-          background-color: lightgray;
+      .navbar-nav{
+
+         @media(max-width:576px) {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+          }
+        .nav-item {
+          font-size: 20px;
+          width: 9vw;
+          height: 60px;
+          line-height: 45px;
+          font-family: "Noto Serif TC", serif;
           transition: 0.3s linear;
-          color: rgba(0, 0, 0, 0.568);
-          // position: relative;
-          // left: -2px;
-          // top: -2px;
+          padding: 10px;
+    
+          @media(max-width:576px) {
+            width: 60%;
+            border-bottom: 1px rgba(211, 211, 211, 0.61) solid;
+            
+          }
+    
+          &:hover {
+            /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
+            background-color: lightgray;
+            transition: 0.3s linear;
+            color: rgba(0, 0, 0, 0.568);
+            // position: relative;
+            // left: -2px;
+            // top: -2px;
+          }
+          
         }
-        
+
       }
+      
     }
   }
