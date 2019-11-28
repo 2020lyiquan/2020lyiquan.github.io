@@ -229,7 +229,8 @@ section.template  {
   }
   p {
     color: whitesmoke;
-    font-size: 1.4em;
+    font-size: 0.9em;
+    letter-spacing: 3px;
     z-index: 9999;
     position: absolute;
     top: 50%;
@@ -241,6 +242,7 @@ section.template  {
       left: 63vw;
       width: 60vw;
       transform: translate(-50%, -50%);
+      letter-spacing: 0.5px;
     }
   }
   .eastArea_Zebra_road {
