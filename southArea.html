@@ -385,21 +385,23 @@
         var wsh = window.screen.height;
 
 
-        console.log( body.scrollHeight);
+        // console.log( body.scrollHeight);
+        
+        // console.log(window.screen.height );
         if (w_width > 460) {
-            var all = bsh - wsh - 400
+            var all = bsh - wsh - 100
         } else {
             var all = bsh - wsh - 50
         }
-
         // console.log(bsh-wsh);
 
-        // console.log(window.screen.height);
+        // console.log(window.screen.heig
+// ht);
 
         $(window).scroll(function () {
 
             var scrollTop = $(window).scrollTop();
-            //  console.log(scrollTop);
+             console.log(scrollTop);
             if (scrollTop > 1000 && scrollTop < all) {
                 $(".topbutn").addClass("active");
             } else {
