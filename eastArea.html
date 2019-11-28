@@ -93,9 +93,11 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 pt-5">
-                    <div class="title drop-shadow">
-                        <img src="./img/東區/樂成宮/素材/樂成宮-合成去背.png" alt="">
-                    </div>
+                   
+<div class="topbutn active">
+    <a href="#"> <img class="d-none d-lg-block" src="/2020lyiquan.github.io/img/TOParrow-black.png" alt=""></a>
+    <a href="#"> <img class="d-block d-lg-none " src="/2020lyiquan.github.io/img/TOParrow-red.png" alt=""></a>
+</div>
                 </div>
             </div>
 
@@ -354,6 +356,35 @@
      
             });
          </script>
+          <script>
+            var body = document.body;
+            var bsh = body.scrollHeight;
+            var w_width = window.screen.width;
+            var wsh = window.screen.height;
+    
+    
+            // console.log( body.scrollHeight);
+            if (w_width > 460) {
+                var all = bsh - wsh - 300
+            } else {
+                var all = bsh - wsh - 57
+            }
+    
+            // console.log(bsh-wsh);
+    
+            // console.log(window.screen.height);
+    
+            $(window).scroll(function () {
+    
+                var scrollTop = $(window).scrollTop();
+                //  console.log(scrollTop);
+                if (scrollTop > 1000 && scrollTop < all) {
+                    $(".topbutn").addClass("active");
+                } else {
+                    $(".topbutn").removeClass("active");
+                }
+            });
+        </script>
 </body>
 
 </html>
