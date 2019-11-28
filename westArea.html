@@ -26,6 +26,10 @@
             justify-content: center;
             align-items: center;
         }
+
+        html{
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
@@ -78,18 +82,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 pl-0 pr-0">
-                    <div class="areaMap">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29125.87343398635!2d120.64864470454476!3d24.145971701322217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d7558e6e215%3A0x4c5f616f9dfe67c!2zNDAz5Y-w5Lit5biC6KW_5Y2A!5e0!3m2!1szh-TW!2stw!4v1574638389663!5m2!1szh-TW!2stw"
-                            width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="map" style="width: 100%; height: 70vh; font-family: 'Noto Serif TC', serif;" ></div> 
     </section>
 
     <section  class="template" id="page02">
@@ -98,7 +91,7 @@
                 </div> 
         <div class="container">
             <div class="row ">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 ">
                     <div class="title drop-shadow">
                         <img src="./img/西區/勤美術館/素材/勤美術館.png" alt="">
                     </div>
@@ -531,6 +524,10 @@
             },
         });
     </script>
+     <!-- map -->
+     <script src="map_north.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"async defer></script>
+    
      <script>
             $(window).scroll(function(){
      
