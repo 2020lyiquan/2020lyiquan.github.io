@@ -1,0 +1,77 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+.bgimg {
+  height: 100vh;
+  width: 100%;
+}
+
+.bgimg .bgtrain {
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+  background-image: url("/2020lyiquan.github.io/img/首頁一/首頁底圖-10.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.bgimg .titletext {
+  -webkit-filter: drop-shadow(7px 7px 5px white);
+          filter: drop-shadow(7px 7px 5px white);
+  width: 60%;
+  position: absolute;
+  top: 95px;
+  left: calc(50% - 275px);
+}
+
+.bgimg .enter {
+  font-size: 20px;
+  font-family: '微軟正黑體';
+  font-weight: bolder;
+  position: absolute;
+  top: 405px;
+  left: calc(50% - -215px);
+  text-shadow: 1px 1px 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bgimg .enter:hover {
+  cursor: pointer;
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+}
+
+@media (max-width: 320px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .bgimg {
+    width: 100%;
+    height: 100vh;
+  }
+  .bgimg .bgtrain {
+    width: 100%;
+    background-image: url("/2020lyiquan.github.io/img/首頁一/台中火車站-黑白遮罩.jpg");
+    background-size: cover;
+  }
+  .bgimg .titletext {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: calc(50% - 165px);
+  }
+  .bgimg .enter {
+    position: absolute;
+    top: 245px;
+    left: calc(50% + 70px);
+  }
+}
+/*# sourceMappingURL=index.css.map */
