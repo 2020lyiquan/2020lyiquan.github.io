@@ -29,7 +29,19 @@ body {
   }
 }
 
-#main_nav.navbar .container .nav-item {
+@media (max-width: 576px) {
+  #main_nav.navbar .container .navbar-nav {
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#main_nav.navbar .container .navbar-nav .nav-item {
   font-size: 20px;
   width: 9vw;
   height: 60px;
@@ -41,12 +53,13 @@ body {
 }
 
 @media (max-width: 576px) {
-  #main_nav.navbar .container .nav-item {
-    width: 100%;
+  #main_nav.navbar .container .navbar-nav .nav-item {
+    width: 60%;
+    border-bottom: 1px rgba(211, 211, 211, 0.61) solid;
   }
 }
 
-#main_nav.navbar .container .nav-item:hover {
+#main_nav.navbar .container .navbar-nav .nav-item:hover {
   /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
   background-color: lightgray;
   -webkit-transition: 0.3s linear;
