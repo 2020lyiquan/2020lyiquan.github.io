@@ -1,0 +1,52 @@
+body {
+    padding-top: 76px;
+    /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
+    background-image: url("./../img/背景圖/ep_naturalwhite.png");
+    background-position: center;
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+  
+  }
+  
+  #main_nav.navbar {
+    width: 100vw;
+  
+    /*  padding: 0; */
+    .container {
+      display: flex;
+  
+      .navbar-brand img {
+        @media(max-width:576px) {
+          width: auto;
+          height: 25px;
+  
+        }
+  
+      }
+  
+      .nav-item {
+        font-size: 20px;
+        width: 9vw;
+        height: 60px;
+        line-height: 45px;
+        font-family: "Noto Serif TC", serif;
+        transition: 0.3s linear;
+  
+        @media(max-width:320px) {
+          width: 100%;
+        }
+  
+        &:hover {
+          /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
+          background-color: lightgray;
+          transition: 0.3s linear;
+          color: rgba(0, 0, 0, 0.568);
+          position: relative;
+          left: -2px;
+          top: -2px;
+        }
+      }
+    }
+  }
