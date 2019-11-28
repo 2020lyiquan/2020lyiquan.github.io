@@ -223,41 +223,80 @@ section.template .container .attraContent p {
   padding-bottom: 200px;
 }
 
+@media (max-width: 768px) {
+  #page07 .container .attraContent {
+    padding-bottom: 300px;
+  }
+}
+
 @media (max-width: 576px) {
   #page07 .container .attraContent {
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 }
 
 .northArea_footer {
   width: 100%;
-  height: 12em;
+  height: 10vw;
   background-color: black;
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .northArea_footer {
+    height: 18vw;
+  }
+}
+
 .northArea_footer p {
   color: whitesmoke;
-  font-size: 1.5em;
+  font-size: 1.4em;
   z-index: 9999;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 66vw;
+  width: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .northArea_footer p {
+    font-size: 3.3vw;
+    left: 55vw;
+    width: 60vw;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .northArea_footer .northArea_museum {
   width: 20%;
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 3vw;
+  bottom: 5vw;
+}
+
+@media (max-width: 768px) {
+  .northArea_footer .northArea_museum {
+    left: 1vw;
+    bottom: 13vw;
+    width: 35%;
+  }
 }
 
 .northArea_footer .northArea_person {
-  width: 20%;
+  width: 9%;
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 8vw;
+  bottom: 5vw;
+}
+
+@media (max-width: 768px) {
+  .northArea_footer .northArea_person {
+    right: 2vw;
+    bottom: 13vw;
+    width: 16%;
+  }
 }
 /*# sourceMappingURL=northArea.css.map */

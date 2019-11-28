@@ -219,119 +219,84 @@ section.template .container .attraContent p {
   }
 }
 
-#page07 .container .attraContent {
-  padding-bottom: 200px;
-}
-
-@media (max-width: 576px) {
-  #page07 .container .attraContent {
-    padding-bottom: 100px;
-  }
-}
-
-#page08 {
-  background-image: url("./../img/背景圖/ep_naturalwhite.png");
-  background-position: center;
-  background-size: contain;
-}
-
-#page08 .container {
-  padding-top: 50px;
-}
-
-#page08 .container .title.drop-shadow {
-  /* attra title add drop-shadow */
-  -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-          filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
-}
-
-#page08 .container .title.drop-shadow img {
-  width: 100%;
-}
-
-@media screen and (max-width: 320px) {
-  #page08 .container .title.drop-shadow img {
-    width: 200%;
-  }
-}
-
-#page08 .container .row02 {
-  -webkit-box-shadow: 0 0 10px #5c5c5c;
-          box-shadow: 0 0 10px #5c5c5c;
-}
-
-#page08 .container .row02 .swiper-container {
-  width: 100%;
-  height: 492px;
-}
-
-@media screen and (max-width: 320px) {
-  #page08 .container .row02 .swiper-container {
-    height: 300px;
-  }
-}
-
-#page08 .container .row02 .swiper-container .swiper-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-#page08 .container .row02 .attraInfo {
-  width: 100%;
-  height: 100%;
-  letter-spacing: 1px;
-  color: whitesmoke;
-  background-color: gray;
-  padding: 40px 40px 40px 40px;
-}
-
-#page08 .container .row02 .attraInfo p {
-  font-size: 18px;
-  word-wrap: break-word;
-  /* 文字強迫換行 */
-}
-
 #page08 .container .attraContent {
   padding-bottom: 200px;
 }
 
-#page08 .container .attraContent p {
-  font-size: 18px;
-  letter-spacing: 3px;
-  line-height: 35px;
-  margin-bottom: 30px;
+@media (max-width: 768px) {
+  #page08 .container .attraContent {
+    padding-bottom: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  #page08 .container .attraContent {
+    padding-bottom: 120px;
+  }
 }
 
 .westArea_footer {
   width: 100%;
-  height: 13em;
+  height: 10vw;
   background-color: black;
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .westArea_footer {
+    height: 18vw;
+  }
+}
+
 .westArea_footer p {
   color: whitesmoke;
-  font-size: 1.5em;
+  font-size: 1.4em;
   z-index: 9999;
   position: absolute;
   top: 50%;
-  right: 17%;
+  left: 66vw;
+  width: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 768px) {
+  .westArea_footer p {
+    font-size: 3.3vw;
+    left: 55vw;
+    width: 60vw;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 .westArea_footer .westArea_art_gallery {
-  height: 130%;
-  width: 40%;
+  width: 35%;
   position: absolute;
-  left: 1em;
-  bottom: 1em;
+  left: 3vw;
+  bottom: 5vw;
+}
+
+@media (max-width: 768px) {
+  .westArea_footer .westArea_art_gallery {
+    left: 1vw;
+    bottom: 13vw;
+    width: 60%;
+  }
 }
 
 .westArea_footer .westArea_person {
-  height: 240%;
+  width: 9%;
   position: absolute;
-  right: 3em;
-  bottom: 0em;
+  right: 8vw;
+  bottom: 5vw;
+}
+
+@media (max-width: 768px) {
+  .westArea_footer .westArea_person {
+    right: 2vw;
+    bottom: 13vw;
+    width: 16%;
+  }
 }
 /*# sourceMappingURL=westArea.css.map */
