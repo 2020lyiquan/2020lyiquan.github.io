@@ -30,7 +30,7 @@ a {
   left: calc(50% - 275px);
 }
 
-.bgimg .enter {
+.bgimg .enter a {
   font-size: 20px;
   font-family: '微軟正黑體';
   font-weight: bolder;
@@ -42,7 +42,7 @@ a {
   transition: 0.5s;
 }
 
-.bgimg .enter:hover {
+.bgimg .enter a:hover {
   cursor: pointer;
   -webkit-transform: translate(-2px, -2px);
           transform: translate(-2px, -2px);
