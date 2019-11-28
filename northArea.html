@@ -459,13 +459,34 @@
     <!-- map -->
     <script src="map_north.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"async defer></script>
-     <script>                                              //AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8
+     <script>  
+     
+     
+     
+     
+     var body = document.body;
+            var bsh = body.scrollHeight;
+            var w_width = window.screen.width;
+            var wsh = window.screen.height;
+    
+    
+            console.log( body.scrollHeight);
+            if (w_width > 460) {
+                var all = bsh - wsh - 100
+            } else {
+                var all = bsh - wsh - 50
+            }
+     
+     
+     
+     
+                                                 //AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8
             $(window).scroll(function(){
                 console.log(scrollTop);
                 
      
                 var scrollTop = $(window).scrollTop();
-             if(scrollTop > 1000 && scrollTop < 7800){
+             if(scrollTop > 1000 && scrollTop < all){
                  $(".topbutn").addClass("active");
              }
              else{ 

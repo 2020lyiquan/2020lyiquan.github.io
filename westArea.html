@@ -539,7 +539,7 @@
     
             console.log( body.scrollHeight);
             if (w_width > 460) {
-                var all = bsh - wsh - 100
+                var all = bsh - wsh - 80
             } else {
                 var all = bsh - wsh - 50
             }
@@ -551,7 +551,7 @@
             $(window).scroll(function () {
     
                 var scrollTop = $(window).scrollTop();
-                //  console.log(scrollTop);
+                 console.log(scrollTop);
                 if (scrollTop > 1000 && scrollTop < all) {
                     $(".topbutn").addClass("active");
                 } else {
