@@ -100,7 +100,7 @@ section.template .topbutn {
   position: fixed;
   right: 100px;
   bottom: 50px;
-  z-index: 9999;
+  z-index: 10;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -246,7 +246,8 @@ section.template .container .attraContent p {
 
 .southArea_footer p {
   color: whitesmoke;
-  font-size: 1.4em;
+  font-size: 0.9em;
+  letter-spacing: 3px;
   z-index: 9999;
   position: absolute;
   top: 50%;
@@ -262,6 +263,7 @@ section.template .container .attraContent p {
     width: 68vw;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    letter-spacing: 0.5px;
   }
 }
 

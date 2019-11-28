@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>趣東區</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- BootStrap Css CDN -->
@@ -42,8 +42,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto" href="#">
-                <img src="./img/logo01.png" width="70" height="50" class="d-inline-block align-top" alt="">
-                <img class="d-lg-none align-top " src="./img/台中文藝趣-合成  參考版全橫-白色字體.png" width="100" height="0" alt="">
+                <img src="./img/logo01.png" width="70"  class="d-inline-block align-top" alt="">
+                <img class="d-lg-none " src="./img/台中文藝趣-合成  參考版全橫-白色字體.png" width="100"  alt="">
             </a>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav text-center mx-auto">
@@ -93,9 +93,11 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 pt-5">
-                    <div class="title drop-shadow">
-                        <img src="./img/東區/樂成宮/素材/樂成宮-合成去背.png" alt="">
-                    </div>
+                   
+<div class="topbutn active">
+    <a href="#"> <img class="d-none d-lg-block" src="/2020lyiquan.github.io/img/TOParrow-black.png" alt=""></a>
+    <a href="#"> <img class="d-block d-lg-none " src="/2020lyiquan.github.io/img/TOParrow-red.png" alt=""></a>
+</div>
                 </div>
             </div>
 
@@ -354,6 +356,35 @@
      
             });
          </script>
+          <script>
+            var body = document.body;
+            var bsh = body.scrollHeight;
+            var w_width = window.screen.width;
+            var wsh = window.screen.height;
+    
+    
+            // console.log( body.scrollHeight);
+            if (w_width > 460) {
+                var all = bsh - wsh - 300
+            } else {
+                var all = bsh - wsh - 57
+            }
+    
+            // console.log(bsh-wsh);
+    
+            // console.log(window.screen.height);
+    
+            $(window).scroll(function () {
+    
+                var scrollTop = $(window).scrollTop();
+                //  console.log(scrollTop);
+                if (scrollTop > 1000 && scrollTop < all) {
+                    $(".topbutn").addClass("active");
+                } else {
+                    $(".topbutn").removeClass("active");
+                }
+            });
+        </script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  padding-top: 76px;
+  padding-top: 60px;
   /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
   font-family: 'Noto Serif TC', serif;
   font-weight: 600;
@@ -11,14 +11,31 @@ body {
 }
 
 #main_nav.navbar {
+  padding: 0;
   width: 100vw;
   /*  padding: 0; */
+}
+
+@media (max-width: 576px) {
+  #main_nav.navbar {
+    padding: 10px 8px;
+  }
 }
 
 #main_nav.navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#main_nav.navbar .container .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main_nav.navbar .container .navbar-brand img {
+  padding: 0 5px;
 }
 
 @media (max-width: 576px) {
@@ -28,7 +45,20 @@ body {
   }
 }
 
-#main_nav.navbar .container .nav-item {
+@media (max-width: 576px) {
+  #main_nav.navbar .container .navbar-nav {
+    height: 100vh;
+    padding: 0 0 150px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#main_nav.navbar .container .navbar-nav .nav-item {
   font-size: 20px;
   width: 9vw;
   height: 60px;
@@ -36,15 +66,17 @@ body {
   font-family: "Noto Serif TC", serif;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  padding: 10px;
 }
 
-@media (max-width: 320px) {
-  #main_nav.navbar .container .nav-item {
-    width: 100%;
+@media (max-width: 576px) {
+  #main_nav.navbar .container .navbar-nav .nav-item {
+    width: 60%;
+    border-bottom: 1px rgba(211, 211, 211, 0.61) solid;
   }
 }
 
-#main_nav.navbar .container .nav-item:hover {
+#main_nav.navbar .container .navbar-nav .nav-item:hover {
   /*  navBar hover 時 標題區塊變灰 文字變黑 轉換時間 0.3S */
   background-color: lightgray;
   -webkit-transition: 0.3s linear;

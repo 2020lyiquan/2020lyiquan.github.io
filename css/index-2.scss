@@ -21,12 +21,14 @@ a{
     /* right: 40vh;*/
     /* top: 5%; */
     // background-image: url("./img/map.png");
-    background-image: url("./img/newmap.png");
+    background-image: url("/2020lyiquan.github.io/img/首頁二/newmap.png");
     background-size: contain;
     
     background-position: center;
     background-repeat: no-repeat;
-
+    @media (max-width:576px){
+      height: 80vh; ;
+    }
     svg {
 
       width: 100%;
@@ -39,7 +41,9 @@ a{
         top:12%;
       left:0%;
       }  */
-
+      @media (max-width:576px){
+        height: 80vh; ;
+      }
       g {
         opacity: 0.4;
         transition: 1s;
@@ -84,30 +88,36 @@ a{
         left: 74%;
         top: 23%;
         animation: blink 1s linear infinite;
-        @media (max-width:320px){
-          display: none;
+        @media (max-width:576px){
+          
+         
+          left: 50%;
+          top: 10%;
+          width: 200px;
+          height: 70px;
+          
         
         }
       }
 
-      .arrow2 {
-        display: none;
-        width: 300px;
-        height: 200px;
-        position: absolute;
-        left: 70%;
-        top: 15%;
-        animation: blink 1s linear infinite;
-        @media (max-width:320px){
-          display: block;
-          width: 200px;
-          height: 150px;
-          position: absolute;
-          left: 45%;
-          top: 75%;
-          animation: blink 1s linear infinite;
-        }
-      }
+      // .arrow2 {
+      //   display: none;
+      //   width: 300px;
+      //   height: 200px;
+      //   position: absolute;
+      //   left: 70%;
+      //   top: 15%;
+      //   animation: blink 1s linear infinite;
+      //   @media (max-width:576px){
+      //     display: none;
+      //     width: 250px;
+      //     height: 100px;
+      //     position: absolute;
+      //     left: 60%;
+      //     top: 10px;
+      //     animation: blink 1s linear infinite;
+      //   }
+      // }
 
       .natural {
         width: 22%;
@@ -120,8 +130,8 @@ a{
         animation-duration: 3000ms;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
-        @media(max-width:320px){
-          top:33%
+        @media(max-width:576px){
+          top:25%
         }
       }
     
@@ -178,6 +188,10 @@ a{
   }
   .textContent {
     margin-left: 50px;
+    @media(max-width:576px){
+      margin: auto;
+      width: 70%;
+    }
     .title2 {
       width: 100%;
       margin-bottom:80px;
@@ -185,6 +199,9 @@ a{
         position: absolute;
         left: 45%;
         top: 25%; */
+        @media (max-width:576px){
+          margin: 0;
+        }
     }
 
     .titletext2 {
@@ -194,6 +211,9 @@ a{
         position: absolute;
         left: 42%;
         top: 40%; */
+        @media (max-width:576px){
+          margin: 0;
+        }
     }
   }
 }

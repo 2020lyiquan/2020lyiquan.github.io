@@ -21,10 +21,16 @@ a {
   /* left: 10%;  */
   /* right: 40vh;*/
   /* top: 5%; */
-  background-image: url("./img/newmap.png");
+  background-image: url("/2020lyiquan.github.io/img/首頁二/newmap.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  .container .mapBox {
+    height: 80vh;
+  }
 }
 
 .container .mapBox svg {
@@ -38,6 +44,12 @@ a {
         top:12%;
       left:0%;
       }  */
+}
+
+@media (max-width: 576px) {
+  .container .mapBox svg {
+    height: 80vh;
+  }
 }
 
 .container .mapBox svg g {
@@ -91,33 +103,12 @@ a {
           animation: blink 1s linear infinite;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   .container .mapBox .arrow {
-    display: none;
-  }
-}
-
-.container .mapBox .arrow2 {
-  display: none;
-  width: 300px;
-  height: 200px;
-  position: absolute;
-  left: 70%;
-  top: 15%;
-  -webkit-animation: blink 1s linear infinite;
-          animation: blink 1s linear infinite;
-}
-
-@media (max-width: 320px) {
-  .container .mapBox .arrow2 {
-    display: block;
+    left: 50%;
+    top: 10%;
     width: 200px;
-    height: 150px;
-    position: absolute;
-    left: 45%;
-    top: 75%;
-    -webkit-animation: blink 1s linear infinite;
-            animation: blink 1s linear infinite;
+    height: 70px;
   }
 }
 
@@ -137,9 +128,9 @@ a {
           animation-timing-function: ease-in-out;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   .container .mapBox .natural {
-    top: 33%;
+    top: 25%;
   }
 }
 
@@ -211,6 +202,13 @@ a {
   margin-left: 50px;
 }
 
+@media (max-width: 576px) {
+  .container .textContent {
+    margin: auto;
+    width: 70%;
+  }
+}
+
 .container .textContent .title2 {
   width: 100%;
   margin-bottom: 80px;
@@ -220,6 +218,12 @@ a {
         top: 25%; */
 }
 
+@media (max-width: 576px) {
+  .container .textContent .title2 {
+    margin: 0;
+  }
+}
+
 .container .textContent .titletext2 {
   width: 100%;
   margin-bottom: 5px;
@@ -227,6 +231,12 @@ a {
         position: absolute;
         left: 42%;
         top: 40%; */
+}
+
+@media (max-width: 576px) {
+  .container .textContent .titletext2 {
+    margin: 0;
+  }
 }
 
 @-webkit-keyframes oxxo {
