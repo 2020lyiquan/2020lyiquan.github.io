@@ -16,7 +16,7 @@ body {
   /*  padding: 0; */
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   #main_nav.navbar {
     padding: 10px 8px;
   }
@@ -161,19 +161,19 @@ body {
   margin: 0 0 0.5em 0;
 }
 
-#page01 #map .map_btn {
+#page01 #map a {
+  font-size: 12px;
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Noto Serif TC', serif;
+}
+
+#page01 #map a .map_btn {
   padding: 0.2em;
   margin: auto;
   border-radius: 2px;
   background-color: #555;
   text-align: center;
-}
-
-#page01 #map .map_btn a {
-  font-size: 12px;
-  color: #FFF;
-  text-decoration: none;
-  font-family: 'Noto Serif TC', serif;
 }
 
 #page01 #map .map_btn:hover {
