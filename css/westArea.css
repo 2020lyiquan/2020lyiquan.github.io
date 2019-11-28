@@ -250,7 +250,8 @@ section.template .container .attraContent p {
 
 .westArea_footer p {
   color: whitesmoke;
-  font-size: 1.4em;
+  font-size: 0.9em;
+  letter-spacing: 3px;
   z-index: 9999;
   position: absolute;
   top: 50%;
@@ -267,6 +268,7 @@ section.template .container .attraContent p {
     width: 60vw;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    letter-spacing: 0.5px;
   }
 }
 
