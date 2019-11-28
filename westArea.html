@@ -48,7 +48,7 @@
             </a>
             <div class="collapse navbar-collapse order-2" id="navbarNavAltMarkup">
                 <div class="navbar-nav text-center mx-auto">
-                    <a class="nav-item nav-link   " href="#page01">回首頁</a>
+                    <a class="nav-item nav-link   " href="./index-2.html">回首頁</a>
                     <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
                     <a class="nav-item nav-link " href="./northArea.html">趣北區</a>
                     <a class="nav-item nav-link  " href="./centerArea.html">趣中區</a>
@@ -531,18 +531,34 @@
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"async defer></script>
     
      <script>
-            $(window).scroll(function(){
-     
+            var body = document.body;
+            var bsh = body.scrollHeight;
+            var w_width = window.screen.width;
+            var wsh = window.screen.height;
+    
+    
+            console.log( body.scrollHeight);
+            if (w_width > 460) {
+                var all = bsh - wsh - 80
+            } else {
+                var all = bsh - wsh - 50
+            }
+    
+            // console.log(bsh-wsh);
+    
+            // console.log(window.screen.height);
+    
+            $(window).scroll(function () {
+    
                 var scrollTop = $(window).scrollTop();
-             if(scrollTop > 1000 && scrollTop < 7800){
-                 $(".topbutn").addClass("active");
-             }else{ 
-                 $(".topbutn").removeClass("active");
-                 }
-     
-     
+                 console.log(scrollTop);
+                if (scrollTop > 1000 && scrollTop < all) {
+                    $(".topbutn").addClass("active");
+                } else {
+                    $(".topbutn").removeClass("active");
+                }
             });
-         </script>
+        </script>
 
 </body>
 
