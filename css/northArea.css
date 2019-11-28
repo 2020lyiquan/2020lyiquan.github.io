@@ -35,7 +35,7 @@ body {
   transition: 0.3s linear;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   #main_nav.navbar .container .nav-item {
     width: 100%;
   }
