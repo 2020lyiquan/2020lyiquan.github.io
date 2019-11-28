@@ -43,8 +43,6 @@ body {
 @media (max-width: 576px) {
   #main_nav.navbar .container .nav-item {
     width: 100%;
-    height: 100vh;
-    display: block;
   }
 }
 
