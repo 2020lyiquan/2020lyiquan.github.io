@@ -104,7 +104,7 @@ section.template {
     position: fixed;
     right: 100px;
     bottom: 50px;
-    z-index: 9999;
+    z-index: 10;
     transition: 0.25s;
 
     &.active {
@@ -118,8 +118,10 @@ section.template {
     }
 
     @media (max-width:576px) {
-      right: 15px;
-    }
+      width: 40px;
+      height: 80px;
+    right: 15px;
+  }
   }
 
   .container {
