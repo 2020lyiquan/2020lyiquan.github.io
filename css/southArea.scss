@@ -105,7 +105,7 @@ section.template {
         position: fixed;
         right: 100px;
         bottom: 50px;
-        z-index: 9999;
+        z-index: 10;
         transition: 0.25s;
     
         &.active {

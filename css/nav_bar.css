@@ -16,10 +16,26 @@ body {
   /*  padding: 0; */
 }
 
+@media (max-width: 576px) {
+  #main_nav.navbar {
+    padding: 10px 8px;
+  }
+}
+
 #main_nav.navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#main_nav.navbar .container .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main_nav.navbar .container .navbar-brand img {
+  padding: 0 5px;
 }
 
 @media (max-width: 576px) {
@@ -32,6 +48,7 @@ body {
 @media (max-width: 576px) {
   #main_nav.navbar .container .navbar-nav {
     height: 100vh;
+    padding: 0 0 150px 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
