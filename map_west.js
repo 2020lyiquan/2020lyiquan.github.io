@@ -6,49 +6,49 @@
                 name: "勤美術館",
                 lat: 24.152376,
                 lng: 120.663562,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/西區/勤美術館/素材/勤美術館.jpg",
                 target: "#page02"
             },
             {
                 name: "忠信市場",
                 lat: 24.139880,
                 lng: 120.663492,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/西區/忠信市場/素材/中信市場.jpg",
                 target: "#page03"
             },
             {
                 name: "國立台灣美術館",
                 lat: 24.141230,
                 lng: 120.662617,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/西區/國立臺灣美術館/素材/國立台灣美術館.jpg",
                 target: "#page04"
             },
             {
                 name: "道禾六藝文化館",
                 lat: 24.134399,
                 lng: 120.673903,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/西區/道禾六藝文化-刑武場/素材/道禾六藝文化-刑武場03.jpg",
                 target: "#page05"
             },
             {
                 name: "台中文學館",
                 lat: 24.139700,
                 lng: 120.672766,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/西區/台中文學館/素材/台中文學館02.jpg",
                 target: "#page06"
             },
             {
                 name: "審計新村",
                 lat: 24.144624,
                 lng: 120.662931,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/西區/審計新村/素材/審計新村.jpg",
                 target: "#page07"
             },
             {
                 name: "台中州廳",
                 lat: 24.138581,
                 lng: 120.678488,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/西區/台中州廳/素材/台中州廳03.jpg",
                 target: "#page08"
             }
             ];

@@ -6,35 +6,35 @@
                 name: "台中火車站",
                 lat: 24.137,
                 lng: 120.686,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/中區/台中火車站-舊站/素材/火車站-舊站.jpg",
                 target: "#page02"
             },
             {
                 name: "宮原眼科",
                 lat: 24.137843,
                 lng: 120.683583,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/中區/宮原眼科/素材/宮原眼科-01.jpg",
                 target: "#page03"
             },
             {
                 name: "柳川水岸步道",
                 lat: 24.142506,
                 lng: 120.677088,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/中區/柳川水岸步道/素材/柳川水岸步道.jpg",
                 target: "#page04"
             },
             {
                 name: "第四信用合作社",
                 lat: 24.138989,
                 lng: 120.682018,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/中區/第四信用合作社/素材/第四信用合作社.jpg",
                 target: "#page05"
             },
             {
                 name: "太陽餅博物館",
                 lat: 24.139741,
                 lng: 120.682492,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/中區/太陽餅博物館/素材/太陽餅博物館(全安堂).jpg",
                 target: "#page06"
             }
             ];
