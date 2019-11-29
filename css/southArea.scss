@@ -1,212 +1,207 @@
 #page01 {
-    .areaAvatar {
-        background-image: url("./../img/示意圖/文創園區.jpg");
-    }
-
+  .areaAvatar {
+    background-image: url("./../img/示意圖/文創園區.jpg");
+  }
 }
 
 section.template {
-    .topbutn {
-        cursor: pointer;
-        // display: none;
-        opacity: 0;
-        pointer-events: none;
-        position: fixed;
-        right: 100px;
-        bottom: 50px;
-        z-index: 10;
-        transition: 0.25s;
+  .topbutn {
+    cursor: pointer;
+    // display: none;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    z-index: 10;
+    transition: 0.25s;
 
-        &.active {
-            opacity: 1;
-            pointer-events: all;
-        }
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    img {
+      width: 50px;
+      height: 100px;
+    }
+
+    @media (max-width: 576px) {
+      width: 40px;
+      height: 80px;
+      right: 15px;
+    }
+  }
+
+  .container {
+    .col-12 {
+      @media (max-width: 576px) {
+        overflow: hidden;
+      }
+
+      .title.drop-shadow {
+        /* attra title add drop-shadow */
+        filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
 
         img {
-            width: 50px;
-            height: 100px;
-        }
+          width: 100%;
+          margin: 80px 0;
 
-        @media (max-width:576px) {
-            width: 40px;
-            height: 80px;
-            right: 15px;
+          @media (max-width: 576px) {
+            margin: 20px 0;
+          }
         }
+      }
     }
 
-    .container {
-        .col-12 {
-            @media (max-width:576px) {
-                overflow: hidden;
-            }
+    .row02 {
+      box-shadow: 0 0 10px #5c5c5c;
 
-            .title.drop-shadow {
-                /* attra title add drop-shadow */
-                filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
+      .swiper-container {
+        width: 100%;
 
-                img {
-                    width: 100%;
-                    margin: 80px 0;
+        .swiper-wrapper {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
 
-                    @media (max-width: 576px) {
-                        margin: 20px 0;
-                    }
-                }
-            }
+      .attraInfo {
+        /* 景點 Attractions 簡介 */
+        width: 100%;
+        height: 100%;
+        letter-spacing: 1px;
+        color: whitesmoke;
+        background-color: gray;
+        padding: 40px 20px 20px 40px;
+
+        @media (max-width: 576px) {
+          padding: 30px 20px 20px 40px;
         }
 
+        h2 {
+          margin-bottom: 30px;
 
-        .row02 {
-            box-shadow: 0 0 10px #5c5c5c;
-
-            .swiper-container {
-                width: 100%;
-
-                .swiper-wrapper {
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-
-            .attraInfo {
-                /* 景點 Attractions 簡介 */
-                width: 100%;
-                height: 100%;
-                letter-spacing: 1px;
-                color: whitesmoke;
-                background-color: gray;
-                padding: 40px 20px 20px 40px;
-
-                @media (max-width: 576px) {
-                    padding: 30px 20px 20px 40px;
-                }
-
-                h2 {
-                    margin-bottom: 30px;
-
-                    @media (max-width: 576px) {
-                        font-size: 22px;
-                        margin-bottom: 15px;
-                    }
-                }
-
-                p {
-                    font-size: 18px;
-
-                    @media (max-width: 576px) {
-                        font-size: 16px;
-                        margin: 0 0 10px 0;
-                    }
-
-                    a {
-                        // background-color:#555;
-                        // padding: 5px 15px;
-
-                        text-decoration: none;
-                        border-bottom: #ffffff 2px solid;
-                        color: #ffffff;
-                        font-size: 16px;
-                        // 一拳修改
-                    }
-                }
-            }
+          @media (max-width: 576px) {
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
         }
 
-        .attraContent {
-            @media(max-width:576px) {
-                padding-top: 15px;
-            }
+        p {
+          font-size: 18px;
 
-            p {
-                font-size: 18px;
-                letter-spacing: 3px;
-                line-height: 35px;
-                margin-bottom: 30px;
-                text-align: justify;
+          @media (max-width: 576px) {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+          }
 
-                @media(max-width:576px) {
-                    font-size: 16px;
-                    letter-spacing: 1px;
-                    line-height: 30px;
-                }
-            }
+          a {
+            // background-color:#555;
+            // padding: 5px 15px;
+
+            text-decoration: none;
+            border-bottom: #ffffff 2px solid;
+            color: #ffffff;
+            font-size: 16px;
+            // 一拳修改
+          }
         }
+      }
     }
+
+    .attraContent {
+      @media (max-width: 576px) {
+        padding-top: 15px;
+      }
+
+      p {
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: justify;
+
+        @media (max-width: 576px) {
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
 }
 
 #page05 {
-    .container {
-        .attraContent {
-            padding-bottom: 200px;
+  .container {
+    .attraContent {
+      padding-bottom: 200px;
 
-            @media(max-width:576px) {
-                padding-bottom: 100px;
-            }
-        }
+      @media (max-width: 576px) {
+        padding-bottom: 100px;
+      }
     }
+  }
 }
-
-
 
 // 常樂footer 修改
 .southArea_footer {
-    width: 100%;
-    height: 10vw;
-    background-color: black;
-    position: relative;
+  width: 100%;
+  height: 10vw;
+  background-color: black;
+  position: relative;
+
+  @media (max-width: 768px) {
+    height: 18vw;
+  }
+
+  p {
+    color: whitesmoke;
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 34vw;
+    transform: translate(-50%, -50%);
 
     @media (max-width: 768px) {
-        height: 18vw;
+      font-size: 3.3vw;
+      left: 50%;
+      width: 68vw;
+      transform: translate(-50%, -50%);
+      letter-spacing: 0.5px;
     }
+  }
 
-    p {
-        color: whitesmoke;
-        font-size: 0.9em;
-        letter-spacing: 3px;
-        z-index: 10;
-        position: absolute;
-        top: 50%;
-        left: 34vw;
-        transform: translate(-50%, -50%);
+  .southArea_library {
+    width: 35%;
+    position: absolute;
+    right: 3vw;
+    bottom: 5vw;
 
-        @media (max-width: 768px) {
-            font-size: 3.3vw;
-            left: 50%;
-            width: 68vw;
-            transform: translate(-50%, -50%);
-            letter-spacing: 0.5px;
-            
-        }
-
-        .southArea_library {
-            width: 35%;
-            position: absolute;
-            right: 3vw;
-            bottom: 5vw;
-
-            @media (max-width: 768px) {
-                right: 1vw;
-                bottom: 13vw;
-                width: 60%;
-            }
-        }
-
-        .southArea_person {
-            width: 8%;
-            position: absolute;
-            left: 8vw;
-            bottom: 5vw;
-            transform: scaleX(-1);
-
-            @media (max-width: 768px) {
-                left: 2vw;
-                bottom: 13vw;
-                width: 16%;
-            }
-        }
+    @media (max-width: 768px) {
+      right: 1vw;
+      bottom: 13vw;
+      width: 60%;
     }
+  }
+
+  .southArea_person {
+    width: 8%;
+    position: absolute;
+    left: 8vw;
+    bottom: 5vw;
+    transform: scaleX(-1);
+
+    @media (max-width: 768px) {
+      left: 2vw;
+      bottom: 13vw;
+      width: 16%;
+    }
+  }
 }
 
-    // 常樂footer 修改
+// 常樂footer 修改

@@ -183,7 +183,7 @@ section.template .container .attraContent p {
   }
 }
 
-.southArea_footer p .southArea_library {
+.southArea_footer .southArea_library {
   width: 35%;
   position: absolute;
   right: 3vw;
@@ -191,14 +191,14 @@ section.template .container .attraContent p {
 }
 
 @media (max-width: 768px) {
-  .southArea_footer p .southArea_library {
+  .southArea_footer .southArea_library {
     right: 1vw;
     bottom: 13vw;
     width: 60%;
   }
 }
 
-.southArea_footer p .southArea_person {
+.southArea_footer .southArea_person {
   width: 8%;
   position: absolute;
   left: 8vw;
@@ -208,7 +208,7 @@ section.template .container .attraContent p {
 }
 
 @media (max-width: 768px) {
-  .southArea_footer p .southArea_person {
+  .southArea_footer .southArea_person {
     left: 2vw;
     bottom: 13vw;
     width: 16%;
