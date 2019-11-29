@@ -232,7 +232,7 @@ function initMap() {
             });
 
 
-            var content = `<div><h5> ${loan} </h5><img class="map_img" src= ${img} alt=""></div> 
+            var content = `<div><h5> ${loan}</h5><img class="map_img" src= ${img} alt=""></div> 
                             <a href=${btn_anchor}><div class="map_btn" >詳細資訊</div></a>`
 
             var infowindow = new google.maps.InfoWindow({
