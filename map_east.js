@@ -217,7 +217,6 @@ function initMap() {
 
             var new_icon = {
                 url: 'https://image.flaticon.com/icons/svg/149/149984.svg',
-                size: new google.maps.Size(80, 80),
                 scaledSize: new google.maps.Size(40, 40),
                 origin: new google.maps.Point(0, 0),
                 anchor: new google.maps.Point(20, 50),
