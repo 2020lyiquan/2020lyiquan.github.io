@@ -1,9 +1,7 @@
-
-
 #page01 {
-     .areaAvatar {
-        background-image: url("./../img/示意圖/美術館.jpg");      
-      }  
+  .areaAvatar {
+    background-image: url("./../img/示意圖/美術館.jpg");
+  }
 }
 
 section.template {
@@ -28,11 +26,11 @@ section.template {
       height: 100px;
     }
 
-    @media (max-width:576px) {
+    @media (max-width: 576px) {
       width: 40px;
       height: 80px;
-    right: 15px;
-  }
+      right: 15px;
+    }
   }
   .container {
     .title.drop-shadow {
@@ -41,10 +39,10 @@ section.template {
 
       img {
         width: 100%;
-        margin: 80px 0 ;
+        margin: 80px 0;
 
-        @media(max-width:576px) {          
-          margin: 20px 0 ;
+        @media (max-width: 576px) {
+          margin: 20px 0;
         }
       }
     }
@@ -72,14 +70,14 @@ section.template {
         background-color: gray;
         padding: 40px 20px 20px 40px;
 
-        @media(max-width:576px) {
+        @media (max-width: 576px) {
           padding: 30px 20px 20px 40px;
         }
 
         h2 {
           margin-bottom: 30px;
 
-          @media(max-width:576px) {
+          @media (max-width: 576px) {
             font-size: 22px;
             margin-bottom: 15px;
           }
@@ -88,8 +86,7 @@ section.template {
         p {
           font-size: 18px;
 
-
-          @media(max-width:576px) {
+          @media (max-width: 576px) {
             font-size: 16px;
             margin: 0 0 10px 0;
           }
@@ -109,7 +106,7 @@ section.template {
     }
 
     .attraContent {
-      @media(max-width:576px) {
+      @media (max-width: 576px) {
         padding-top: 15px;
       }
 
@@ -120,7 +117,7 @@ section.template {
         margin-bottom: 30px;
         text-align: justify;
 
-        @media(max-width:576px) {
+        @media (max-width: 576px) {
           font-size: 16px;
           letter-spacing: 1px;
           line-height: 30px;
@@ -130,17 +127,13 @@ section.template {
   }
 }
 
-
-
-
-
 #page08 {
   .container {
     .attraContent {
       padding-bottom: 200px;
       @media (max-width: 768px) {
         padding-bottom: 300px;
-      }
+      } 
       @media (max-width: 576px) {
         padding-bottom: 120px;
       }
@@ -168,11 +161,12 @@ section.template {
     width: auto;
     transform: translate(-50%, -50%);
     @media (max-width: 768px) {
-      font-size: 3.3vw;
       left: 55vw;
       width: 60vw;
-      transform: translate(-50%, -50%);
       letter-spacing: 0.5px;
+    }
+    @media (max-width: 414px) {
+      font-size: 3vw;
     }
   }
 
