@@ -36,7 +36,11 @@ section.template {
   }
 
   .container {
-    .title.drop-shadow {
+    .col-12{ 
+      @media (max-width:576px) {
+        overflow: hidden;
+      }
+      .title.drop-shadow {
       /* attra title add drop-shadow */
       filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
 
@@ -48,7 +52,8 @@ section.template {
           margin: 20px 0;
         }
       }
-    }
+    }}
+   
 
     .row02 {
       box-shadow: 0 0 10px #5c5c5c;
