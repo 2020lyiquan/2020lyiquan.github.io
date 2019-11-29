@@ -5,28 +5,28 @@ function initMap() {
         name: "老樹根魔法公坊",
         lat: 24.110084,
         lng: 120.652767,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/南區/老樹根魔法木工坊/素材/老樹根.jpg",
         target: "#page02"
     },
     {
         name: "台中城隍爺廟",
         lat: 24.128533,
         lng: 120.681237,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/南區/台中城隍廟/素材/台中市城隍廟-城隍爺.jpg",
         target: "#page03"
     },
     {
         name: "國立公共資訊圖書館",
         lat: 24.127129,
         lng: 120.670505,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/南區/國立公共資訊圖書館/素材/國資圖總館.jpg",
         target: "#page04"
     },
     {
         name: "台中文化創意產業園區",
         lat: 24.132960,
         lng: 120.680919,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/南區/文化部創意園區/文化部創意園區-衡道堂.jpg",
         target: "#page05"
     }
     ];

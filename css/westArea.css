@@ -164,7 +164,7 @@ section.template .container .attraContent p {
   color: whitesmoke;
   font-size: 0.9em;
   letter-spacing: 3px;
-  z-index: 9999;
+  z-index: 10;
   position: absolute;
   top: 50%;
   left: 66vw;
@@ -175,12 +175,15 @@ section.template .container .attraContent p {
 
 @media (max-width: 768px) {
   .westArea_footer p {
-    font-size: 3.3vw;
     left: 55vw;
     width: 60vw;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
     letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 414px) {
+  .westArea_footer p {
+    font-size: 3vw;
   }
 }
 

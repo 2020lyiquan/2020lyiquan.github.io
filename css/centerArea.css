@@ -25,11 +25,23 @@ section.template .topbutn img {
   height: 100px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   section.template .topbutn {
+    left: 86%;
+  }
+  section.template .topbutn img {
     width: 40px;
     height: 80px;
-    right: 15px;
+  }
+}
+
+@media (max-width: 414px) {
+  section.template .topbutn {
+    left: 85%;
+  }
+  section.template .topbutn img {
+    width: 30px;
+    height: 60px;
   }
 }
 

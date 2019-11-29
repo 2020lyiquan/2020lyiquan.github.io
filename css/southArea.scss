@@ -156,21 +156,20 @@ section.template {
     }
 
     p {
-        color: whitesmoke;
-        font-size: 0.9em;
-        letter-spacing: 3px;
-        z-index: 9999;
-        position: absolute;
-        top: 50%;
-        left: 34vw;
-        transform: translate(-50%, -50%);
-
-        @media (max-width: 768px) {
+      color: whitesmoke;
+      font-size: 0.9em;
+      letter-spacing: 3px;
+      z-index: 10;
+      position: absolute;
+      top: 50%;
+      left: 34vw;
+      transform: translate(-50%, -50%);
+      @media (max-width: 768px) {
+        left: 50%;
+        width: 68vw;
+        letter-spacing: 0.5px;
+        @media (max-width: 414px) {
             font-size: 3.3vw;
-            left: 50%;
-            width: 68vw;
-            transform: translate(-50%, -50%);
-            letter-spacing: 0.5px;
         }
     }
 
