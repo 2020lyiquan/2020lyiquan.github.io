@@ -165,17 +165,11 @@ section.template {
       left: 34vw;
       transform: translate(-50%, -50%);
       @media (max-width: 768px) {
-        font-size: 3.3vw;
         left: 50%;
         width: 68vw;
-        transform: translate(-50%, -50%);
-
-        @media (max-width: 768px) {
+        letter-spacing: 0.5px;
+        @media (max-width: 414px) {
             font-size: 3.3vw;
-            left: 50%;
-            width: 68vw;
-            transform: translate(-50%, -50%);
-            letter-spacing: 0.5px;
         }
     }
 
