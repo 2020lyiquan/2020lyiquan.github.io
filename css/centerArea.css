@@ -27,7 +27,7 @@ section.template .topbutn img {
 
 @media (max-width: 768px) {
   section.template .topbutn {
-    right: 7%;
+    left: 86%;
   }
   section.template .topbutn img {
     width: 40px;
@@ -37,7 +37,7 @@ section.template .topbutn img {
 
 @media (max-width: 414px) {
   section.template .topbutn {
-    right: 4%;
+    left: 85%;
   }
   section.template .topbutn img {
     width: 30px;
