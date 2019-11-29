@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/nav_bar.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <!-- swiper css include -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- aos css include -->
 
     <style>
         /*  Swiper styles */
@@ -27,7 +28,8 @@
             justify-content: center;
             align-items: center;
         }
-        html{
+
+        html {
             scroll-behavior: smooth;
         }
     </style>
@@ -37,13 +39,14 @@
     <nav id="main_nav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark  ">
         <!-- Nav Bar  -->
         <div class="container mx-auto ">
-            <button class="navbar-toggler order-1 " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler order-1 " type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand order-0 mr-auto" href="#">
-                <img src="./img/logo01.png" width="70"  class="d-inline-block align-top" alt="">
-                <img class="d-lg-none " src="./img/台中文藝趣-合成  參考版全橫-白色字體.png" height="33.84px"  alt="">
+                <img src="./img/logo01.png" width="70" class="d-inline-block align-top" alt="">
+                <img class="d-lg-none " src="./img/台中文藝趣-合成  參考版全橫-白色字體.png" height="33.84px" alt="">
             </a>
             <div class="collapse navbar-collapse order-2 " id="navbarNavAltMarkup">
                 <div class="navbar-nav text-center mx-auto">
@@ -83,23 +86,25 @@
             </div>
         </div>
 
-        <div id="map" style="width: 100%; height: 70vh; font-family: 'Noto Serif TC', serif;" ></div> 
+        <div id="map" style="width: 100%; height: 70vh; font-family: 'Noto Serif TC', serif;"></div>
     </section>
 
-    <section class="template"  id="page02">
-            <div class="topbutn active">
-                    <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
-                    <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
-            </div>
+    <section class="template" id="page02">
+        <div class="topbutn active">
+            <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
+            <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
+        </div>
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 pt-5">
-                    <div class="title drop-shadow">
+                    <div class="title drop-shadow" data-aos="fade-right" data-aos-duration="800"
+                        data-aos-easing="ease-in-sine">
                         <img src="./img/東區/樂成宮/素材/樂成宮-合成去背.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="row row02 mt-5">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8  pl-0  pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -118,15 +123,15 @@
                         <h2><strong>詳細資訊</strong></h2>
                         <p>地址：臺中市東區旱溪街48 號 <br>
                             <p>電話：04 -22111928 <br>
-                            <p>傳真：04 -22126224</p>
-                        <p>開放時間：06:30 ~ 22:00<br>
+                                <p>傳真：04 -22126224</p>
+                                <p>開放時間：06:30 ~ 22:00<br>
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-11 mx-auto p-1  p-lg-5">
-                    <div class="attraContent  ">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>樂成宮建廟的緣由於清乾隆時期，林大發的祖先由湄州奉請媽祖香火來台，行至旱溪，媽祖自擇地安身，於是庄民建廟奉祀，至今已有兩百餘年的歷史。此廟為兩殿式，前殿的屋頂為重簷歇山式，看起來較一般廟宇華美，而正門口一對青石獅子和許多尚存的花崗岩石板說明廟的悠久歷史，內政部於民國七十四年核定樂成宮為國家第三級古蹟，所以亦可安排一趟古蹟之旅，有悠久歷史、兩百年的香爐，雕工精美的神桌、石門枕與石座、青斗石古獅，都是樂成宮兩百年歷史的見證。
                         </p>
                         <p>台中市旱溪媽祖廟一「樂成宮」之歷史淵源，溯自乾隆初年，林大發之十五世祖渡台拓墾，為冀求一帆風順及其墾業順利，遂恭迎湄洲天后宮之「老二媽」金尊一道來台，林氏一行人，行經至本宮現址，因神靈顯異，乃擇定聖地，暫奉祀神祇於此。
@@ -143,17 +148,18 @@
         </div>
     </section>
 
-    <section class="template"  id="page03">
+    <section class="template" id="page03">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
                         <img src="./img/東區/新天地西洋博物館/素材/新天地西洋博物館-去背 1.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5 ">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -172,14 +178,16 @@
                         <h2><strong>詳細資訊</strong></h2>
                         <p>地址： 臺中市東區旱溪東路一段456號1樓 <br>
                             <p>電話：04-22136222</p>
-                        <p>開放時間：09:00 - 21:30</p>
-                        <p><a target="blank" href="https://www.facebook.com/%E6%96%B0%E5%A4%A9%E5%9C%B0%E8%A5%BF%E6%B4%8B%E5%8D%9A%E7%89%A9%E9%A4%A8-586771734848361/">臉書官網</a></p>
+                            <p>開放時間：09:00 - 21:30</p>
+                            <p><a target="blank"
+                                    href="https://www.facebook.com/%E6%96%B0%E5%A4%A9%E5%9C%B0%E8%A5%BF%E6%B4%8B%E5%8D%9A%E7%89%A9%E9%A4%A8-586771734848361/">臉書官網</a>
+                            </p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-11 mx-auto p-1  p-lg-5">
-                    <div class="attraContent  ">
+                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>千件私人收藏，藏品來自蘇富比 Sotheby's、佳士得 Christie's 及私人收藏，帶您體驗，絢爛繽紛的西洋文化。
                         </p>
                         <p>二十大西洋古董主題，千件私人收藏品來自 蘇富比 Sotheby's佳士得 Christie's 及私人收藏，帶您體驗絢爛繽紛的西洋文化。
@@ -190,24 +198,25 @@
         </div>
     </section>
 
-    <section class="template"  id="page04">
+    <section class="template" id="page04">
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
-                    <div class="title drop-shadow">
+                    <div class="title drop-shadow" data-aos="fade-right"  data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <img src="./img/東區/關聖帝君-南天宮/素材/東區.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5 ">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide"><img src="./img/東區/關聖帝君-南天宮/素材/台中南天宮-關帝聖君.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="./img/東區/關聖帝君-南天宮/素材/台中南天宮-關帝聖君01.jpg" alt=""></div>
-                            
+
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
@@ -217,46 +226,48 @@
 
                 <div class="col-lg-4 pl-0  pr-0  ">
                     <div class="attraInfo  ">
-                        <h2><strong>詳細資訊</strong></h2><p>地址：臺中市東區自由路三段309 號</p>
-                            <p>電話：04-22111281</p>
-                            <p>傳真：04-22153477</p>
+                        <h2><strong>詳細資訊</strong></h2>
+                        <p>地址：臺中市東區自由路三段309 號</p>
+                        <p>電話：04-22111281</p>
+                        <p>傳真：04-22153477</p>
                         <p>開放時間： 06:00 ~ 21:50</p>
                         <p><a target="blank" href="http://www.tcntg.org.tw/">官方網站</a></p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent">
-                        <p>南天宮於民國41年建廟，先修正殿，42年完成前殿，主祀關帝聖君，當時為台中市最大的關帝廟，民國69年另建基層六樓、高達一百四十六公尺的聖帝大神像，73年完成後，從遠處便可看到這座聳入雲天的神像，而成為南天宮的標誌。
-                        </p>
-                        <p>南天宮目前樓高六層，每層供奉神祇有：至聖先師、精忠岳武穆王、財神爺、福德正神、月下老人、文昌帝君、聖母娘娘、註生娘娘、觀世音菩薩、保生大帝、玉皇大帝﹑南斗星君﹑北斗星君﹑孚佑帝君、玄天上帝、天官大帝；登上六樓向下望，台中東區街道盡收眼底，讓人頓覺心曠神怡。
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-11 mx-auto p-1  p-lg-5">
+                <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <p>南天宮於民國41年建廟，先修正殿，42年完成前殿，主祀關帝聖君，當時為台中市最大的關帝廟，民國69年另建基層六樓、高達一百四十六公尺的聖帝大神像，73年完成後，從遠處便可看到這座聳入雲天的神像，而成為南天宮的標誌。
+                    </p>
+                    <p>南天宮目前樓高六層，每層供奉神祇有：至聖先師、精忠岳武穆王、財神爺、福德正神、月下老人、文昌帝君、聖母娘娘、註生娘娘、觀世音菩薩、保生大帝、玉皇大帝﹑南斗星君﹑北斗星君﹑孚佑帝君、玄天上帝、天官大帝；登上六樓向下望，台中東區街道盡收眼底，讓人頓覺心曠神怡。
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 
-    <section class="template"  id="page05">
+    <section class="template" id="page05">
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術 紀念館-去背.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5 ">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide"><img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術紀念館.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術紀念館01.jpg" alt=""></div>                           
+                            <div class="swiper-slide"><img src="./img/東區/賴高山藝術紀念館/素材/賴高山藝術紀念館01.jpg" alt=""></div>
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
@@ -272,7 +283,7 @@
                         </p>
                         <!-- <p>賴高山藝術官方臉書: https://www.facebook.com/laimuseum/</p> -->
                         <p>開放時間：週一至週二: 休館<br>
-                        &emsp;&emsp;&emsp;&emsp;&emsp;週三至週日: 10:00 ~ 17:00</p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;週三至週日: 10:00 ~ 17:00</p>
                         </p>
                         <P>導覽解說：■有 □無 ■預約制
                         </P>
@@ -283,7 +294,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1  p-lg-5">
-                    <div class="attraContent  ">
+                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>賴高山先生師承日人山中公，於「臺中工藝專科學校」習得融合臺灣意象的雕刻技法與漆工藝「蓬萊塗」。2000年，賴氏父子將昔日漆工廠兼自宅改建為「臺灣漆文化博物館」，目前館內已賴高山先生生平事蹟、創作，以及臺灣樹漆文化發展為主軸，將臺中獨特的漆文化作為臺灣特色，發揚光大。
                         </p>
                         <p>創始人賴高山先生，自幼研習漆藝，將一生奉獻於台灣漆文化之創作研究與發展，有感於民族傳統工藝傳承推廣之重要，將一甲子所學所作所收藏之漆文物，提供參觀。
@@ -302,8 +313,8 @@
         </div>
     </section>
 
-     <!-- 常樂footer 修改 -->
-     <footer class="eastArea_footer bg-black ">
+    <!-- 常樂footer 修改 -->
+    <footer class="eastArea_footer bg-black ">
         <p>2019 © 上益資訊團體專題所有 </p>
         <img class="eastArea_Zebra_road" src="./img/東區/東區-footer-img/東區-footer-斑馬線-去背.png" alt="">
         <img class="eastArea_person" src="./img/東區/東區-footer-img/東、南區-底圖人物.png" alt="">
@@ -311,7 +322,7 @@
     </footer>
     <!-- 常樂footer 修改 -->
 
-    
+
 
 
     <!--  BootStrap JS LOAD -->
@@ -338,51 +349,58 @@
             },
         });
     </script>
-     <!-- map -->
-     <script src="./map_east.js"></script>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"async defer></script>
-     <script>
-            $(window).scroll(function(){
-     
-                var scrollTop = $(window).scrollTop();
-             if(scrollTop > 1000 && scrollTop < 7800){
-                 $(".topbutn").addClass("active");
-             }else{ 
-                 $(".topbutn").removeClass("active");
-                 }
-     
-     
-            });
-         </script>
-          <script>
-            var body = document.body;
-            var bsh = body.scrollHeight;
-            var w_width = window.screen.width;
-            var wsh = window.screen.height;
-    
-    
-            // console.log( body.scrollHeight);
-            if (w_width > 460) {
-                var all = bsh - wsh - 300
+    <!-- map -->
+    <script src="./map_east.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"
+        async defer></script>
+    <script>
+        $(window).scroll(function () {
+
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 1000 && scrollTop < 7800) {
+                $(".topbutn").addClass("active");
             } else {
-                var all = bsh - wsh - 70
+                $(".topbutn").removeClass("active");
             }
-    
-            // console.log(bsh-wsh);
-    
-            // console.log(window.screen.height);
-    
-            $(window).scroll(function () {
-    
-                var scrollTop = $(window).scrollTop();
-                 console.log(scrollTop);
-                if (scrollTop > 1000 && scrollTop < all) {
-                    $(".topbutn").addClass("active");
-                } else {
-                    $(".topbutn").removeClass("active");
-                }
-            });
-        </script>
+
+
+        });
+    </script>
+    <script>
+        var body = document.body;
+        var bsh = body.scrollHeight;
+        var w_width = window.screen.width;
+        var wsh = window.screen.height;
+
+
+        // console.log( body.scrollHeight);
+        if (w_width > 460) {
+            var all = bsh - wsh - 300
+        } else {
+            var all = bsh - wsh - 70
+        }
+
+        // console.log(bsh-wsh);
+
+        // console.log(window.screen.height);
+
+        $(window).scroll(function () {
+
+            var scrollTop = $(window).scrollTop();
+            console.log(scrollTop);
+            if (scrollTop > 1000 && scrollTop < all) {
+                $(".topbutn").addClass("active");
+            } else {
+                $(".topbutn").removeClass("active");
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- aos js include -->
+    <script>                                                        /* INITIALIZE AOS */
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
