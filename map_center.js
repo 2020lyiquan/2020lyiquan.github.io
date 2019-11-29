@@ -241,7 +241,7 @@
 
 
                     var content = `<div><h5> ${loan} </h5><img class="map_img" src= ${img} alt=""></div> 
-                                    <div class="map_btn"><a  href=${btn_anchor}>詳細資訊</a></div>`
+                                   <a  href=${btn_anchor}> <div class="map_btn">詳細資訊</div></a>`
 
                     var infowindow = new google.maps.InfoWindow({
                         maxWidth: 250,

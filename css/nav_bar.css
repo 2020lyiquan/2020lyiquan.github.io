@@ -16,7 +16,7 @@ body {
   /*  padding: 0; */
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   #main_nav.navbar {
     padding: 10px 8px;
   }
@@ -157,23 +157,30 @@ body {
 }
 
 #page01 #map .map_img {
-  width: 15em;
-  margin: 0 0 0.5em 0;
+  width: 180px;
+  margin: 0 0 6px 0;
 }
 
-#page01 #map .map_btn {
+@media (max-width: 576px) {
+  #page01 #map .map_img {
+    width: 150px;
+    margin: 0 0 4px 0;
+  }
+}
+
+#page01 #map a {
+  font-size: 12px;
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Noto Serif TC', serif;
+}
+
+#page01 #map a .map_btn {
   padding: 0.2em;
   margin: auto;
   border-radius: 2px;
   background-color: #555;
   text-align: center;
-}
-
-#page01 #map .map_btn a {
-  font-size: 12px;
-  color: #FFF;
-  text-decoration: none;
-  font-family: 'Noto Serif TC', serif;
 }
 
 #page01 #map .map_btn:hover {

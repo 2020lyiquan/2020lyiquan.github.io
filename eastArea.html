@@ -43,11 +43,11 @@
             </button>
             <a class="navbar-brand order-0 mr-auto" href="#">
                 <img src="./img/logo01.png" width="70"  class="d-inline-block align-top" alt="">
-                <img class="d-lg-none " src="./img/台中文藝趣-合成  參考版全橫-白色字體.png" width="100"  alt="">
+                <img class="d-lg-none " src="./img/台中文藝趣-合成  參考版全橫-白色字體.png" height="33.84px"  alt="">
             </a>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav text-center mx-auto">
-                    <a class="nav-item nav-link  " href="#page01">回首頁</a>
+                    <a class="nav-item nav-link  " href="./index-2.html">回首頁</a>
                     <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
                     <a class="nav-item nav-link " href="./northArea.html">趣北區</a>
                     <a class="nav-item nav-link  " href="./centerArea.html">趣中區</a>
@@ -90,18 +90,15 @@
             <div class="topbutn active">
                     <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
                     <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
-                </div>
+            </div>
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 pt-5">
-                   
-<div class="topbutn active">
-    <a href="#"> <img class="d-none d-lg-block" src="/2020lyiquan.github.io/img/TOParrow-black.png" alt=""></a>
-    <a href="#"> <img class="d-block d-lg-none " src="/2020lyiquan.github.io/img/TOParrow-red.png" alt=""></a>
-</div>
+                    <div class="title drop-shadow">
+                        <img src="./img/東區/樂成宮/素材/樂成宮-合成去背.png" alt="">
+                    </div>
                 </div>
             </div>
-
             <div class="row row02 mt-5">
                 <div class="col-lg-8  pl-0  pr-0 ">
                     <!-- Swiper -->
@@ -368,7 +365,7 @@
             if (w_width > 460) {
                 var all = bsh - wsh - 300
             } else {
-                var all = bsh - wsh - 57
+                var all = bsh - wsh - 70
             }
     
             // console.log(bsh-wsh);
@@ -378,7 +375,7 @@
             $(window).scroll(function () {
     
                 var scrollTop = $(window).scrollTop();
-                //  console.log(scrollTop);
+                 console.log(scrollTop);
                 if (scrollTop > 1000 && scrollTop < all) {
                     $(".topbutn").addClass("active");
                 } else {
