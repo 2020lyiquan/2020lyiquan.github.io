@@ -18,7 +18,35 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,600,900&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- aos css include -->
+    <script>
+        var body = document.body;
+        var bsh = body.scrollHeight;
+        var w_width = window.screen.width;
+        var wsh = window.screen.height;
 
+
+        // console.log(body.scrollHeight);
+        // console.log(window.screen.height);
+        if (w_width > 460) {
+            var all = bsh - wsh - 160
+        } else {
+            var all = bsh - wsh - 50
+        }
+
+
+        $(window).scroll(function () {
+
+            var scrollTop = $(window).scrollTop();
+            console.log(scrollTop);
+            if (scrollTop > 1000 && scrollTop < all) {
+                $(".topbutn").addClass("active");
+            } else {
+                $(".topbutn").removeClass("active");
+            }
+
+
+        });
+    </script>
     <style>
         /*  Swiper styles */
         .swiper-slide {
@@ -101,6 +129,7 @@
         </div>
 
         <div class="container">
+            
             <div class="row ">
                 <div class="col-12 col-lg-6 pt-5">
                     <div class="title drop-shadow" data-aos="fade-right" data-aos-duration="800"
