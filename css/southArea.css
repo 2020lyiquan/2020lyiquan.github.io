@@ -33,19 +33,25 @@ section.template .topbutn img {
   }
 }
 
-section.template .container .title.drop-shadow {
+@media (max-width: 576px) {
+  section.template .container .col-12 {
+    overflow: hidden;
+  }
+}
+
+section.template .container .col-12 .title.drop-shadow {
   /* attra title add drop-shadow */
   -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
           filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
 }
 
-section.template .container .title.drop-shadow img {
+section.template .container .col-12 .title.drop-shadow img {
   width: 100%;
   margin: 80px 0;
 }
 
 @media (max-width: 576px) {
-  section.template .container .title.drop-shadow img {
+  section.template .container .col-12 .title.drop-shadow img {
     margin: 20px 0;
   }
 }
@@ -158,7 +164,7 @@ section.template .container .attraContent p {
   color: whitesmoke;
   font-size: 0.9em;
   letter-spacing: 3px;
-  z-index: 9999;
+  z-index: 10;
   position: absolute;
   top: 50%;
   left: 34vw;
@@ -177,7 +183,7 @@ section.template .container .attraContent p {
   }
 }
 
-.southArea_footer .southArea_library {
+.southArea_footer p .southArea_library {
   width: 35%;
   position: absolute;
   right: 3vw;
@@ -185,14 +191,14 @@ section.template .container .attraContent p {
 }
 
 @media (max-width: 768px) {
-  .southArea_footer .southArea_library {
+  .southArea_footer p .southArea_library {
     right: 1vw;
     bottom: 13vw;
     width: 60%;
   }
 }
 
-.southArea_footer .southArea_person {
+.southArea_footer p .southArea_person {
   width: 8%;
   position: absolute;
   left: 8vw;
@@ -202,7 +208,7 @@ section.template .container .attraContent p {
 }
 
 @media (max-width: 768px) {
-  .southArea_footer .southArea_person {
+  .southArea_footer p .southArea_person {
     left: 2vw;
     bottom: 13vw;
     width: 16%;

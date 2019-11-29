@@ -1,5 +1,11 @@
 @charset "UTF-8";
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
+  margin: 0;
   padding-top: 60px;
   /* navBar fixed-up 時 body 需 padding-top navBar 的 height */
   font-family: 'Noto Serif TC', serif;
@@ -12,7 +18,6 @@ body {
 
 #main_nav.navbar {
   padding: 0;
-  width: 100vw;
   /*  padding: 0; */
 }
 

@@ -45,19 +45,25 @@ section.template .topbutn img {
   }
 }
 
-section.template .container .title.drop-shadow {
+@media (max-width: 576px) {
+  section.template .container .col-12 {
+    overflow: hidden;
+  }
+}
+
+section.template .container .col-12 .title.drop-shadow {
   /* attra title add drop-shadow */
   -webkit-filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
           filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
 }
 
-section.template .container .title.drop-shadow img {
+section.template .container .col-12 .title.drop-shadow img {
   width: 100%;
   margin: 80px 0;
 }
 
 @media (max-width: 576px) {
-  section.template .container .title.drop-shadow img {
+  section.template .container .col-12 .title.drop-shadow img {
     margin: 20px 0;
   }
 }

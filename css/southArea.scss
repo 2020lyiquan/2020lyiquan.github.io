@@ -35,20 +35,26 @@ section.template {
     }
 
     .container {
+        .col-12 {
+            @media (max-width:576px) {
+                overflow: hidden;
+            }
 
-        .title.drop-shadow {
-            /* attra title add drop-shadow */
-            filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
+            .title.drop-shadow {
+                /* attra title add drop-shadow */
+                filter: drop-shadow(3px 3px 4px rgba(41, 41, 41, 0.7));
 
-            img {
-                width: 100%;
-                margin: 80px 0;
+                img {
+                    width: 100%;
+                    margin: 80px 0;
 
-                @media (max-width: 576px) {
-                    margin: 20px 0;
+                    @media (max-width: 576px) {
+                        margin: 20px 0;
+                    }
                 }
             }
         }
+
 
         .row02 {
             box-shadow: 0 0 10px #5c5c5c;
@@ -156,18 +162,13 @@ section.template {
     }
 
     p {
-      color: whitesmoke;
-      font-size: 0.9em;
-      letter-spacing: 3px;
-      z-index: 10;
-      position: absolute;
-      top: 50%;
-      left: 34vw;
-      transform: translate(-50%, -50%);
-      @media (max-width: 768px) {
-        font-size: 3.3vw;
-        left: 50%;
-        width: 68vw;
+        color: whitesmoke;
+        font-size: 0.9em;
+        letter-spacing: 3px;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 34vw;
         transform: translate(-50%, -50%);
 
         @media (max-width: 768px) {
@@ -176,35 +177,36 @@ section.template {
             width: 68vw;
             transform: translate(-50%, -50%);
             letter-spacing: 0.5px;
+            
         }
-    }
 
-    .southArea_library {
-        width: 35%;
-        position: absolute;
-        right: 3vw;
-        bottom: 5vw;
+        .southArea_library {
+            width: 35%;
+            position: absolute;
+            right: 3vw;
+            bottom: 5vw;
 
-        @media (max-width: 768px) {
-            right: 1vw;
-            bottom: 13vw;
-            width: 60%;
+            @media (max-width: 768px) {
+                right: 1vw;
+                bottom: 13vw;
+                width: 60%;
+            }
         }
-    }
 
-    .southArea_person {
-        width: 8%;
-        position: absolute;
-        left: 8vw;
-        bottom: 5vw;
-        transform: scaleX(-1);
+        .southArea_person {
+            width: 8%;
+            position: absolute;
+            left: 8vw;
+            bottom: 5vw;
+            transform: scaleX(-1);
 
-        @media (max-width: 768px) {
-            left: 2vw;
-            bottom: 13vw;
-            width: 16%;
+            @media (max-width: 768px) {
+                left: 2vw;
+                bottom: 13vw;
+                width: 16%;
+            }
         }
     }
 }
 
-// 常樂footer 修改
+    // 常樂footer 修改
