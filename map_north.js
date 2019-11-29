@@ -6,42 +6,42 @@
                 name: "台中公園",
                 lat: 24.144853,
                 lng: 120.684518,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/北區/台中公園/素材/台中公園.jpg",
                 target: "#page02"
             },
             {
                 name: "台中孔廟",
                 lat: 24.154337,
                 lng: 120.689977,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/北區/台中孔廟/素材/祭孔大典儀節.jpg",
                 target: "#page03"
             },
             {
                 name: "國立自然科學博物館",
                 lat: 24.157355,
                 lng: 120.666075,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/北區/國立自然科學博物館/素材/植物園-01.jpg",
                 target: "#page04"
             },
             {
                 name: "香蕉新樂園",
                 lat: 24.156196,
                 lng: 120.689975,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/北區/香蕉新樂園/素材/香蕉新樂園.jpg",
                 target: "#page06"
             },
             {
                 name: "中興堂",
                 lat: 24.145892,
                 lng: 120.685504,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/北區/中興堂/素材/中興堂.jpg",
                 target: "#page05"
             },
             {
                 name: "寶覺寺",
                 lat: 24.159693,
                 lng: 120.687782,
-                img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+                img_link: "./img/北區/寶覺寺/素材/寶覺寺彌勒大佛正面照.jpg",
                 target: "#page07"
             }
             ];

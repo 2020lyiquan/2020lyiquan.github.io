@@ -5,28 +5,28 @@ function initMap() {
         name: "樂成宮",
         lat: 24.140770,
         lng: 120.698032,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/東區/樂成宮/素材/樂成宮.jpg",
         target: "#page02"
     },
     {
         name: "新天地西洋博物館",
         lat: 24.141952,
         lng: 120.70161,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/東區/新天地西洋博物館/素材/新天地西洋博物館01.jpg",
         target: "#page03"
     },
     {
         name: "台中南天宮",
         lat: 24.142870,
         lng: 120.695377,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/東區/關聖帝君-南天宮/素材/台中南天宮-關帝聖君.jpg",
         target: "#page04"
     },
     {
         name: "賴高山藝術紀念館",
         lat: 24.127025,
         lng: 120.689239,
-        img_link: "https://www.thinkingtaiwan.com/sites/default/files/images/insert/policy/tai_zhong_huo_che_zhan_1.jpg",
+        img_link: "./img/東區/賴高山藝術紀念館/素材/賴高山藝術紀念館01.jpg",
         target: "#page05"
     }
     ];
