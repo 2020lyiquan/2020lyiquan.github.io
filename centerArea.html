@@ -93,7 +93,7 @@
 
     <section class="template" id="page02">
 
-        <div class="topbutn active">
+        <div class="topbutn ">
             <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
             <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
         </div>
@@ -440,7 +440,7 @@
         $(window).scroll(function () {
   
             var scrollTop = $(window).scrollTop();
-            console.log(scrollTop);
+            // console.log(scrollTop);
             if (scrollTop > 1000 && scrollTop < all) {
                 $(".topbutn").addClass("active");
             } else {
