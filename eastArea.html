@@ -357,7 +357,6 @@
             },
         });
     </script>
-<<<<<<< HEAD
      <!-- map -->
      <script src="./map_east.js"></script>
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"async defer></script>
@@ -373,53 +372,9 @@
             // console.log( body.scrollHeight);
             if (w_width > 460) {
                 var all = bsh - wsh - 300
-=======
-    <!-- map -->
-    <script src="./map_east.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkIsBMXa9tjgc4FhYITLBmei5NbYqUky8&callback=initMap"
-        async defer></script>
-    <script>
-        $(window).scroll(function () {
-
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop > 1000 && scrollTop < 7800) {
-                $(".topbutn").addClass("active");
             } else {
-                $(".topbutn").removeClass("active");
+                var all = bsh - wsh - 300
             }
-
-
-        });
-    </script>
-    <script>
-        var body = document.body;
-        var bsh = body.scrollHeight;
-        var w_width = window.screen.width;
-        var wsh = window.screen.height;
-
-
-        // console.log( body.scrollHeight);
-        if (w_width > 460) {
-            var all = bsh - wsh - 300
-        } else {
-            var all = bsh - wsh - 50
-        }
-
-        // console.log(bsh-wsh);
-
-        // console.log(window.screen.height);
-
-        $(window).scroll(function () {
-
-            var scrollTop = $(window).scrollTop();
-            console.log(scrollTop);
-            if (scrollTop > 1000 && scrollTop < all) {
-                $(".topbutn").addClass("active");
->>>>>>> 81b10519b9a1607de4b57f13493fe49c7cea42ce
-            } else {
-                $(".topbutn").removeClass("active");
-            }
-<<<<<<< HEAD
     
             // console.log(bsh-wsh);
     
@@ -428,7 +383,7 @@
             $(window).scroll(function () {
     
                 var scrollTop = $(window).scrollTop();
-                 console.log(scrollTop);
+                //  console.log(scrollTop);
                 if ( scrollTop > 1000 && scrollTop < all ) {
                     $(".topbutn").addClass("active");
                 } 
@@ -437,16 +392,6 @@
                 }
             });
         </script>
-=======
-        });
-    </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- aos js include -->
-    <script>                                                        /* INITIALIZE AOS */
-        AOS.init();
-    </script>
-
->>>>>>> 81b10519b9a1607de4b57f13493fe49c7cea42ce
 </body>
 
 </html>
