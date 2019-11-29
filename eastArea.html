@@ -91,7 +91,7 @@
 
     <section class="template"  id="page02">
             <div class="topbutn ">
-                    <a href="#"> <img class="" src="./img/TOParrow-black.png" alt=""></a>
+                    <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
                     <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
             </div>
         <div class="container">
@@ -381,6 +381,11 @@
                     $(".topbutn").removeClass("active");
                 }
             });
+        </script>
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- aos js include -->
+        <script>                                                        /* INITIALIZE AOS */
+            AOS.init();
         </script>
 </body>
 
