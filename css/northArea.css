@@ -164,7 +164,7 @@ section.template .container .attraContent p {
   color: whitesmoke;
   font-size: 0.9em;
   letter-spacing: 3px;
-  z-index: 9999;
+  z-index: 10;
   position: absolute;
   top: 50%;
   left: 66vw;
