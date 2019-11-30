@@ -13,24 +13,29 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/southArea.css"> <!-- css 資料夾 include southArea.css -->
     <link rel="stylesheet" href="./css/nav_bar.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <!-- swiper css include -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> <!-- swiper.css include -->
+    <!-- swiper.css include , swiper-button-prev,next 顏色，大小 在.swiper container設定 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- aos css include -->
 
     <style>
-        /*  Swiper styles */
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         html {
             scroll-behavior: smooth;
+        }
+
+        .swiper-container {
+            /* --swiper-theme-color: #ff6600; */
+            /* 设置Swiper风格 */
+            --swiper-navigation-color: #f1f1f1f8;
+            /* 单独设置按钮颜色 */
+            --swiper-navigation-size: 80px;
+            /* 设置按钮大小  預設大小是44px*/
+        }
+
+        @media (max-width: 576px) {
+            .swiper-container {
+                --swiper-navigation-size: 48px;
+                /* 设置按钮大小  預設大小是44px*/
+            }
         }
     </style>
 
@@ -96,14 +101,15 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12  col-lg-6 ">
-                    <div class="title drop-shadow" data-aos="fade-right"  data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="title drop-shadow" data-aos="fade-right" data-aos-duration="800"
+                        data-aos-easing="ease-in-sine">
                         <img src="./img/南區/老樹根魔法木工坊/素材/彩虹眷村IN老樹根02.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8  pl-0  pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -135,7 +141,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1  p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>二十多年來「老樹根」設計製造的產品相當多樣，是個各種原木教具、玩具、遊樂設施、涼亭、花架、景觀木器的專業公司，為台灣少數擁有經濟部登記核可的兒童遊戲設施製造工廠。
                         </p>
                         <p>『老樹根魔法木工坊』是一個充滿驚奇、趣味的木頭創藝樂園，它設有木器彩繪DIY館、魯班創意館、木工教室，並有家鄉的土埆厝三合院、獨角仙小棧及阿嬤的蔬菜農園、木頭鳥咖啡館、草坪遊戲區並備有停車場。是一個非常適合親子、師生和社團，一起體驗木頭、玩木頭，以及欣賞木藝、手造木藝好地方。
@@ -159,14 +165,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                        data-aos-duration="800">
                         <img src="./img/南區/台中城隍廟/素材/彩虹眷村IN台中城隍廟02.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -202,7 +209,7 @@
             </div>
             <div class="row">
                 <div class="col-11 mx-auto   p-1  p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>傳說中城隍爺一直為民間所信奉的地方守護神，而台中市合作街的城隍廟中供祀的城隍爺遍傳說是管理台中市的地方官。城隍廟創建於清光緒10年，日治大正10年(西元1921年)遷移現址，歷經數度整修，至今仍香火鼎盛，而在陽光照耀下，廟外屋頂華麗瓷瓦閃閃發亮，與神像栩栩如生，相互輝映，而每年農曆6月15日為城隍爺的祭典日。
                         </p>
                         <p>城隍爺是民眾的信仰中心。城隍爺奉祀城隍尊神、關聖帝君、註生娘娘、城隍夫人、天上聖母、福德正神、文昌帝君、文
@@ -222,14 +229,15 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
-                    <div class="title drop-shadow" data-aos="fade-right"  data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="title drop-shadow" data-aos="fade-right" data-aos-duration="800"
+                        data-aos-easing="ease-in-sine">
                         <img src="./img/南區/國立公共資訊圖書館/素材/彩虹眷村IN公共圖書館02拷貝.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -265,7 +273,7 @@
             </div>
             <div class="row">
                 <div class="col-11 mx-auto  p-1  p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>國立公共資訊圖書館(國資圖)為國立級之公共圖書館及數位圖書館，除蒐集、整理、典藏各種圖書、數位資源，推廣閱讀及提供資訊服務外，還負有輔導全國各級公共圖書館之任務。總館位於臺中市南區五權南路，於民國101年(西元2012年)落成啟用，下設黎明、精武及中興三所分館。
                         </p>
                         <p>總館為地上五層、地下二層建築物，佔地2.164公頃，樓地板面積約41,797平方公尺。大致分為讀者服務區、會議學習區、公共服務區與行政支援區。
@@ -290,15 +298,16 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                        data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/南區/文化部創意園區/彩虹眷村IN文化創意園區02.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -331,7 +340,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto  p-1  p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>台中文化創意產業園區，佔地5.6公頃，前身為創立於1916年日治時期的民營「大正製酒株式會社」，在1922年日本政府實施酒類專賣制度後被收歸官有，1928年成為當時全台最大的釀酒工場。
                         </p>
                         <p>距離台中火車站不遠處，座落於復興路三段與民生路交叉口，「文化部文化資產園區」是近年來提供許多大專院校生、藝文團體、產業等文化創意發表與交流的舞台。並且「文化部文化資產園區」更也讓舊台中酒廠從此由製酒工業遺址活化新生，蛻變成文化創意產業的推展基地。
@@ -369,12 +378,18 @@
         </script>
 
     <!-- Swiper JS LOAD -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,                             /*  圖片一次顯示幾張 */
+            spaceBetween: 0,                              /* 圖片間距 */
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
