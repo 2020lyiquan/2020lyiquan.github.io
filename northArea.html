@@ -14,28 +14,24 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/northArea.css"> <!-- css 資料夾 include northArea.css -->
     <link rel="stylesheet" href="./css/nav_bar.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> <!-- swiper.css include -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <!-- swiper css include -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- aos css include -->
 
     <style>
+        /*  Swiper styles */
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         html {
             scroll-behavior: smooth;
-        }
-
-        .swiper-container {
-            /* --swiper-theme-color: #ff6600; */
-            /* 设置Swiper风格 */
-            --swiper-navigation-color: #f1f1f1f8;
-            /* 单独设置按钮颜色 */
-            --swiper-navigation-size: 80px;
-            /* 设置按钮大小  預設大小是44px*/
-        }
-
-        @media (max-width: 576px) {
-            .swiper-container {
-                --swiper-navigation-size: 48px;
-                /* 设置按钮大小  預設大小是44px*/
-            }
         }
     </style>
 </head>
@@ -92,24 +88,23 @@
         </div>
         <div id="map" style="width: 100%; height: 70vh; font-family: 'Noto Serif TC', serif;"></div>
     </section>
-
-    <section class="template" id="page02">
-        <div class="topbutn ">
-            <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
-            <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
-        </div>
+  
+    <section  class="template"  id="page02">
+            <div class="topbutn ">
+                    <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
+                    <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
+                </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 pt-4 ">
-                    <div class="title drop-shadow" data-aos="fade-right" data-aos-duration="800"
-                        data-aos-easing="ease-in-sine">
+                    <div class="title drop-shadow" data-aos="fade-right"  data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <img src="./img/北區/台中公園/素材/台中公園.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
-                data-aos-offset="0" data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8  pl-0  pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -138,7 +133,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>臺中公園自1903年(明治36年)10月28日創立以來，一直是臺中市重要的地標，公園內設有人工湖、亭臺樓閣、曲橋等優美造景，有露天音樂臺、兒童遊戲區、網球場等多項遊樂設施，適合親子一同前往休閒運動，位於臺中市區，交通方便，臺中市假日闔家出遊的熱門景點。
                         </p>
                         <p>逾百年的臺中公園，是台中市一直以來的地標，園內林木蓊鬱，還有歷史、人文、動物等元素點綴其中，常說「前人種樹，後人乘涼」，在台灣的市區，要找到像臺中公園這樣綠木群集實不多見，這般的詩情畫意，不知要多久的養成，得以讓後人在疲累的時候，還能找到不花大錢、不需要特別開車跑到山間或溪邊的自然休憩處。
@@ -154,15 +149,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
-                        data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
                         <img src="./img/北區/台中孔廟/素材/台中孔廟.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
-                data-aos-offset="0" data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -195,7 +189,7 @@
             </div>
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>平時免費開放供遊客觀光及休憩,
                             孔廟並於每年九月二十八日舉行大成至聖先師孔子誕辰釋奠典禮另為服務考生與學生，每逢考季前均會適時舉辦祈福許願活動以利考生、學生及家長祈求考試順利、金榜題名。亦協辦各項藝文活動，並有民間社團辦理攝影與寫生等活動,增添文化社教的功能。
                         </p>
@@ -212,15 +206,14 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
-                    <div class="title drop-shadow" data-aos="fade-right" data-aos-duration="800"
-                        data-aos-easing="ease-in-sine">
+                    <div class="title drop-shadow" data-aos="fade-right"  data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <img src="./img/北區/國立自然科學博物館/素材/科博館.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
-                data-aos-offset="0" data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -255,7 +248,7 @@
             </div>
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>歷史: 1981年，成立「國立自然科學博物館籌備處」1986年元旦對外開放
                             展區介紹:科學中心、生命科學廳、中國科學廳、地球環境廳、植物園、劇場放映，臺中市霧峰的九二一地震教育園區、南投縣鹿谷鄉的鳳凰谷鳥園、竹山鎮的車籠埔斷層保存園區，也成為科博館館外園區，不僅館內內容豐富且深具教育意義，館外的園區也適合休閒踏青，故歷年來參觀人數平均居全臺博物館第二名，高達三百萬人次左右。
                         </p>
@@ -271,16 +264,15 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
-                        data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/北區/中興堂/素材/忠興堂.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
-                data-aos-offset="0" data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -311,7 +303,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>民國五十八年興建的中興堂，位在台中市雙十路和精武路交會口，場內設備齊全，如燈光、音響、舞台、座椅等，都是超乎國際水準。中興堂經常舉辦各項藝文活動，歌劇、話劇、芭蕾舞、現代舞、合唱、演講、棋藝等，是台中市民享受音樂、戲劇表演的瑰麗殿堂。
                         </p>
                         <p>民國61年落成啟用，佔地坪，總樓板面積約坪1,950坪，觀眾席1,380位。因建築物不符消防及公共安全相關法規之規定，加以設備陳舊不堪使用，於93年起進行整建改善工程。由於中興堂為30多年之老舊建築物，現場拆卸開挖後，發現舊有結構年久腐朽、舞台上方承接預力樑之柱頭龜裂，基於安全起見，整建期間曾暫停施工，進行相關結構檢測、增設大型支撐鋼架及變更設計等應變措施，以致工期稍有拖延，歷時2年3個月，終於完工。
@@ -328,16 +320,15 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
-                    <div class="title drop-shadow" data-aos="fade-right" data-aos-duration="800"
-                        data-aos-easing="ease-in-sine">
+                    <div class="title drop-shadow" data-aos="fade-right"  data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/北區/香蕉新樂園/素材/香蕉 拷貝.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
-                data-aos-offset="0" data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -367,7 +358,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>位於北區的臺灣香蕉新樂園，提供古老味餐點、早期台灣生活器具、人文生活歷史介紹，一整排的日式建築，營造台灣老街場景，每一個角落，都在訴說古早的故事，帶您追溯台灣那段生活記憶。
                         </p>
                         <p>臺灣香蕉新樂園透過復古懷舊式餐廳，讓現代的都會人觀賞台灣建築物及常民的美、人性的善及歷史的真。
@@ -391,16 +382,15 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
-                        data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/北區/寶覺寺/素材/寶覺寺.PNG" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
-                data-aos-offset="0" data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
+            data-aos-offset="0"data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -428,7 +418,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <p>寶覺寺位於北屯區健行路，建於日治昭和2年(西元1927年)。是一處清幽的參禪問學之地，廟貌為鼓樓式建築，主奉釋迦牟尼、藥師佛和阿彌陀佛三尊佛。
                             歷史:1926年創建開山者為良達法師，首任主持妙禪法師，臺日二戰軍人與遺屬會來此祭祀，也為日本觀光客旅遊地點。建築特色：大梵鐘、菩薩像、巨佛像、俳句碑。
                         </p>
@@ -442,7 +432,7 @@
         </div>
     </section>
 
-
+   
 
     <!-- 常樂footer 修改 -->
     <footer class="northArea_footer bg-black ">
@@ -464,18 +454,12 @@
         crossorigin="anonymous"></script>
 
     <!-- Swiper JS LOAD -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,                             /*  圖片一次顯示幾張 */
-            spaceBetween: 0,                              /* 圖片間距 */
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

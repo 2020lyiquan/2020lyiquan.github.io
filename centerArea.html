@@ -13,30 +13,54 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/centerArea.css"> <!-- css 資料夾 include centerArea.css -->
     <link rel="stylesheet" href="./css/nav_bar.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"><!-- swiper css include -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <!-- swiper css include -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,600,900&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- aos css include -->
-   
+    <script>
+        var body = document.body;
+        var bsh = body.scrollHeight;
+        var w_width = window.screen.width;
+        var wsh = window.screen.height;
+
+
+        // console.log(body.scrollHeight);
+        // console.log(window.screen.height);
+        if (w_width > 460) {
+            var all = bsh - wsh - 160
+        } else {
+            var all = bsh - wsh - 50
+        }
+
+
+        $(window).scroll(function () {
+
+            var scrollTop = $(window).scrollTop();
+            console.log(scrollTop);
+            if (scrollTop > 1000 && scrollTop < all) {
+                $(".topbutn").addClass("active");
+            } else {
+                $(".topbutn").removeClass("active");
+            }
+
+
+        });
+    </script>
     <style>
+        /*  Swiper styles */
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         html {
             scroll-behavior: smooth;
-        }
-
-        .swiper-container {
-            /* --swiper-theme-color: #ff6600; */
-            /* 设置Swiper风格 */
-            --swiper-navigation-color: #f1f1f1f8;
-            /* 单独设置按钮颜色 */
-            --swiper-navigation-size: 80px;
-            /* 设置按钮大小  預設大小是44px*/
-        }
-
-        @media (max-width: 576px) {
-            .swiper-container {
-                --swiper-navigation-size: 48px;
-                /* 设置按钮大小  預設大小是44px*/
-            }
         }
     </style>
 </head>
@@ -422,18 +446,12 @@
         </script>
 
     <!-- Swiper JS LOAD -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,                             /*  圖片一次顯示幾張 */
-            spaceBetween: 0,                              /* 圖片間距 */
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+        var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
