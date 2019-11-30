@@ -23,12 +23,17 @@
         }
 
         .swiper-container {
-            /* --swiper-theme-color: #ff6600; */
+            --swiper-theme-color: #f1f1f1f8;
             /* 设置Swiper风格 */
-            --swiper-navigation-color: #f1f1f1f8;
+            /* --swiper-navigation-color: #f1f1f1f8; */
             /* 单独设置按钮颜色 */
             --swiper-navigation-size: 80px;
             /* 设置按钮大小  預設大小是44px*/
+        }
+
+        .swiper-button-next:hover,                  /* 手機板黃色外邊框消除 */
+        .swiper-button-prev:hover{
+            outline: none;
         }
 
         @media (max-width: 576px) {
