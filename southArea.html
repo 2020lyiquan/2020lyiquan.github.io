@@ -29,7 +29,15 @@
             /* 单独设置按钮颜色 */
             --swiper-navigation-size: 80px;
             /* 设置按钮大小  預設大小是44px*/
-            outline: none!important;
+        }
+
+        .swiper-button-next:focus,
+        .swiper-button-next:hover,
+        .swiper-button-next:active,
+        .swiper-button-prev:focus,
+        .swiper-button-prev:hover,
+        .swiper-button-prev:active.focus {
+            outline: none;
         }
 
         @media (max-width: 576px) {
