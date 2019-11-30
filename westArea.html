@@ -13,24 +13,30 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/westArea.css"> <!-- css 資料夾 include northArea.css -->
     <link rel="stylesheet" href="./css/nav_bar.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> <!-- swiper css include -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> <!-- swiper.css include -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- aos css include -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <style>
-        /*  Swiper styles */
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         html {
             scroll-behavior: smooth;
+        }
+
+        .swiper-container {
+            /* --swiper-theme-color: #ff6600; */
+            /* 设置Swiper风格 */
+            --swiper-navigation-color: #f1f1f1f8;
+            /* 单独设置按钮颜色 */
+            --swiper-navigation-size: 80px;
+            /* 设置按钮大小  預設大小是44px*/
+        }
+
+        @media (max-width: 576px) {
+            .swiper-container {
+                --swiper-navigation-size: 48px;
+                /* 设置按钮大小  預設大小是44px*/
+            }
         }
     </style>
 </head>
@@ -86,11 +92,11 @@
         <div id="map" style="width: 100%; height: 70vh; font-family: 'Noto Serif TC', serif;"></div>
     </section>
 
-    <section  class="template" id="page02">
-            <div class="topbutn">
-                    <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
-                    <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
-                </div>
+    <section class="template" id="page02">
+        <div class="topbutn">
+            <a href="#"> <img class="d-none d-lg-block" src="./img/TOParrow-black.png" alt=""></a>
+            <a href="#"> <img class="d-block d-lg-none " src="./img/TOParrow-red.png" alt=""></a>
+        </div>
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
@@ -133,8 +139,8 @@
             </div>
 
             <div class="row">
-                <div class="col-11 mx-auto p-1 p--lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="col-11 mx-auto p-1 p-lg-5">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>位於科博館、國美館之間的勤美術館，臨近誠品旗艦店，加上與草悟道串連，共同打造出台中市「街區博物館」。勤美術館是一個無牆也無疆界的美術館，讓藝術更貼近民眾生活。
                         </p>
                         <p>勤美術館以活的、無疆界的美術館為定位，由勤美集團與璞真建設聯手，推出佔地2,500坪的「勤美術館CMP Block Museum of
@@ -156,14 +162,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow"data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                        data-aos-duration="800">
                         <img src="./img/西區/忠信市場/素材/忠信市場.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -191,7 +198,7 @@
             </div>
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>忠信市場從一個老市場，變成一個藝文工作者的展演場所，展現出現代與復古的衝突美感。看起來老舊的建築，裡頭卻注入了新的元素。來到這裡會發現，這裡的建築空間都比較小，當初為了節省空間，讓空間更有效的應用，所以每一間房子，坪數其實都不大。忠信市場，一個舊有的空間，曾經是傳統市場，當初熱鬧的景象已不復見，已搖身一變，轉變為新的藝文空間。
                         </p>
                         <p>忠信市場位於台中國美館對面，包括五權一街、五權西二街、五權西三街圍成的小區域。建造於民國50年代的忠信市場，在60、70年代時人口相當密集，而後因經濟下滑而逐漸沒落。
@@ -211,14 +218,14 @@
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
                     <div class="title drop-shadow" data-aos="fade-right" data-aos-easing="ease-in-sine"
-                    data-aos-duration="800">
+                        data-aos-duration="800">
                         <img src="./img/西區/國立臺灣美術館/素材/國立台灣美術館.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8 pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -250,7 +257,7 @@
             </div>
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>國立臺灣美術館隸屬文化部，是台灣唯一的國家級美術館，也是目前亞洲最大的美術館之一，地處於臺中市中心點，交通便利，館佔地約三公頃，於1988年開館使用。國立臺灣美術館周邊景點有國立自然科學博物館、美術園道商圈、草悟道等知名景點，特殊的藝術氛圍帶動附近的藝文與商業活動，形成充滿文藝氣息的生活圈與觀光遊憩區。
                         </p>
                         <p>美術館的建築空間強調開闊性與現代感，造型簡潔方整，呈階梯遞降，以天然石片為主要外飾材料。開闊的園區陳列雕塑精品，並有蒐集台灣先賢書家之墨跡而成的碑林廣場。
@@ -271,15 +278,16 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                        data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/西區/道禾六藝文化-刑武場/素材/刑武場.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -313,7 +321,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>台中刑務所演武場，位於台中市西區林森路33號，興建於日治時期昭和12年(西元1937年)，為司獄官、警察日常練武之武道館舍，屬本市僅存之演武場，歷史原貌保存完整，
                             極具保存、再利用及建築研究價值。
                         </p>
@@ -332,15 +340,15 @@
             <div class="row ">
                 <div class="col-12 col-lg-6">
                     <div class="title drop-shadow" data-aos="fade-right" data-aos-easing="ease-in-sine"
-                    data-aos-duration="800">
+                        data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/西區/台中文學館/素材/台中文學館.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -375,7 +383,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto  p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>為台中首座以文學為主題的公園，進入園區可見檜木搭建的古老日式建築，為1932年日治時期建造的警察宿舍群，原為面臨剷平拆除的廢墟，後來經過各方搶救被保存下來，103年開始進行修復工作，改建為台中文學館，用以推廣在地文學家作品，培育市民文學涵養向下扎根，預計六棟館舍將規劃常設展、主題特展、兒童文學展、主題餐廳等，並舉辦相關的展演講座活動，拓展文學更多的可能性。
                         </p>
                         <p>臺中文學館原為日治時期警察宿舍，為活化歷史建築，於2016年8月26日全館開放，共有6棟館舍，包含常設館、主題特展館、研習講堂、主題餐廳、兒童文學區及行政中心。以「臺中文學」為主題，推廣在地文化，讓文學走進日常生活中。臺中文學館是臺中第一座以文學為主題之公立博物館，也是文青休閒好去處。
@@ -397,15 +405,16 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-6 ml-auto">
-                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"data-aos-duration="800">
+                    <div class="title drop-shadow" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                        data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/西區/審計新村/素材/審計新村.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -437,7 +446,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>活絡閒置公有建物，提供產業發展需求之空間，並帶動地方整體發展，臺中市政府以委託經營方式合作開發，另公開招商募集民間、法人團體投資開發。本基地以引入複合式主題文化創意產業為主，本區之區位之交通優勢，及臨近臺中相關之藝術、人文及新興商業活動區都在步行可達之範圍，可串連既有的綠園道及美術館文創商店以形成產業群聚效應，型塑臺中市園道文創產業廊道，並以生活、生產、生態三生共構的基礎，輔導青年族群進行微型創業，增加就業機會。
                         </p>
                         <p>鄰近馬路卻獨出一格的審計新村，便是在這片將近半世紀歷史的老宿舍，審計新村是臺中市第三批臺灣省政府宿舍群之一。
@@ -455,15 +464,15 @@
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
                     <div class="title drop-shadow" data-aos="fade-right" data-aos-easing="ease-in-sine"
-                    data-aos-duration="800">
+                        data-aos-duration="800">
                         <!--  div 景點書法體標題 add drop-shadow class -->
                         <img src="./img/西區/台中州廳/素材/台中州廳.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"data-aos-duration="800"
-            data-aos-offset="0"data-aos-delay="400">
+            <div class="row row02 mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="800"
+                data-aos-offset="0" data-aos-delay="400">
                 <div class="col-lg-8   pl-0 pr-0 ">
                     <!-- Swiper -->
                     <div class="swiper-container ">
@@ -492,7 +501,7 @@
 
             <div class="row">
                 <div class="col-11 mx-auto p-1 p-lg-5">
-                    <div class="attraContent" data-aos="fade-up"data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="attraContent" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
                         <p>臺中州廳建於日治時期的官署建築，完工後先後成為日治之臺中州、後之臺中市的政府所在地。目前被列為臺中市市定古蹟保護。由於該建築最初是日治時期的臺中州廳（「州廳」等同於中文語法的「州政府」）使用，因而沿用成為對其之稱呼。台中州廳附屬建築群自日治時期起就被規劃作為總督府的廳舍，至今仍為台中市政府的辦公處所；州廳鄰近台中火車站，交通具便利性，其附近有商業區、飲食消費區和傳統的老街，充滿著歷史文化資源，州廳及附近建築群被列為歷史建築，此區域可說是歷史古蹟最為密集之地區，也因此，吸引許多外來遊客到此處參觀。
                         </p>
                         <p>臺中州廳1912年動工，1913年完成第一期，經歷四次擴建，於1934年完成現行規模，由日人森山松之助設計。臺中州廳管轄臺中市市、彰化縣及南投縣地，臺中市役所才是當時臺中市政府。二戰後，臺中市政府遷入現址辦公至今，而臺中州廳則被臺中市列為市定古蹟。
@@ -525,12 +534,18 @@
         crossorigin="anonymous"></script>
 
     <!-- Swiper JS LOAD -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- Initialize Swiper Loop-->
     <script>
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,                             /*  圖片一次顯示幾張 */
+            spaceBetween: 0,                              /* 圖片間距 */
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
