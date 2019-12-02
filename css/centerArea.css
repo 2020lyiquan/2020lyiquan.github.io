@@ -25,7 +25,7 @@ section.template .topbutn img {
   height: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   section.template .topbutn {
     right: 15px;
   }
