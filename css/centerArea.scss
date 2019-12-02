@@ -28,21 +28,14 @@ section.template {
 
     @media (max-width: 768px) {
       img {
-        width: 40px;
-        height: 80px;
+        width: 50px;
+        height: 100px;
       }
 
-      right: 7%;
+      right: 15px;
     }
 
-    @media (max-width: 414px) {
-      img {
-        width: 30px;
-        height: 60px;
-      }
-
-      right: 4%;
-    }
+    
   }
 
   .container {
