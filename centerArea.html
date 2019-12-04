@@ -43,6 +43,7 @@
                 /* 设置按钮大小  預設大小是44px*/
             }
         }
+    
     </style>
 </head>
 
@@ -66,7 +67,7 @@
                     <a class="nav-item nav-link  " href="./index-2.html">回首頁</a>
                     <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
                     <a class="nav-item nav-link " href="./northArea.html">趣北區</a>
-                    <a class="nav-item nav-link  " href="./centerArea.html">趣中區</a>
+                    <a class="nav-item nav-link btn_color  " href="./centerArea.html" style="color: black;">趣中區</a>
                     <a class="nav-item nav-link  " href="./eastArea.html">趣東區</a>
                     <a class="nav-item nav-link  " href="./westArea.html">趣西區</a>
                     <a class="nav-item nav-link  " href="./southArea.html">趣南區</a>
@@ -458,20 +459,20 @@
 
         // console.log(body.scrollHeight);
         // console.log(window.screen.height);
-        if (w_width > 460) {
-            var all = bsh - wsh - 160
-        } else {
-            var all = bsh - wsh - 50
-        }
+        // if (w_width > 460) {
+        //     var all = bsh - wsh - 160
+        // } else {
+        //     var all = bsh - wsh - 50
+        // }
 
 
         $(window).scroll(function () {
 
             var scrollTop = $(window).scrollTop();
             // console.log(scrollTop);
-            if (scrollTop > 1000 && scrollTop < all) {
+            if (scrollTop > 1000 ) {
                 $(".topbutn").addClass("active");
-            } else {
+            } else{
                 $(".topbutn").removeClass("active");
             }
 
