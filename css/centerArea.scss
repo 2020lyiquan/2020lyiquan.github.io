@@ -1,3 +1,17 @@
+
+ul{
+  position: fixed;
+  // z-index: 999;
+  top: 40%;
+  list-style:none ;
+  li{ 
+    font-family: '微軟正黑體';
+    letter-spacing: 5px;
+    text-align: center;
+  }
+}
+
+
 #page01 {
   .areaAvatar {
     background-image: url("./../img/示意圖/柳川4.jpg");
