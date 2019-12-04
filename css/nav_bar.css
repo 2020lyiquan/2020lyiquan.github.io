@@ -4,11 +4,6 @@ html {
   overflow-x: hidden;
 }
 
-.btn_color {
-  background-color: lightgrey;
-  color: black;
-}
-
 body {
   margin: 0;
   padding-top: 60px;
@@ -66,6 +61,11 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+#main_nav.navbar .container .navbar-nav .btn_color {
+  background-color: lightgrey;
+  color: black;
 }
 
 #main_nav.navbar .container .navbar-nav .nav-item {

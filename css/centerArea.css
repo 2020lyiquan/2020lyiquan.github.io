@@ -2,14 +2,27 @@
 ul {
   position: fixed;
   top: 0%;
-  right: 0%;
+  left: 0%;
   list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 576px) {
+  ul {
+    width: 5%;
+  }
 }
 
 ul li {
   font-family: '微軟正黑體';
   letter-spacing: 5px;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  ul li {
+    text-align: unset;
+  }
 }
 
 #page01 .areaAvatar {

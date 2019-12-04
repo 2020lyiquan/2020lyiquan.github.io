@@ -3,12 +3,20 @@ ul{
   position: fixed;
   // z-index: 999;
   top: 0%;
-  right: 0%;
+  left: 0%;
   list-style:none ;
+  padding: 0;
+  @media (max-width: 576px) {
+
+      width: 5%;
+  }
   li{ 
     font-family: '微軟正黑體';
     letter-spacing: 5px;
     text-align: center;
+    @media (max-width: 576px) {
+      text-align: unset;
+    }
   }
 }
 
