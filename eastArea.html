@@ -63,7 +63,7 @@
                     <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
                     <a class="nav-item nav-link " href="./northArea.html">趣北區</a>
                     <a class="nav-item nav-link  " href="./centerArea.html">趣中區</a>
-                    <a class="nav-item nav-link  " href="./eastArea.html">趣東區</a>
+                    <a class="nav-item nav-link btn_color  " href="./eastArea.html" style="color: black;">趣東區</a>
                     <a class="nav-item nav-link  " href="./westArea.html">趣西區</a>
                     <a class="nav-item nav-link  " href="./southArea.html">趣南區</a>
                     <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
@@ -379,11 +379,7 @@
 
 
         // console.log( body.scrollHeight);
-        if (w_width > 460) {
-            var all = bsh - wsh - 50
-        } else {
-            var all = bsh - wsh - 30
-        }
+       
 
         // console.log(bsh-wsh);
 
@@ -393,12 +389,12 @@
 
             var scrollTop = $(window).scrollTop();
             //  console.log(scrollTop);
-            if (scrollTop > 1000 && scrollTop < all) {
+            if (scrollTop > 1000 ) {
                 $(".topbutn").addClass("active");
-            }
-            else {
+            }else{
                 $(".topbutn").removeClass("active");
             }
+           
         });
     </script>
 

@@ -67,7 +67,7 @@
                     <a class="nav-item nav-link  " href="./centerArea.html">趣中區</a>
                     <a class="nav-item nav-link  " href="./eastArea.html">趣東區</a>
                     <a class="nav-item nav-link  " href="./westArea.html">趣西區</a>
-                    <a class="nav-item nav-link  " href="./southArea.html">趣南區</a>
+                    <a class="nav-item nav-link btn_color " href="./southArea.html" style="color: black;">趣南區</a>
                     <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
                 </div>
             </div>
@@ -415,11 +415,8 @@
         // console.log( body.scrollHeight);
 
         // console.log(window.screen.height );
-        if (w_width > 460) {
-            var all = bsh - wsh - 100
-        } else {
-            var all = bsh - wsh - 50
-        }
+    
+        
         // console.log(bsh-wsh);
 
         // console.log(window.screen.heig
@@ -429,9 +426,9 @@
 
             var scrollTop = $(window).scrollTop();
             //  console.log(scrollTop);
-            if (scrollTop > 1000 && scrollTop < all) {
+            if (scrollTop > 1000) {
                 $(".topbutn").addClass("active");
-            } else {
+            } else{
                 $(".topbutn").removeClass("active");
             }
         });
