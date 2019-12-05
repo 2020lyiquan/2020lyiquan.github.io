@@ -1,4 +1,71 @@
 @charset "UTF-8";
+body ul li {
+  text-align: left;
+}
+
+ul {
+  width: 85%;
+  position: fixed;
+  z-index: 999;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  ul {
+    width: 5%;
+  }
+}
+
+ul li {
+  width: 100%;
+  position: relative;
+  margin: 20px 5px;
+  text-align: unset;
+  font-family: '微軟正黑體';
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+ul li .list-group-item {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: #413f3f 2px solid;
+}
+
+ul li .list-group-item:first-child {
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+ul li .list-group-item:last-child {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+ul li .list-group-item.active {
+  background-color: transparent;
+  border-color: #22dbc9;
+}
+
+@media (max-width: 576px) {
+  ul li {
+    text-align: unset;
+  }
+}
+
 #page01 .areaAvatar {
   background-image: url("./../img/示意圖/美術館.jpg");
 }
