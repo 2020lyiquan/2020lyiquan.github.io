@@ -20,6 +20,7 @@ ul {
 
 @media (max-width: 576px) {
   ul {
+    left: 10px;
     width: 5%;
   }
 }
@@ -32,6 +33,12 @@ ul li {
   font-family: '微軟正黑體';
   letter-spacing: 5px;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  ul li {
+    margin: 20px 15px;
+  }
 }
 
 ul li .list-group-item {

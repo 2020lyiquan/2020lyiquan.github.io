@@ -12,7 +12,7 @@ ul{
   padding: 0;
   display: flex;
   @media (max-width: 576px) {
-
+      left:10px;
       width: 5%;
   }
    li{ 
@@ -20,12 +20,18 @@ ul{
     position: relative;
     margin: 20px 5px;
     text-align: unset;
-    
+    @media (max-width: 576px) {
+
+      margin: 20px 15px;
+    }
   
     .list-group-item{
       position: absolute;
       top: -10px;
       left: -10px;
+      @media (max-width: 576px) {
+   
+      }
 
       &:first-child{ border-top-right-radius:50%;
         border-top-left-radius: 50%;}
