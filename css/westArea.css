@@ -20,6 +20,7 @@ ul {
 
 @media (max-width: 576px) {
   ul {
+    display: none;
     left: 10px;
     width: 5%;
   }
@@ -30,14 +31,14 @@ ul li {
   position: relative;
   margin: 20px 5px;
   text-align: unset;
-  font-family: '微軟正黑體';
+  font-family: "微軟正黑體";
   letter-spacing: 5px;
   text-align: center;
 }
 
 @media (max-width: 576px) {
   ul li {
-    margin: 20px 15px;
+    margin: 15px 11px;
   }
 }
 
@@ -60,6 +61,14 @@ ul li .list-group-item:first-child {
 ul li .list-group-item:last-child {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  ul li .list-group-item {
+    width: 0;
+    height: 0;
+    padding: 1rem 1rem;
+  }
 }
 
 ul li .list-group-item.active {

@@ -1,60 +1,58 @@
-
-body ul li{
+body ul li {
   text-align: left;
 }
-ul{
+ul {
   width: 85%;
   position: fixed;
   z-index: 999;
   top: 60px;
   left: 50%;
   transform: translate(-50%);
-  list-style:none ;
+  list-style: none;
   padding: 0;
   display: flex;
   @media (max-width: 576px) {
-
-      width: 5%;
+    display: none;
+    width: 5%;
   }
-   li{ 
-   width: 100%;
+  li {
+    width: 100%;
     position: relative;
     margin: 20px 15px;
     text-align: unset;
-    
-  
-    .list-group-item{
+
+    .list-group-item {
       position: absolute;
       top: -10px;
       left: -10px;
 
-      &:first-child{ border-top-right-radius:50%;
-        border-top-left-radius: 50%;}
-      &:last-child{border-bottom-left-radius:50%;
-      border-bottom-right-radius: 50%;}
+      &:first-child {
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      &:last-child {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
       background-color: transparent;
       width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        border: #413f3f 2px solid;
-       
-  
-
+      height: 50px;
+      border-radius: 50px;
+      border: #413f3f 2px solid;
     }
-    .list-group-item.active{
-      background-color:transparent;
-      border-color:rgb(34, 219, 201) ;
+    .list-group-item.active {
+      background-color: transparent;
+      border-color: rgb(34, 219, 201);
     }
-    font-family: '微軟正黑體';
+    font-family: "微軟正黑體";
     letter-spacing: 5px;
     text-align: center;
-    
+
     @media (max-width: 576px) {
       text-align: unset;
     }
   }
 }
-
 
 #page01 {
   .areaAvatar {
@@ -92,13 +90,11 @@ section.template {
 
       right: 15px;
     }
-
-    
   }
 
   .container {
     .col-12 {
-      @media (max-width:576px) {
+      @media (max-width: 576px) {
         overflow: hidden;
       }
       .title.drop-shadow {
@@ -114,7 +110,6 @@ section.template {
         }
       }
     }
-
 
     .row02 {
       box-shadow: 0 0 10px #5c5c5c;

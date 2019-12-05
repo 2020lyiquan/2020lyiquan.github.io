@@ -20,6 +20,7 @@ ul {
 
 @media (max-width: 576px) {
   ul {
+    display: none;
     width: 5%;
   }
 }
@@ -29,7 +30,7 @@ ul li {
   position: relative;
   margin: 20px 15px;
   text-align: unset;
-  font-family: '微軟正黑體';
+  font-family: "微軟正黑體";
   letter-spacing: 5px;
   text-align: center;
 }
